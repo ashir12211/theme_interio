@@ -1,0 +1,214 @@
+/* Ambient Contact Section */
+.ambient_contact_section {
+    padding: 120px 0;
+    background-color: #000000;
+    color: #FAF6F0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Typography */
+.ambient_contact_section .section-title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #FAF6F0;
+}
+
+.ambient_contact_section .section-title .highlight {
+    color: #F4DFC8;
+    /* Pale Gold */
+    font-style: italic;
+    font-family: serif;
+    /* Elegant contrast */
+}
+
+.ambient_contact_section .section-desc {
+    color: #b2bec3;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+/* Contact Cards */
+.ambient_contact_section .contact-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ambient_contact_section .contact-card {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(244, 223, 200, 0.1);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.ambient_contact_section .contact-card:hover {
+    transform: translateX(10px);
+    border-color: rgba(244, 223, 200, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.ambient_contact_section .icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(244, 223, 200, 0.1);
+    color: #F4DFC8;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.ambient_contact_section .contact-card:hover .icon-box {
+    background: #F4DFC8;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.ambient_contact_section .content-box {
+    z-index: 2;
+}
+
+.ambient_contact_section .content-box h4 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: #FAF6F0;
+}
+
+.ambient_contact_section .content-box p,
+.ambient_contact_section .content-box a {
+    margin: 0;
+    color: #b2bec3;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.ambient_contact_section .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(244, 223, 200, 0.05), transparent);
+    transition: width 0.5s ease;
+    z-index: 1;
+}
+
+.ambient_contact_section .contact-card:hover .hover-overlay {
+    width: 100%;
+}
+
+/* Form Styles */
+.ambient_contact_section .input-group {
+    position: relative;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.ambient_contact_section input,
+.ambient_contact_section textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FAF6F0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.ambient_contact_section textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.ambient_contact_section label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #7d7d7d;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.ambient_contact_section input:focus~label,
+.ambient_contact_section input:not(:placeholder-shown)~label,
+.ambient_contact_section textarea:focus~label,
+.ambient_contact_section textarea:not(:placeholder-shown)~label {
+    top: -20px;
+    font-size: 12px;
+    color: #F4DFC8;
+}
+
+.ambient_contact_section .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: #F4DFC8;
+    transition: width 0.4s ease;
+}
+
+.ambient_contact_section input:focus~.line,
+.ambient_contact_section textarea:focus~.line {
+    width: 100%;
+}
+
+/* Submit Button */
+.ambient_contact_section .submit-btn {
+    padding: 15px 40px;
+    background: transparent;
+    color: #F4DFC8;
+    border: 1px solid #F4DFC8;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ambient_contact_section .submit-btn:hover {
+    background: #F4DFC8;
+    color: #000000;
+}
+
+.ambient_contact_section .submit-btn i {
+    transition: transform 0.3s;
+}
+
+.ambient_contact_section .submit-btn:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 991px) {
+    .ambient_contact_section .section-title {
+        font-size: 40px;
+    }
+
+    .ambient_contact_section .ambient-form-wrapper {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_project" name="Atelier Project">
+        <section class="atelier-project-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+            
+            <!-- Top Banner Component -->
+            <div class="aproj-banner">
+                <div class="aproj-banner-bg" style="background-image: url('/theme_interio/static/src/img/hero1_slide_3.png');"></div>
+                <div class="aproj-banner-overlay"></div>
+                <div class="container aproj-banner-content aproj-anim" data-delay="0s">
+                    <h2 class="aproj-title">TRENDS, TIPS &amp; INSPIRING<br/>INTERIOR RENEWAL</h2>
+                    <p class="aproj-subtitle">At Interio, we're passionate about transforming spaces into unique and inspiring interiors.<br/>Our expert team of designers use creativity to breathe life into every project.</p>
+                    <a href="#" class="aproj-btn">READ MORE POSTS</a>
+                </div>
+            </div>
+
+            <!-- Below Banner Grid -->
+            <div class="aproj-grid-container">
+                <div class="aproj-grid-wrapper">
+                    <div class="row g-4 aproj-cards-row">
+                        <!-- Card 1 -->
+                        <div class="col-md-6 aproj-anim" data-delay="0.2s">
+                            <a href="#" class="aproj-card">
+                                <div class="aproj-card-img-wrap">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_1.png" alt="Project 1"/>
+                                    <div class="aproj-card-overlay"></div>
+                                </div>
+                                <div class="aproj-card-content">
+                                    <span class="aproj-card-category">TIPS &amp; TRICKS</span>
+                                    <h3 class="aproj-card-title">A GUIDE TO MODERN<br/>BIOPHILIC DESIGN</h3>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="col-md-6 aproj-anim" data-delay="0.4s">
+                            <a href="#" class="aproj-card">
+                                <div class="aproj-card-img-wrap">
+                                    <img src="/theme_interio/static/src/img/hero4_bg.png" alt="Project 2"/>
+                                    <div class="aproj-card-overlay"></div>
+                                </div>
+                                <div class="aproj-card-content">
+                                    <span class="aproj-card-category">DECOR INSPIRATION</span>
+                                    <h3 class="aproj-card-title">DESIGNING FOR COZY<br/>URBAN APARTMENTS</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-6 aproj-anim" data-delay="0.2s">
+                            <a href="#" class="aproj-card">
+                                <div class="aproj-card-img-wrap">
+                                    <img src="/theme_interio/static/src/img/comm.png" alt="Project 3"/>
+                                    <div class="aproj-card-overlay"></div>
+                                </div>
+                                <div class="aproj-card-content">
+                                    <span class="aproj-card-category">DECOR INSPIRATION</span>
+                                    <h3 class="aproj-card-title">THE ART OF REFINED<br/>INTERIOR SPACES</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-6 aproj-anim" data-delay="0.4s">
+                            <a href="#" class="aproj-card">
+                                <div class="aproj-card-img-wrap">
+                                    <img src="/theme_interio/static/src/img/clinic.png" alt="Project 4"/>
+                                    <div class="aproj-card-overlay"></div>
+                                </div>
+                                <div class="aproj-card-content">
+                                    <span class="aproj-card-category">DESIGN TRENDS</span>
+                                    <h3 class="aproj-card-title">CHOOSING HUES TO<br/>ELEVATE YOUR SPACE</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

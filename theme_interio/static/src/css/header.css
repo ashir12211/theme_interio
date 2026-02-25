@@ -1,0 +1,699 @@
+
+/* Header Container - Transparent background for outer wrapper */
+.interioheader-header {
+    background-color: transparent;
+    z-index: 1050;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: none;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    padding: 1.5rem 0;
+}
+
+/* Scrolled state */
+.interioheader-header.fixed-header {
+    padding: 1.5rem 0;
+}
+
+/* Header wrapper - Rounded white container */
+.interioheader-header-wrapper {
+    /* === PHOTOREALISTIC WOOD LAYERS ===
+       Layer 1: Fine longitudinal grain fibers (tight, light)
+       Layer 2: Coarser grain spacing (medium bands)
+       Layer 3: Cross-grain noise shimmer (depth & fiber scatter)
+       Layer 4: Pore/knot noise (dark micro-dots)
+       Layer 5: Raking light — left edge highlight
+       Layer 6: Shadow vignette — right and bottom edge
+       Layer 7: Base wood color gradient (heartwood to sapwood)
+    */
+    background-color: #6b4423;
+    background-image:
+        /* Fine grain fibers — tight longitudinal lines */
+        repeating-linear-gradient(88deg,
+            transparent 0px,
+            transparent 1px,
+            rgba(255, 220, 160, 0.04) 1px,
+            rgba(255, 220, 160, 0.04) 2px,
+            transparent 2px,
+            transparent 5px,
+            rgba(0, 0, 0, 0.03) 5px,
+            rgba(0, 0, 0, 0.03) 6px,
+            transparent 6px,
+            transparent 9px),
+        /* Medium grain bands */
+        repeating-linear-gradient(90deg,
+            transparent 0px,
+            transparent 14px,
+            rgba(255, 190, 100, 0.05) 14px,
+            rgba(255, 190, 100, 0.05) 16px,
+            transparent 16px,
+            transparent 28px,
+            rgba(0, 0, 0, 0.04) 28px,
+            rgba(0, 0, 0, 0.04) 30px,
+            transparent 30px,
+            transparent 44px),
+        /* Cross-grain fiber scatter — subtle diagonal shimmer */
+        repeating-linear-gradient(97deg,
+            transparent 0px,
+            transparent 22px,
+            rgba(255, 200, 120, 0.03) 22px,
+            rgba(255, 200, 120, 0.03) 24px,
+            transparent 24px,
+            transparent 55px),
+        /* Wood pore dots — dark micro texture */
+        repeating-linear-gradient(180deg,
+            transparent 0px,
+            transparent 6px,
+            rgba(30, 10, 0, 0.04) 6px,
+            rgba(30, 10, 0, 0.04) 7px,
+            transparent 7px,
+            transparent 18px,
+            rgba(30, 10, 0, 0.025) 18px,
+            rgba(30, 10, 0, 0.025) 19px,
+            transparent 19px,
+            transparent 32px),
+        /* Raking light — left edge glancing highlight (simulates overhead light rake) */
+        linear-gradient(170deg,
+            rgba(255, 235, 190, 0.18) 0%,
+            rgba(255, 210, 140, 0.10) 20%,
+            transparent 50%),
+        /* Shadow vignette — depth on right + bottom */
+        linear-gradient(to right,
+            transparent 60%,
+            rgba(20, 8, 0, 0.18) 100%),
+        /* Base wood gradient — heartwood (dark warm center) to sapwood (lighter edge) */
+        linear-gradient(162deg,
+            #7a4e28 0%,
+            #6b3f1c 18%,
+            #7c5230 35%,
+            #5a3318 52%,
+            #6e4522 68%,
+            #4e2e10 85%,
+            #3d2209 100%);
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Multi-layer shadow: top-edge light reflection + deep cast shadow + ambient */
+    box-shadow:
+        0 1px 0 rgba(255, 220, 160, 0.22) inset,
+        /* top edge light sheen */
+        0 -1px 0 rgba(0, 0, 0, 0.45) inset,
+        /* bottom inner shadow — thickness */
+        1px 0 0 rgba(255, 200, 130, 0.10) inset,
+        /* left side micro-highlight */
+        -1px 0 0 rgba(0, 0, 0, 0.2) inset,
+        /* right side shadow */
+        0 6px 28px rgba(40, 18, 4, 0.55),
+        /* main cast shadow */
+        0 2px 6px rgba(0, 0, 0, 0.35),
+        /* close shadow */
+        0 1px 2px rgba(0, 0, 0, 0.4);
+    /* contact shadow */
+
+    border: 1px solid rgba(20, 8, 0, 0.5);
+    border-top: 1px solid rgba(255, 210, 150, 0.20);
+    /* top edge catch light */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    /* bottom edge ground line */
+
+    position: relative;
+    overflow: visible;
+}
+
+/* Knot / medullary ray overlay — pseudo element for extra realism */
+.interioheader-header-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        /* Soft knot — elliptical ring shadow left zone */
+        radial-gradient(ellipse 18% 60% at 8% 50%,
+            rgba(25, 10, 2, 0.12) 0%,
+            rgba(25, 10, 2, 0.06) 40%,
+            transparent 70%),
+        /* Medullary ray — bright ray catching light */
+        radial-gradient(ellipse 35% 25% at 55% 30%,
+            rgba(255, 220, 160, 0.07) 0%,
+            transparent 70%),
+        /* Sapwood fade — right edge slightly lighter */
+        radial-gradient(ellipse 30% 80% at 95% 50%,
+            rgba(160, 100, 50, 0.10) 0%,
+            transparent 60%);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.interioheader-header.fixed-header .interioheader-header-wrapper {
+    padding: 0.7rem 2rem;
+    box-shadow:
+        0 1px 0 rgba(255, 220, 160, 0.22) inset,
+        0 -1px 0 rgba(0, 0, 0, 0.45) inset,
+        1px 0 0 rgba(255, 200, 130, 0.10) inset,
+        -1px 0 0 rgba(0, 0, 0, 0.2) inset,
+        0 10px 40px rgba(40, 18, 4, 0.65),
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+/* ============================================
+   LOGO - Dark Badge Style
+   ============================================ */
+.interioheader-logo {
+    flex-shrink: 0;
+    margin-right: 2.5rem;
+}
+
+.interioheader-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    padding: 0.6rem 1.3rem;
+
+    /* Lighter, sanded wood — like a routed label panel */
+    background-color: #c9966a;
+    background-image:
+        repeating-linear-gradient(88deg,
+            transparent 0px,
+            transparent 2px,
+            rgba(255, 240, 200, 0.06) 2px,
+            rgba(255, 240, 200, 0.06) 3px,
+            transparent 3px,
+            transparent 7px,
+            rgba(0, 0, 0, 0.03) 7px,
+            rgba(0, 0, 0, 0.03) 8px,
+            transparent 8px,
+            transparent 12px),
+        linear-gradient(150deg,
+            #ddb080 0%,
+            #c9966a 40%,
+            #b07848 70%,
+            #c08060 100%);
+
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(60, 25, 5, 0.4);
+    border-top: 1px solid rgba(255, 220, 160, 0.35);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+    box-shadow:
+        0 1px 0 rgba(255, 225, 170, 0.30) inset,
+        0 -1px 0 rgba(0, 0, 0, 0.25) inset,
+        0 4px 12px rgba(30, 10, 0, 0.45),
+        0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.interioheader-logo-link:hover {
+    background-color: #d9a678;
+    transform: translateY(-1px);
+    box-shadow:
+        0 1px 0 rgba(255, 225, 170, 0.35) inset,
+        0 -1px 0 rgba(0, 0, 0, 0.25) inset,
+        0 6px 18px rgba(30, 10, 0, 0.55),
+        0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.interioheader-logo-text {
+    color: #1e0e04;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255, 200, 130, 0.3);
+}
+
+/* ============================================
+   NAVIGATION - Horizontal Links (Dark Text)
+   ============================================ */
+.interioheader-nav {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+}
+
+.interioheader-nav-item {
+    position: relative;
+}
+
+.interioheader-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.6rem 1rem;
+    color: #e8c898 !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+    background: transparent !important;
+    border: none !important;
+    text-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.7),
+        0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.interioheader-nav-link:hover,
+.interioheader-nav-link:focus {
+    color: #fff8ec !important;
+    text-shadow:
+        0 0 14px rgba(255, 210, 140, 0.55),
+        0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.interioheader-nav-link.active {
+    color: #fff8ec !important;
+    font-weight: 500;
+}
+
+/* Dropdown Chevron Arrow - Dark */
+.interioheader-chevron {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    border-top: 4px solid rgba(220, 170, 90, 0.75);
+    margin-left: 3px;
+    margin-top: 1px;
+    transition: all 0.3s ease;
+}
+
+.interioheader-nav-link:hover .interioheader-chevron {
+    border-top-color: #e8c898;
+}
+
+.interioheader-nav-link[aria-expanded="true"] .interioheader-chevron {
+    transform: rotate(180deg);
+    border-top-color: #fff8ec;
+}
+
+/* ============================================
+   DROPDOWN MENUS
+   ============================================ */
+.interioheader-dropdown-menu {
+    background: #5a3518 !important;
+    background-image:
+        repeating-linear-gradient(88deg,
+            transparent 0px,
+            transparent 1px,
+            rgba(255, 210, 140, 0.04) 1px,
+            rgba(255, 210, 140, 0.04) 2px,
+            transparent 2px,
+            transparent 6px,
+            rgba(0, 0, 0, 0.03) 6px,
+            rgba(0, 0, 0, 0.03) 7px,
+            transparent 7px,
+            transparent 12px),
+        repeating-linear-gradient(90deg,
+            transparent 0px,
+            transparent 18px,
+            rgba(255, 180, 80, 0.04) 18px,
+            rgba(255, 180, 80, 0.04) 20px,
+            transparent 20px,
+            transparent 36px),
+        linear-gradient(165deg, #7a4e28 0%, #5a3518 50%, #3e2008 100%) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow:
+        0 1px 0 rgba(255, 210, 140, 0.15) inset,
+        0 -1px 0 rgba(0, 0, 0, 0.4) inset,
+        0 12px 40px rgba(30, 10, 0, 0.6),
+        0 4px 12px rgba(0, 0, 0, 0.45) !important;
+    padding: 0.6rem 0 !important;
+    min-width: 200px !important;
+    margin-top: 0.5rem !important;
+    animation: interioheaderSlideDown 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform-origin: top center;
+    border-top: 2px solid rgba(220, 160, 70, 0.35) !important;
+    border-left: 1px solid rgba(255, 200, 120, 0.08) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.35) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
+    z-index: 1200;
+}
+
+@keyframes interioheaderSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px) scaleY(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+.interioheader-dropdown-item {
+    display: block;
+    padding: 0.55rem 1.4rem !important;
+    color: #e0b87a !important;
+    font-size: 0.835rem !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    letter-spacing: 0.1px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.interioheader-dropdown-item:hover {
+    background-color: rgba(255, 200, 120, 0.08) !important;
+    color: #fff8ec !important;
+    padding-left: 1.6rem !important;
+    text-shadow: 0 0 10px rgba(255, 200, 120, 0.35), 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ============================================
+   SOCIAL ICONS - Dark
+   ============================================ */
+.interioheader-social {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-left: auto;
+}
+
+.interioheader-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    color: rgba(220, 170, 90, 0.75) !important;
+    text-decoration: none !important;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.interioheader-social-icon:hover {
+    color: #fff8ec !important;
+    background-color: rgba(255, 200, 120, 0.1);
+    transform: translateY(-1px);
+}
+
+.interioheader-social-icon svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+/* ============================================
+   MOBILE TOGGLE BUTTON - Dark
+   ============================================ */
+.interioheader-mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(220, 170, 90, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.interioheader-mobile-toggle:hover {
+    border-color: rgba(220, 170, 90, 0.65);
+    background-color: rgba(255, 200, 120, 0.07);
+}
+
+.interioheader-burger-line {
+    display: block;
+    width: 18px;
+    height: 1.5px;
+    background-color: #e0b87a;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Burger animation when expanded */
+.interioheader-mobile-toggle[aria-expanded="true"] .interioheader-burger-line:nth-child(1) {
+    transform: translateY(5.5px) rotate(45deg);
+}
+
+.interioheader-mobile-toggle[aria-expanded="true"] .interioheader-burger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.interioheader-mobile-toggle[aria-expanded="true"] .interioheader-burger-line:nth-child(3) {
+    transform: translateY(-5.5px) rotate(-45deg);
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+.interioheader-mobile-menu {
+    border-top: 1px solid rgba(220, 160, 70, 0.2);
+    padding-bottom: 1rem;
+    background-color: #3e2008;
+    background-image:
+        repeating-linear-gradient(88deg,
+            transparent 0px,
+            transparent 2px,
+            rgba(255, 200, 120, 0.03) 2px,
+            rgba(255, 200, 120, 0.03) 3px,
+            transparent 3px,
+            transparent 8px,
+            rgba(0, 0, 0, 0.03) 8px,
+            rgba(0, 0, 0, 0.03) 9px,
+            transparent 9px,
+            transparent 16px),
+        linear-gradient(180deg, #5a3518 0%, #3e2008 100%);
+    overflow: visible !important;
+}
+
+.interioheader-mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0;
+}
+
+
+
+.interioheader-mobile-item {
+    background-color: rgba(255, 200, 120, 0.05);
+    border: 1px solid rgba(220, 160, 70, 0.15);
+    border-top: 1px solid rgba(255, 210, 140, 0.12);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    overflow: visible;
+    box-shadow:
+        0 1px 0 rgba(255, 200, 120, 0.08) inset,
+        0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove default border from links within the item */
+.interioheader-mobile-item .interioheader-mobile-link {
+    border-bottom: none;
+    font-weight: 600;
+    color: #fff8ec !important;
+    padding: 12px 12px;
+    font-size: 0.95rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Dropdown toggle button */
+.interioheader-mobile-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 48px;
+    /* Match link height approx */
+    color: #e0b87a;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.interioheader-mobile-toggle-btn[aria-expanded="true"] .interioheader-chevron {
+    transform: rotate(180deg);
+}
+
+/* Submenu container */
+.interioheader-mobile-item .collapse {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 8px 8px;
+    /* Round bottom corners */
+    width: 100%;
+}
+
+/* Submenu links */
+.interioheader-mobile-item .collapse .interioheader-mobile-link {
+    font-weight: 400;
+    color: #e0b87a !important;
+    padding: 10px 10px 10px 24px;
+    /* Indent */
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+.interioheader-mobile-item .collapse .interioheader-mobile-link:hover {
+    color: #fff8ec !important;
+    background-color: rgba(255, 200, 120, 0.06);
+}
+
+.interioheader-mobile-link.active {
+    color: #fff8ec !important;
+    font-weight: 700;
+}
+
+.interioheader-mobile-social {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.75rem 0.5rem 0;
+}
+
+/* ============================================
+   SMOOTH SCROLLING
+   ============================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+@media (max-width: 991.98px) {
+    .interioheader-header {
+        padding: 1rem 0;
+    }
+
+    .interioheader-header-wrapper {
+        border-radius: 40px;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .interioheader-logo {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .interioheader-header {
+        padding: 0.75rem 0;
+    }
+
+    .interioheader-header-wrapper {
+        border-radius: 30px;
+        padding: 0.6rem 1rem;
+    }
+
+    .interioheader-logo-text {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .interioheader-logo-link {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+    }
+}
+
+/* ============================================
+   ODOO OVERRIDES - Ensure clean rendering
+   ============================================ */
+.interioheader-header .container {
+    max-width: 1400px;
+    padding: 0 1.5rem;
+}
+
+/* Override any Odoo default link styles */
+.interioheader-header a {
+    text-decoration: none !important;
+}
+
+.interioheader-header .dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Hide Odoo default edit mode nav styles cleanly */
+.interioheader-header .nav-link,
+.interioheader-header .navbar-nav {
+    all: unset;
+}
+
+
+
+
+.interioheader-social-item.dropdown {
+    position: relative;
+}
+
+.interioheader-social-item.dropdown .interioheader-social-icon {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.interioheader-social-item.dropdown .dropdown-menu {
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow:
+        0 1px 0 rgba(255, 210, 140, 0.15) inset,
+        0 -1px 0 rgba(0, 0, 0, 0.4) inset,
+        0 10px 36px rgba(30, 10, 0, 0.6),
+        0 4px 10px rgba(0, 0, 0, 0.45) !important;
+    padding: 0.6rem 0 !important;
+    min-width: 160px !important;
+    margin-top: 0.5rem !important;
+    border-top: 2px solid rgba(220, 160, 70, 0.35) !important;
+    background: #5a3518 !important;
+    background-image:
+        repeating-linear-gradient(88deg,
+            transparent 0px,
+            transparent 1px,
+            rgba(255, 210, 140, 0.04) 1px,
+            rgba(255, 210, 140, 0.04) 2px,
+            transparent 2px,
+            transparent 7px,
+            rgba(0, 0, 0, 0.03) 7px,
+            rgba(0, 0, 0, 0.03) 8px,
+            transparent 8px,
+            transparent 13px),
+        linear-gradient(165deg, #7a4e28 0%, #5a3518 55%, #3e2008 100%) !important;
+    z-index: 1200;
+}
+
+/* Adjustments for desktop */
+@media (min-width: 992px) {
+    .interioheader-header .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+}
+
+/* Adjustments for mobile */
+@media (max-width: 991.98px) {
+    .interioheader-social-item.dropdown .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: auto;
+        left: 0;
+        transform: none !important;
+        /* Reset any potential transform interferences */
+    }
+
+    /* Ensure the mobile menu container allows overflow if needed, or handle placement */
+    .interioheader-mobile-social {
+        position: relative;
+        /* If the dropdown is clipped, we might need to adjust this or the parent */
+    }
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_snippets" inherit_id="website.snippets">
+        <xpath expr="//snippets[@id='snippet_structure']" position="after">
+
+
+            <!--            Interio Luxe-->
+
+            <snippets id="interio_luxe_snippets" class="o_panel_body" string="Interio Luxe">
+                 <t t-snippet="theme_interio.interio_hero2" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.luxe_marquee" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.interio_creation" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.luxe_services" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.luxe_team" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.interio_project2" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.luxe_clients" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.interio_process" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.luxe_contact" t-thumbnail="/theme_interio/static/description/icon.png"/>
+            </snippets>
+
+
+
+            <!--            Interio Crafted-->
+
+            <snippets id="interio_crafted_snippets" class="o_panel_body" string="Interio Crafted">
+                 <t t-snippet="theme_interio.interio_hero4" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.crafted_pure" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.crafted_about" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.crafted_designers" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.work_marquee" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.crafted_reviews" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.crafted_projects" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.our_client" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                 <t t-snippet="theme_interio.crafted_contact" t-thumbnail="/theme_interio/static/description/icon.png"/>
+            </snippets>
+
+
+
+            <!--            Interio Atelier-->
+
+            <snippets id="interio_atelier_snippets" class="o_panel_body" string="Interio Atelier">
+                <t t-snippet="theme_interio.interio_hero5" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_philosophy" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_project" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_designers" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_pricing" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_follow_us" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_key" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_marquee" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.atelier_get_in_touch" t-thumbnail="/theme_interio/static/description/icon.png"/>
+            </snippets>
+
+
+
+            <!--            Interio Vista-->
+
+            <snippets id="interio_vista_snippets" class="o_panel_body" string="Interio Vista">
+                <t t-snippet="theme_interio.interio_hero3" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_gallery" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_rooms3" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.vista_marquee" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_about3" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_reviews" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_members" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_fandq" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.vista_contact" t-thumbnail="/theme_interio/static/description/icon.png"/>
+            </snippets>
+
+
+
+            <!--            Interio Ambient-->
+
+            <snippets id="interio_ambient_snippets" class="o_panel_body" string="Interio Ambient">
+                <t t-snippet="theme_interio.interio_hero1" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.studio_marquee" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_philosophy" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_project1" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.ambient_marquee" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.ambient_atelier" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.interio_designers" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.ambient_faq" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.ambient_contact" t-thumbnail="/theme_interio/static/description/icon.png"/>
+            </snippets>
+
+            <!--            Interio Extra-->
+
+            <snippets id="interio_extra_snippets" class="o_panel_body" string="Interio Extra">
+                <t t-snippet="theme_interio.extra_about" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.extra_projects1" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.extra_marquee1" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.extra_visit" t-thumbnail="/theme_interio/static/description/icon.png"/>
+                <t t-snippet="theme_interio.extra_project2" t-thumbnail="/theme_interio/static/description/icon.png"/>
+            </snippets>
+
+        </xpath>
+    </template>
+</odoo>

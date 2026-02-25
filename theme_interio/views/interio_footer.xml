@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_footer" inherit_id="website.layout" name="Interio Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="interio-footer">
+                <div class="container">
+                    <!-- Top Row -->
+                    <div class="row gy-5 gx-5">
+                        <!-- Left: Branding & Tagline -->
+                        <div class="col-lg-5 col-md-12">
+                            <h2 class="interio-footer-heading">
+                                Build something<br/>
+                                beautiful together
+                            </h2>
+                            <div class="d-flex flex-column gap-3 mt-4">
+                                <a href="mailto:info@interio.com" class="interio-footer-link contact-link">
+                                    <i class="fa fa-envelope interio-footer-icon"></i>
+                                    info@interio.com
+                                </a>
+                                <a href="#" class="interio-footer-link contact-link">
+                                    <i class="fa fa-map-marker interio-footer-icon"></i>
+                                    1234 Studio Ave, Design City
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Spacer -->
+                        <div class="col-lg-1 d-none d-lg-block"></div>
+
+                        <!-- Right: Navigation Columns -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h5 class="text-white text-uppercase fs-6 mb-4 fw-bold letter-spacing-2">Navigate</h5>
+                            <ul class="interio-footer-menu">
+                                <li><a href="/" class="interio-footer-link">Home</a></li>
+                                <li><a href="/about" class="interio-footer-link">About</a></li>
+                                <li><a href="/projects" class="interio-footer-link">Projects</a></li>
+                                <li><a href="/faq" class="interio-footer-link">FAQ</a></li>
+                                <li><a href="/studio" class="interio-footer-link">Studio</a></li>
+                                <li><a href="/contact" class="interio-footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <h5 class="text-white text-uppercase fs-6 mb-4 fw-bold letter-spacing-2">Connect</h5>
+                            <ul class="interio-footer-menu">
+                                <li><a href="#" class="interio-footer-link">Facebook</a></li>
+                                <li><a href="#" class="interio-footer-link">Instagram</a></li>
+                                <li><a href="#" class="interio-footer-link">Twitter</a></li>
+                                <li><a href="#" class="interio-footer-link">LinkedIn</a></li>
+                            </ul>
+                            <!-- Social Icons Group -->
+                            <div class="interio-footer-socials">
+                                <a href="#" class="interio-social-item" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="interio-social-item" title="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="interio-social-item" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Copyright -->
+                    <div class="interio-footer-bottom">
+                        <div class="d-flex flex-wrap gap-4 align-items-center">
+                            <span>© <span class="interio-year-update">2026</span> Interio Studio. All rights reserved.</span>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="/privacy" class="interio-footer-link-small">Privacy Policy</a>
+                            <a href="/terms" class="interio-footer-link-small">Terms &amp; Conditions</a>
+                            <a href="#" class="interio-back-to-top ms-3 interio-footer-link-small"><i class="fa fa-arrow-up"></i> Back to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

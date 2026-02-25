@@ -1,0 +1,322 @@
+.s_crafted_reviews {
+    background-color: #FAF6F0;
+    /* Aesthetic earthy brown */
+    font-family: 'Inter', sans-serif;
+    color: #2D2D2D;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.cr-main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cr-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    row-gap: 300px;
+    /* Greatly increased to solve text overlapping issues */
+    column-gap: 40px;
+    align-items: center;
+}
+
+.cr-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 260px;
+    z-index: 1;
+    /* Standard z-index */
+    cursor: pointer;
+}
+
+/* Elevated z-index on hover so review text flawlessly overlaps lower rows */
+.cr-card-wrapper:hover {
+    z-index: 100;
+}
+
+/* Grid Cell Positions */
+.cr-pos-1 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
+}
+
+.cr-pos-2 {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
+}
+
+.cr-pos-3 {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.cr-pos-4 {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    align-self: end;
+}
+
+.cr-pos-5 {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+    align-self: end;
+}
+
+/* The Art Frame Design */
+.cr-art-frame {
+    position: relative;
+    width: 240px;
+    height: 320px;
+    margin-bottom: 25px;
+}
+
+.cr-frame-bg {
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid rgba(45, 45, 45, 0.4);
+    border-radius: 50px 0px 50px 0px;
+    /* Unique asymmetrical shape */
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+}
+
+.cr-frame-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    background: #EAE5DB;
+    border-radius: 50px 0px 50px 0px;
+    /* Unique shape matches bg */
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cr-frame-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%) sepia(20%);
+    transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.8s ease;
+}
+
+.cr-frame-info {
+    text-align: center;
+    margin-bottom: 10px;
+    transition: opacity 0.4s ease;
+    width: 100%;
+}
+
+.cr-name {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #2D2D2D;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.cr-role {
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    font-weight: 500;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Hover Interactions */
+
+/* The signature micro-animation: borders swap radii, bg fills, image lifts */
+.cr-card-wrapper:hover .cr-frame-bg {
+    top: 10px;
+    left: 10px;
+    background: #2D2D2D;
+    border-color: #2D2D2D;
+    border-radius: 0px 50px 0px 50px;
+    /* Opposite border radius swap */
+    box-shadow: 15px 25px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cr-card-wrapper:hover .cr-frame-img {
+    transform: translate(-5px, -5px);
+    border-radius: 0px 50px 0px 50px;
+    /* Opposite border radius swap */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cr-card-wrapper:hover .cr-frame-img img {
+    filter: grayscale(0%) sepia(0%);
+    transform: scale(1.08);
+    /* slight zoom inside mask */
+}
+
+/* Hover Review Text */
+.cr-review-text {
+    position: absolute;
+    top: 100%;
+    /* Placed below the card info */
+    left: 50%;
+    width: 320px;
+    text-align: center;
+    color: #2D2D2D;
+    font-size: 1.15rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateX(-50%) translateY(30px);
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    pointer-events: none;
+    /* allows hovered element to stick to wrapper */
+    z-index: 5;
+    margin-top: 15px;
+}
+
+.cr-card-wrapper:hover .cr-review-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .cr-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 200px;
+        column-gap: 40px;
+    }
+
+    .cr-pos-1,
+    .cr-pos-2,
+    .cr-pos-3,
+    .cr-pos-4,
+    .cr-pos-5 {
+        grid-column: auto;
+        grid-row: auto;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cr-card-wrapper {
+        margin-bottom: 80px;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .cr-grid-container {
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+    }
+
+    .cr-review-text {
+        position: relative;
+        top: 0;
+        width: 100%;
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+        /* Always visible on mobile */
+        margin-top: 20px;
+    }
+
+    .cr-card-wrapper:hover .cr-review-text {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Heading Styling */
+.cr-heading-wrapper {
+    margin-bottom: 60px;
+}
+
+.cr-subtitle {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: rgba(45, 45, 45, 0.8);
+    position: relative;
+}
+
+.cr-subtitle::before,
+.cr-subtitle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background: rgba(45, 45, 45, 0.4);
+}
+
+.cr-subtitle::before {
+    left: -40px;
+}
+
+.cr-subtitle::after {
+    right: -40px;
+}
+
+.cr-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin: 0;
+    color: #2D2D2D;
+    font-family: serif;
+    /* Elegant serif look for crafted vibe */
+}
+
+/* Unique Shimmer Animation for the words */
+.cr-animated-text {
+    background: linear-gradient(120deg,
+            #2D2D2D 0%,
+            #2D2D2D 35%,
+            #F9F6F0 50%,
+            #2D2D2D 65%,
+            #2D2D2D 100%);
+    background-size: 300% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: crTextShimmer 4s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+    display: inline-block;
+}
+
+@keyframes crTextShimmer {
+    0% {
+        background-position: 150% center;
+    }
+
+    100% {
+        background-position: -150% center;
+    }
+}
+
+@media (max-width: 767px) {
+    .cr-title {
+        font-size: 2.2rem;
+    }
+}

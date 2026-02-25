@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="vista_contact" name="Vista Contact">
+        <section class="vista-contact-section">
+            <div class="container py-5">
+                <div class="vista-contact-wrapper">
+                    <!-- Top subtle header inside wrapper -->
+                    <div class="vista-contact-top d-flex justify-content-between">
+                        <span class="vc-brand">INTERIO / VISTA</span>
+                        <div class="vc-menu-icon" aria-label="Menu">
+                            <span></span><span></span>
+                        </div>
+                    </div>
+
+                    <!-- Giant Typography -->
+                    <div class="vista-contact-heading-container">
+                        <h2 class="vista-contact-huge-title">
+                            <span class="vc-title-inner">Contact Us</span>
+                        </h2>
+                    </div>
+
+                    <!-- Contact details -->
+                    <div class="row vc-details-row">
+                        <div class="col-lg-4 col-md-6 offset-lg-2 mb-5 mb-md-0">
+                            <div class="vc-location-block">
+                                <h4 class="vc-location-id">9983</h4>
+                                <p class="vc-address">
+                                    Branch Street Flushing<br/>
+                                    New York, NY<br/>
+                                    11354
+                                </p>
+                                <div class="vc-contact-links">
+                                    <a href="tel:+2128234126" class="vc-link">+212 (0) 823 4126</a>
+                                    <a href="mailto:info@interio.com" class="vc-link">info@interio.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+                            <div class="vc-location-block">
+                                <h4 class="vc-location-id">9280</h4>
+                                <p class="vc-address">
+                                    York Road<br/>
+                                    London, LND<br/>
+                                    N69 1SU
+                                </p>
+                                <div class="vc-contact-links">
+                                    <a href="tel:+02079460121" class="vc-link">+020 (0) 7946 0121</a>
+                                    <a href="mailto:hello@interio.com" class="vc-link">hello@interio.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

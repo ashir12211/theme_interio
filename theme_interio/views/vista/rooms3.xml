@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_rooms3" name="Vista Rooms">
+        <section class="vh-rooms3">
+            <div class="container">
+                <div class="vh-rooms3-header">
+                    <div class="vh-rooms3-header-left">
+                        <span class="vh-rooms3-tag">Rooms</span>
+                        <h2 class="vh-rooms3-title">
+                            Studio<br/>
+                            <span>Rooms</span>
+                        </h2>
+                    </div>
+                    <div class="vh-rooms3-header-desc">
+                        <p class="vh-rooms3-subtitle">
+                            Shoot-ready rooms with lighting, gear, and flexible vibes.
+                        </p>
+                        <a href="#" class="vh-rooms3-link">Explore Rooms</a>
+                    </div>
+                </div>
+
+                <div class="vh-rooms3-list">
+                    <!-- Room 1 -->
+                    <div class="vh-room-item">
+                        <div class="vh-room-num">(01)</div>
+                        <div class="vh-room-info">
+                            <div>
+                                <h3 class="vh-room-name">Lumora Room</h3>
+                                <p class="vh-room-short-desc">Editorial light, refined space.</p>
+                                <a href="#" class="vh-rooms3-link">Learn More</a>
+                            </div>
+                            <div class="vh-room-specs">
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-arrows-alt"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">74m²</span>
+                                        <span class="vh-spec-label">Room Size</span>
+                                    </div>
+                                </div>
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-arrows-v"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">4.5m</span>
+                                        <span class="vh-spec-label">Max Height</span>
+                                    </div>
+                                </div>
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-users"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">8-10</span>
+                                        <span class="vh-spec-label">Capacity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vh-room-media">
+                            <div class="vh-room-img-main">
+                                <img src="/theme_interio/static/src/img/r3_lumora.png" class="img img-fluid" alt="Lumora Room"/>
+                            </div>
+                            <div class="vh-room-img-detail">
+                                <img src="/theme_interio/static/src/img/r3_lumora.png" class="img img-fluid" alt="Detail"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room 2 -->
+                    <div class="vh-room-item">
+                        <div class="vh-room-num">(02)</div>
+                        <div class="vh-room-info">
+                            <div>
+                                <h3 class="vh-room-name">Solira Room</h3>
+                                <p class="vh-room-short-desc">Natural light, perfected.</p>
+                                <a href="#" class="vh-rooms3-link">Learn More</a>
+                            </div>
+                            <div class="vh-room-specs">
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-arrows-alt"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">48m²</span>
+                                        <span class="vh-spec-label">Room Size</span>
+                                    </div>
+                                </div>
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-arrows-v"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">3.5m</span>
+                                        <span class="vh-spec-label">Max Height</span>
+                                    </div>
+                                </div>
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-users"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">6-8</span>
+                                        <span class="vh-spec-label">Capacity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vh-room-media">
+                            <div class="vh-room-img-main">
+                                <img src="/theme_interio/static/src/img/r3_solira.png" class="img img-fluid" alt="Solira Room"/>
+                            </div>
+                            <div class="vh-room-img-detail">
+                                <img src="/theme_interio/static/src/img/r3_solira.png" class="img img-fluid" alt="Detail"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room 3 -->
+                    <div class="vh-room-item">
+                        <div class="vh-room-num">(03)</div>
+                        <div class="vh-room-info">
+                            <div>
+                                <h3 class="vh-room-name">Zentra Room</h3>
+                                <p class="vh-room-short-desc">Neutral tones. Total control.</p>
+                                <a href="#" class="vh-rooms3-link">Learn More</a>
+                            </div>
+                            <div class="vh-room-specs">
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-arrows-alt"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">85m²</span>
+                                        <span class="vh-spec-label">Room Size</span>
+                                    </div>
+                                </div>
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-arrows-v"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">6.5m</span>
+                                        <span class="vh-spec-label">Max Height</span>
+                                    </div>
+                                </div>
+                                <div class="vh-spec-item">
+                                    <div class="vh-spec-icon"><i class="fa fa-users"/></div>
+                                    <div class="vh-spec-text">
+                                        <span class="vh-spec-val">10-12</span>
+                                        <span class="vh-spec-label">Capacity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vh-room-media">
+                            <div class="vh-room-img-main">
+                                <img src="/theme_interio/static/src/img/r3_zentra.png" class="img img-fluid" alt="Zentra Room"/>
+                            </div>
+                            <div class="vh-room-img-detail">
+                                <img src="/theme_interio/static/src/img/r3_zentra.png" class="img img-fluid" alt="Detail"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

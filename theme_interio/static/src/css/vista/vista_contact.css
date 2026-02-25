@@ -1,0 +1,159 @@
+/* ============================================
+   Vista Contact — Editorial Minimalist Layout
+   ============================================ */
+.vista-contact-section {
+    background-color: #ECDFCC;
+    padding: 80px 0;
+    font-family: 'DM Sans', sans-serif;
+    color: #181C14;
+}
+
+.vista-contact-wrapper {
+    background-color: #F4EBE0;
+    /* slightly lighter cream inside */
+    border: 3px solid #181C14;
+    border-radius: 4px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.vista-contact-wrapper:hover {
+    box-shadow: 12px 12px 0px rgba(105, 117, 101, 1);
+    /* Accent green drop shadow */
+    transform: translate(-6px, -6px);
+}
+
+.vista-contact-top {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    color: #3C3D37;
+}
+
+.vc-menu-icon {
+    width: 24px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.vc-menu-icon span {
+    display: block;
+    height: 2px;
+    background-color: #181C14;
+    transition: all 0.4s ease;
+}
+
+.vc-menu-icon:hover span:first-child {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.vc-menu-icon:hover span:last-child {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+.vista-contact-heading-container {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.vista-contact-huge-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(4rem, 15vw, 11rem);
+    /* Giant text */
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -3px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.vc-title-inner {
+    display: inline-block;
+    color: #181C14;
+    -webkit-text-stroke: 0px transparent;
+    transition: color 0.6s ease, -webkit-text-stroke 0.6s ease, transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* The giant text turns hollow when the card is hovered */
+.vista-contact-wrapper:hover .vc-title-inner {
+    color: transparent;
+    -webkit-text-stroke: 2px #181C14;
+    transform: scale(1.02);
+}
+
+.vc-details-row {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.vc-location-id {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #181C14;
+}
+
+.vc-address {
+    margin-bottom: 30px;
+    color: #3C3D37;
+    font-weight: 400;
+}
+
+.vc-contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vc-link {
+    color: #181C14;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding-bottom: 4px;
+}
+
+.vc-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #181C14;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.vc-link:hover::after {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.vc-link:hover {
+    color: #697565;
+}
+
+@media (max-width: 991px) {
+    .vista-contact-wrapper {
+        padding: 30px 20px;
+    }
+
+    .vista-contact-huge-title {
+        font-size: clamp(3rem, 15vw, 6rem);
+        letter-spacing: -1px;
+    }
+}

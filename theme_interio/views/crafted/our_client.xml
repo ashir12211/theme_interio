@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="our_client" name="Crafted Clients">
+        <section class="crafted-our-client-section pt128 pb128" data-snippet="our_client" data-name="Our Clients">
+            <div class="container mb-5 text-center">
+                <span class="coc-badge mb-3 d-inline-block" data-oe-type="text">Trusted Partnerships</span>
+                <h2 class="coc-title" data-oe-type="text">Our Clients</h2>
+            </div>
+
+            <div class="coc-marquee-container" data-oe-protected="true">
+                <div class="coc-marquee-track">
+                    <div class="coc-marquee-content">
+                        <span class="coc-marquee-text">LUMINA STUDIOS</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">VERTEX ARCHITECTURE</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">ELEVATE DESIGN</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">AURA INTERIORS</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">NOVA SPACES</span>
+                        <span class="coc-marquee-star">✦</span>
+                    </div>
+                    <div class="coc-marquee-content" aria-hidden="true">
+                        <span class="coc-marquee-text">LUMINA STUDIOS</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">VERTEX ARCHITECTURE</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">ELEVATE DESIGN</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">AURA INTERIORS</span>
+                        <span class="coc-marquee-star">✦</span>
+                        <span class="coc-marquee-text">NOVA SPACES</span>
+                        <span class="coc-marquee-star">✦</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

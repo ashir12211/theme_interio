@@ -1,0 +1,188 @@
+/* --- Liquid Wave Marquee Section --- */
+.extra_marquee1_section {
+    background-color: #FAF6F0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top: 1px dashed rgba(244, 223, 200, 0.2);
+    border-bottom: 1px dashed rgba(244, 223, 200, 0.2);
+}
+
+.extra_marquee1_track {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+}
+
+.extra_marquee1_wrapper {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee1_infinite_scroll 20s linear infinite;
+}
+
+.extra_marquee1_track:hover .extra_marquee1_wrapper {
+    animation-play-state: paused;
+}
+
+@keyframes marquee1_infinite_scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Grouping text and separator for layout */
+.marquee_content_group {
+    display: flex;
+    align-items: center;
+}
+
+/* Dynamic SVG Star Separator */
+.marquee1_separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    opacity: 0.8;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.marquee1_separator svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* The Marquee Text Element */
+.extra_marquee1_item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 50px;
+    font-size: 5vw;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #0b0b0b;
+    cursor: default;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* --- THE LIQUID BLOB WAVE (Background) --- */
+.extra_marquee1_item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    background: linear-gradient(135deg, #F4DFC8 0%, #F4EAE0 100%);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    opacity: 0;
+}
+
+/* --- THE INNER TEXT WAVE EFFECT --- */
+.extra_marquee1_item span {
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+/* --- HOVER STATES --- */
+
+/* 1. Item Hover: Color and Perspective Pop */
+.marquee_content_group:hover .extra_marquee1_item {
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* 2. Blob Wave Background Activation */
+.marquee_content_group:hover .extra_marquee1_item::before {
+    width: 110%;
+    height: 140%;
+    opacity: 1;
+    animation: liquid_blob_wave 3s infinite linear;
+}
+
+/* 3. Text Character Squiggle Wave */
+.marquee_content_group:hover .extra_marquee1_item span {
+    animation: textSquiggle 2s ease-in-out infinite alternate;
+}
+
+/* 4. Separator Reaction */
+.marquee_content_group:hover .marquee1_separator {
+    opacity: 1;
+    transform: scale(1.6) rotate(90deg);
+}
+
+/* --- KEYFRAMES --- */
+
+/* The liquid morphing background wave */
+@keyframes liquid_blob_wave {
+    0% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+
+    33% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    66% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+}
+
+/* The text bobbing/waving inside the blob */
+@keyframes textSquiggle {
+    0% {
+        transform: translateY(0px) skewX(0deg);
+    }
+
+    50% {
+        transform: translateY(-4px) skewX(-2deg);
+    }
+
+    100% {
+        transform: translateY(4px) skewX(2deg);
+    }
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 991px) {
+    .extra_marquee1_item {
+        font-size: 5.5vw;
+        padding: 15px 35px;
+    }
+
+    .marquee1_separator {
+        margin: 0 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .extra_marquee1_item {
+        font-size: 2.5rem;
+        padding: 10px 25px;
+    }
+
+    .marquee1_separator {
+        margin: 0 25px;
+    }
+
+    .marquee1_separator svg {
+        width: 24px;
+        height: 24px;
+    }
+}

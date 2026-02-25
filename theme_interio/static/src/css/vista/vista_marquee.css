@@ -1,0 +1,78 @@
+/* ============================================
+   Vista Marquee
+   ============================================ */
+
+.vista-marquee-section {
+    background-color: #ECDFCC;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(24, 28, 20, 0.08);
+    /* Vista aesthetic line above/below */
+    border-bottom: 1px solid rgba(24, 28, 20, 0.08);
+}
+
+.vista-marquee-container {
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    transform: translateZ(0);
+    /* Hardware accelerate */
+}
+
+.vista-marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    animation: vista-marquee-scroll 25s linear infinite;
+}
+
+.vista-marquee-content span {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #181C14;
+    /* Outline text to match Vista clean layout */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.vista-marquee-content span.vm-separator {
+    color: #697565;
+    /* Accent color */
+    -webkit-text-stroke: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    padding: 0 20px;
+}
+
+.vista-marquee-section:hover .vista-marquee-content span:not(.vm-separator) {
+    color: #181C14;
+    /* Fills in text on hover */
+    -webkit-text-stroke: 0;
+}
+
+@keyframes vista-marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 767px) {
+    .vista-marquee-section {
+        padding: 30px 0;
+    }
+
+    .vista-marquee-content span {
+        padding: 0 20px;
+    }
+}

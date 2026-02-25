@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_fandq" name="Vista FAQ">
+        <section class="vh-faq">
+            <div class="container">
+                <!-- Top Row: Text + Accordion -->
+                <div class="row vh-faq-top">
+                    <div class="col-lg-5 vh-faq-intro">
+                        <span class="vh-faq-tag">FAQ</span>
+                        <h2 class="vh-faq-heading">
+                            We focus on providing a seamless studio experience for photographers, creators, and brands.
+                        </h2>
+                        <p class="vh-faq-desc">
+                            We’ve put together answers to common questions so you can book and shoot with ease and zero stress.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-7 vh-faq-accordion">
+                        <div class="vh-accordion">
+                            <!-- Question 1 -->
+                            <div class="vh-accordion-item">
+                                <div class="vh-accordion-header">
+                                    <span>What comes with the room?</span>
+                                    <div class="vh-acc-icon"></div>
+                                </div>
+                                <div class="vh-accordion-content">
+                                    <div class="vh-acc-inner">
+                                        Each room includes professional lighting stands, a selection of props, basic furniture, and access to the common kitchen area. High-speed Wi-Fi is standard throughout the studio.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="vh-accordion-item">
+                                <div class="vh-accordion-header">
+                                    <span>Can I bring my own equipment?</span>
+                                    <div class="vh-acc-icon"></div>
+                                </div>
+                                <div class="vh-accordion-content">
+                                    <div class="vh-acc-inner">
+                                        Absolutely. We encourage creators to bring their own gear. We also have equipment available for rent if you need anything extra on the day of your shoot.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="vh-accordion-item">
+                                <div class="vh-accordion-header">
+                                    <span>How do I book a room?</span>
+                                    <div class="vh-acc-icon"></div>
+                                </div>
+                                <div class="vh-accordion-content">
+                                    <div class="vh-acc-inner">
+                                        Booking is easy through our online portal. Select your desired room, choose your date and time slot, and confirm instantly. You'll receive a confirmation email with access details.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div class="vh-accordion-item">
+                                <div class="vh-accordion-header">
+                                    <span>What is the minimum booking time?</span>
+                                    <div class="vh-acc-icon"></div>
+                                </div>
+                                <div class="vh-accordion-content">
+                                    <div class="vh-acc-inner">
+                                        The minimum booking duration is 2 hours. This ensures you have enough time to set up, shoot comfortably, and pack down without rushing.
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Question 5 -->
+                            <div class="vh-accordion-item">
+                                <div class="vh-accordion-header">
+                                    <span>Can I move furniture or props?</span>
+                                    <div class="vh-acc-icon"></div>
+                                </div>
+                                <div class="vh-accordion-content">
+                                    <div class="vh-acc-inner">
+                                        Yes, our spaces are flexible. You are welcome to move furniture and props to suit your creative vision, provided you return everything to its original place before leaving.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Images -->
+                <div class="row vh-faq-imgs">
+                    <div class="col-lg-7">
+                        <div class="vh-faq-img-wrap">
+                            <img src="/theme_interio/static/src/img/fandq_1.png" alt="Studio Corner" loading="lazy"/>
+                            <div class="vh-faq-logo-ol">
+                                <h3>VISTA®</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="vh-faq-img-wrap">
+                            <img src="/theme_interio/static/src/img/fandq_2.png" alt="Living Set" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

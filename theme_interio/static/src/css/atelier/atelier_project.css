@@ -1,0 +1,309 @@
+
+
+.atelier-project-section {
+    --aproj-bg: #040D12;
+    --aproj-text: #93B1A6;
+    --aproj-accent: #5C8374;
+    --aproj-muted: #183D3D;
+
+    background-color: var(--aproj-bg);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--aproj-text);
+}
+
+/* ============================================
+   Top Banner Component
+   ============================================ */
+.aproj-banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.aproj-banner-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.6) grayscale(30%);
+    transform: scale(1.05);
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+.aproj-banner:hover .aproj-banner-bg {
+    transform: scale(1);
+}
+
+.aproj-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(4, 13, 18, 0.7) 0%, rgba(4, 13, 18, 0.95) 100%);
+    z-index: 2;
+}
+
+.aproj-banner-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.aproj-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.aproj-subtitle {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--aproj-text);
+    opacity: 0.9;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.aproj-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: var(--aproj-bg);
+    padding: 14px 34px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.aproj-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--aproj-accent);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aproj-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none;
+}
+
+.aproj-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* ============================================
+   Grid Presentation
+   ============================================ */
+.aproj-grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    /* Negative margin to pull it up over the banner slightly, as per design */
+    margin-top: -120px;
+    padding-bottom: 120px;
+}
+
+.aproj-grid-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    background-color: var(--aproj-bg);
+    /* Thin styling borders around the block container */
+    border-left: 1px solid var(--aproj-muted);
+    border-right: 1px solid var(--aproj-muted);
+    padding: 60px 40px;
+}
+
+.aproj-cards-row {
+    margin: 0;
+}
+
+
+/* ============================================
+   Project Cards & Hover Physics
+   ============================================ */
+.aproj-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    text-decoration: none;
+    /* Clean dark shadow against background */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(24, 61, 61, 0.5);
+    /* muted edge */
+}
+
+.aproj-card-img-wrap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aproj-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6) grayscale(30%);
+    transform: scale(1.05);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+.aproj-card-overlay {
+    position: absolute;
+    inset: 0;
+    /* Dark gradient emphasizing the bottom text */
+    background: linear-gradient(to bottom, rgba(4, 13, 18, 0) 0%, rgba(4, 13, 18, 0.2) 50%, rgba(4, 13, 18, 0.95) 100%);
+    transition: background 0.5s ease;
+}
+
+.aproj-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 30px;
+    z-index: 2;
+    transform: translateY(15px);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aproj-card-category {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--aproj-text);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    transition: color 0.4s ease;
+}
+
+.aproj-card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: color 0.4s ease;
+}
+
+
+/* Advanced Hover State Dynamics */
+.aproj-card:hover {
+    text-decoration: none;
+    border-color: var(--aproj-accent);
+}
+
+.aproj-card:hover .aproj-card-img-wrap img {
+    transform: scale(1);
+    filter: brightness(1.1) grayscale(0%);
+}
+
+.aproj-card:hover .aproj-card-overlay {
+    background: linear-gradient(to bottom, rgba(4, 13, 18, 0) 0%, rgba(92, 131, 116, 0.2) 50%, rgba(4, 13, 18, 0.95) 100%);
+}
+
+.aproj-card:hover .aproj-card-content {
+    transform: translateY(0);
+}
+
+.aproj-card:hover .aproj-card-category {
+    color: var(--aproj-accent);
+}
+
+.aproj-card:hover .aproj-card-title {
+    color: #ffffff;
+}
+
+/* Scroll Animation Initial State */
+.aproj-anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aproj-anim.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ============================================
+   Responsive Settings
+   ============================================ */
+@media (max-width: 991px) {
+    .aproj-grid-container {
+        margin-top: -60px;
+        padding-bottom: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aproj-grid-wrapper {
+        padding: 40px 20px;
+        border: none;
+    }
+
+    .aproj-banner {
+        height: 500px;
+    }
+
+    .aproj-card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .aproj-title {
+        font-size: 1.8rem;
+    }
+
+    .aproj-card-title {
+        font-size: 1.2rem;
+    }
+
+    .aproj-card {
+        height: 350px;
+    }
+}

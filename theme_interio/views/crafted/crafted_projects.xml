@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crafted_projects" name="Crafted Projects">
+        <section class="crafted-projects-section pt128 pb128" data-snippet="crafted_projects" data-name="Crafted Projects">
+            <div class="container pb64">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <span class="c-projects-badge mb-3 d-inline-block" data-oe-type="text">Our Masterpieces</span>
+                        <h2 class="crafted-projects-title mb-4" data-oe-type="text">Crafted Elegance</h2>
+                        <p class="crafted-projects-subtitle text-muted" data-oe-type="text">
+                            A curated selection of our finest architectural and interior transformations. Each space tells a unique story of refinement and bespoke luxury.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+                        <a href="#" class="btn c-projects-btn" data-oe-type="text">Discover More <i class="fa fa-arrow-right ms-2 mt-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid px-lg-5 c-projects-container">
+                <div class="row c-projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="col-lg-4 col-md-6 c-project-col">
+                        <div class="c-project-card">
+                            <div class="c-project-img-wrapper" data-oe-protected="true">
+                                <img src="/theme_interio/static/src/img/crafted_1_ny.png" alt="New York Loft" class="img-fluid c-project-img"/>
+                                <div class="c-project-overlay" data-oe-protected="true">
+                                    <div class="c-glass-card" style="--r:-5;" data-oe-protected="true">
+                                        <div class="c-glass-content">
+                                            <h3 class="c-project-name" data-oe-type="text">The NY Loft</h3>
+                                            <p class="c-project-category" data-oe-type="text">Urban Residence</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="col-lg-4 col-md-6 c-project-col mt-md-5 mt-lg-0">
+                        <div class="c-project-card">
+                            <div class="c-project-img-wrapper" data-oe-protected="true">
+                                <img src="/theme_interio/static/src/img/crafted_2_london.png" alt="London Townhouse" class="img-fluid c-project-img"/>
+                                <div class="c-project-overlay" data-oe-protected="true">
+                                    <div class="c-glass-card" style="--r:5;" data-oe-protected="true">
+                                        <div class="c-glass-content">
+                                            <h3 class="c-project-name" data-oe-type="text">London Townhouse</h3>
+                                            <p class="c-project-category" data-oe-type="text">Heritage Restoration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="col-lg-4 col-md-6 c-project-col mt-md-5 mt-lg-0">
+                        <div class="c-project-card">
+                            <div class="c-project-img-wrapper" data-oe-protected="true">
+                                <img src="/theme_interio/static/src/img/crafted_3_paris.png" alt="Parisian Suite" class="img-fluid c-project-img"/>
+                                <div class="c-project-overlay" data-oe-protected="true">
+                                    <div class="c-glass-card" style="--r:-3;" data-oe-protected="true">
+                                        <div class="c-glass-content">
+                                            <h3 class="c-project-name" data-oe-type="text">Parisian Suite</h3>
+                                            <p class="c-project-category" data-oe-type="text">Boutique Interior</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

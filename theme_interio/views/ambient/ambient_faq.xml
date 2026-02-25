@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ambient_faq" name="Ambient FAQ">
+        <section class="am-faq-section" data-snippet="ambient_faq" data-name="Ambient FAQ">
+            <div class="am-faq-container container">
+                <!-- Header -->
+                <div class="row text-center am-faq-header">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="am-faq-pill d-inline-block" data-oe-protected="true">FAQs</div>
+                        <h2 class="am-faq-title display-5 fw-bold mt-3">Frequently asked questions</h2>
+                        <p class="am-faq-subtitle lead mt-2 mx-auto">
+                            Find helpful answers about our services, detailed process, and bringing your vision to life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ List -->
+                <div class="am-faq-list mx-auto mt-5">
+                    <!-- FAQ Item 1 -->
+                    <div class="am-faq-item active">
+                        <div class="am-faq-question d-flex justify-content-between align-items-center">
+                            <span class="q-text">Why should I hire a professional interior designer?</span>
+                            <i class="am-faq-icon fa fa-arrow-up" data-oe-protected="true"></i>
+                        </div>
+                        <div class="am-faq-answer open">
+                            <div class="am-answer-content pb-4">
+                                Professional interior designers bring expertise in space planning, color theory, materials, and lighting that helps transform your space efficiently and beautifully. They can help avoid costly mistakes, maximize your budget, and create a cohesive look that reflects your lifestyle while increasing your property value.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="am-faq-item">
+                        <div class="am-faq-question d-flex justify-content-between align-items-center">
+                            <span class="q-text">How long does a typical renovation or landscaping project take?</span>
+                            <i class="am-faq-icon fa fa-arrow-down" data-oe-protected="true"></i>
+                        </div>
+                        <div class="am-faq-answer">
+                            <div class="am-answer-content pb-4">
+                                The timeline depends entirely on the scope of the project. A small room refresh might take a few weeks, while a full home renovation or complex landscape installation can take several months. We will provide a detailed timeline during the consultation phase.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="am-faq-item">
+                        <div class="am-faq-question d-flex justify-content-between align-items-center">
+                            <span class="q-text">Can I be actively involved in the design process?</span>
+                            <i class="am-faq-icon fa fa-arrow-down" data-oe-protected="true"></i>
+                        </div>
+                        <div class="am-faq-answer">
+                            <div class="am-answer-content pb-4">
+                                Absolutely. We believe in a collaborative approach and encourage your input at every stage. We present ideas and concepts for your approval before execution, ensuring the final result aligns with your vision.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="am-faq-item">
+                        <div class="am-faq-question d-flex justify-content-between align-items-center">
+                            <span class="q-text">What materials do you usually use for outdoor spaces?</span>
+                            <i class="am-faq-icon fa fa-arrow-down" data-oe-protected="true"></i>
+                        </div>
+                        <div class="am-faq-answer">
+                            <div class="am-answer-content pb-4">
+                                We prioritize using durable, weather-resistant materials that complement your home's architecture. This includes natural stone, composite decking, high-quality outdoor fabrics, and low-maintenance plants suitable for your climate.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="am-faq-item">
+                        <div class="am-faq-question d-flex justify-content-between align-items-center">
+                            <span class="q-text">How do I begin a new home project with your team?</span>
+                            <i class="am-faq-icon fa fa-arrow-down" data-oe-protected="true"></i>
+                        </div>
+                        <div class="am-faq-answer">
+                            <div class="am-answer-content pb-4">
+                                Getting started is easy. Simply contact us to schedule an initial consultation. We'll discuss your goals, budget, and timeline, and then propose a tailored plan to bring your vision to reality.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

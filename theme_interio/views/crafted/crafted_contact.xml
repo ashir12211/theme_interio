@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crafted_contact" name="Crafted Contact">
+        <section class="s_crafted_contact pt96 pb96" data-snippet="crafted_contact" data-name="Crafted Contact">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Column: Contact Info -->
+                    <div class="col-lg-5 mb-5 mb-lg-0 crafted-contact-info" data-oe-protected="true">
+                        <div class="info-wrapper">
+                            <h6 class="small-title mb-3">GET IN TOUCH</h6>
+                            <h2 class="estancia-title mb-4">Let's Craft Your Dream Space</h2>
+                            <p class="mb-5 crafted-text-muted">Whether you're looking to redesign a single room or seeking a complete home makeover, our team of expert designers is here to turn your vision into reality.</p>
+                            
+                            <div class="contact-details">
+                                <div class="detail-item mb-4 d-flex align-items-center stagger-item">
+                                    <div class="icon-box me-4">
+                                        <i class="fa fa-map-marker"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-black">Our Studio</h5>
+                                        <p class="mb-0 crafted-text-muted">123 Design Boulevard, NY 10012</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item mb-4 d-flex align-items-center stagger-item">
+                                    <div class="icon-box me-4">
+                                        <i class="fa fa-envelope"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-black">Email Us</h5>
+                                        <p class="mb-0 crafted-text-muted">hello@interio.com</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-center stagger-item">
+                                    <div class="icon-box me-4">
+                                        <i class="fa fa-phone"/>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1 text-black">Call Us</h5>
+                                        <p class="mb-0 crafted-text-muted">+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Contact Form -->
+                    <div class="col-lg-6 offset-lg-1 crafted-contact-form-col">
+                        <div class="form-wrapper crafted-card-panel slide-up-item">
+                            <form action="/website/form/" method="post" data-model_name="mail.mail" data-success_page="/contactus-thank-you" class="s_website_form" enctype="multipart/form-data" data-editable-form="false">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 form-group">
+                                        <input type="text" class="form-control crafted-form-control" name="name" required="1" placeholder="Your Name"/>
+                                    </div>
+                                    <div class="col-md-6 mb-4 form-group">
+                                        <input type="email" class="form-control crafted-form-control" name="email_from" required="1" placeholder="Your Email"/>
+                                    </div>
+                                    <div class="col-md-12 mb-4 form-group">
+                                        <input type="text" class="form-control crafted-form-control" name="subject" required="1" placeholder="Subject"/>
+                                    </div>
+                                    <div class="col-md-12 mb-4 form-group">
+                                        <textarea class="form-control crafted-form-control" name="description" required="1" rows="5" placeholder="Tell us about your project"></textarea>
+                                    </div>
+                                    <div class="col-md-12 text-end mt-2">
+                                        <button type="submit" class="btn estancia-btn w-100 py-3">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

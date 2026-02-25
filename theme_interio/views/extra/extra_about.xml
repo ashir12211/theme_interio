@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="extra_about" name="Extra About">
+        <section class="extra_about pt96 pb96" data-snippet="extra_about" data-name="Extra About">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <span class="text-uppercase fw-bold" style="color: #000000; letter-spacing: 2px;">Our Expertise</span>
+                        <h2 class="display-4 fw-bold mt-3" style="color: #000000;">Tailored Interior Solutions</h2>
+                        <p class="lead" style="color: #555555;">Hover over the cards to explore the technical specifications and detailed design processes behind our premium services.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center pe-auto">
+                        <div class="card_extra">
+                            <div class="content_extra">
+                                <!-- Initial View (Image) -->
+                                <div class="back_extra">
+                                    <div class="back-content_extra">
+                                        <img src="/theme_interio/static/src/img/crafted_3_paris.png" alt="Space Planning Image"/>
+                                        <div class="position-absolute bottom-0 w-100 p-4 text-start" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
+                                            <h4 class="text-white mb-0 fw-bold">Space Planning</h4>
+                                            <p class="text-white-50 mb-0 font-italic" style="font-size: 0.9em;">Discover Specs &#8594;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hover View (Specifications) -->
+                                <div class="front_extra">
+                                    <div class="img_extra">
+                                        <div class="circle_extra"></div>
+                                        <div class="circle_extra" id="right_extra"></div>
+                                        <div class="circle_extra" id="bottom_extra"></div>
+                                    </div>
+                                    <div class="front-content_extra">
+                                        <small class="badge_extra">Specifications</small>
+
+                                        <div class="specs-list_extra">
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>2D &amp; 3D Floor Plans</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Traffic Flow Analysis</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Zoning &amp; Utilization</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Ergonomic Layouts</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="description_extra">
+                                            <div class="title_extra">
+                                                <p class="title_extra"><strong>Optimization</strong></p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0 0 256 256"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#F4DFC8"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                                            </div>
+                                            <p class="card-footer_extra">Maximized efficiency &amp; flow</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center pe-auto">
+                        <div class="card_extra">
+                            <div class="content_extra">
+                                <!-- Initial View (Image) -->
+                                <div class="back_extra">
+                                    <div class="back-content_extra">
+                                        <img src="/theme_interio/static/src/img/crafted_4_tokyo.png" alt="Material Selection Image"/>
+                                        <div class="position-absolute bottom-0 w-100 p-4 text-start" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
+                                            <h4 class="text-white mb-0 fw-bold">Material Selection</h4>
+                                            <p class="text-white-50 mb-0 font-italic" style="font-size: 0.9em;">Discover Specs &#8594;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hover View (Specifications) -->
+                                <div class="front_extra">
+                                    <div class="img_extra">
+                                        <div class="circle_extra"></div>
+                                        <div class="circle_extra" id="right_extra"></div>
+                                        <div class="circle_extra" id="bottom_extra"></div>
+                                    </div>
+                                    <div class="front-content_extra">
+                                        <small class="badge_extra">Specifications</small>
+
+                                        <div class="specs-list_extra">
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Premium Textures</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Sustainable Sourcing</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Color Palette Design</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Durability Testing</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="description_extra">
+                                            <div class="title_extra">
+                                                <p class="title_extra"><strong>Aesthetics</strong></p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0 0 256 256"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#F4DFC8"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                                            </div>
+                                            <p class="card-footer_extra">Curated finishes &amp; paints</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-5 d-flex justify-content-center pe-auto">
+                        <div class="card_extra">
+                            <div class="content_extra">
+                                <!-- Initial View (Image) -->
+                                <div class="back_extra">
+                                    <div class="back-content_extra">
+                                        <img src="/theme_interio/static/src/img/hero5_img_3.png" alt="Custom Furniture Image"/>
+                                        <div class="position-absolute bottom-0 w-100 p-4 text-start" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
+                                            <h4 class="text-white mb-0 fw-bold">Bespoke Decor</h4>
+                                            <p class="text-white-50 mb-0 font-italic" style="font-size: 0.9em;">Discover Specs &#8594;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hover View (Specifications) -->
+                                <div class="front_extra">
+                                    <div class="img_extra">
+                                        <div class="circle_extra"></div>
+                                        <div class="circle_extra" id="right_extra"></div>
+                                        <div class="circle_extra" id="bottom_extra"></div>
+                                    </div>
+                                    <div class="front-content_extra">
+                                        <small class="badge_extra">Specifications</small>
+
+                                        <div class="specs-list_extra">
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Custom Millwork</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Art Placement</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Lighting Fixtures</span>
+                                            </div>
+                                            <div class="spec-item_extra">
+                                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                                <span>Exclusive Fabrics</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="description_extra">
+                                            <div class="title_extra">
+                                                <p class="title_extra"><strong>Furnishing</strong></p>
+                                                <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0 0 256 256"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#F4DFC8"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
+                                            </div>
+                                            <p class="card-footer_extra">Unique, tailored pieces</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

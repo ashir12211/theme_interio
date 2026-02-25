@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_reviews" name="Vista Reviews">
+        <section class="vh-reviews">
+            <div class="container">
+                <!-- Header -->
+                <div class="vh-reviews-header">
+                    <span class="vh-reviews-tag">Reviews</span>
+                    <h2 class="vh-reviews-title">
+                        Discover how our space has brought calm, clarity,
+                        and inspiration – real words from those who’ve
+                        felt the peaceful atmosphere we created.
+                    </h2>
+                </div>
+
+                <!-- Main Grid -->
+                <div class="vh-reviews-grid">
+                    <!-- Left: Testimonials (2x2) -->
+                    <div class="vh-reviews-list">
+                        <!-- Review 1 -->
+                        <div class="vh-review-card">
+                            <i class="fa fa-quote-left vh-quote-icon"></i>
+                            <p class="vh-review-text">
+                                The moment I stepped inside, I felt a sense of calm I haven't experienced in years. Every detail is intentional.
+                            </p>
+                            <div class="vh-review-user">
+                                <div class="vh-user-avatar">
+                                    <img src="/theme_interio/static/src/img/reviews_avatar_1.png" alt="Richard K." loading="lazy"/>
+                                </div>
+                                <div class="vh-user-details">
+                                    <span class="vh-user-name">Richard K.</span>
+                                    <span class="vh-user-role">Self-Portraits</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="vh-review-card">
+                            <i class="fa fa-quote-left vh-quote-icon"></i>
+                            <p class="vh-review-text">
+                                A truly peaceful retreat from the noise of daily life – every corner feels intentional, asking you to slow down.
+                            </p>
+                            <div class="vh-review-user">
+                                <div class="vh-user-avatar">
+                                    <img src="/theme_interio/static/src/img/reviews_avatar_2.png" alt="Sofia M." loading="lazy"/>
+                                </div>
+                                <div class="vh-user-details">
+                                    <span class="vh-user-name">Sofia M.</span>
+                                    <span class="vh-user-role">Lookbook Shoot</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="vh-review-card">
+                            <i class="fa fa-quote-left vh-quote-icon"></i>
+                            <p class="vh-review-text">
+                                There’s a subtle magic in this space. Every detail, from the light to the stillness, encourages you to breathe.
+                            </p>
+                            <div class="vh-review-user">
+                                <div class="vh-user-avatar">
+                                    <img src="/theme_interio/static/src/img/reviews_avatar_3.png" alt="John D." loading="lazy"/>
+                                </div>
+                                <div class="vh-user-details">
+                                    <span class="vh-user-name">John D.</span>
+                                    <span class="vh-user-role">Content Creation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="vh-review-card">
+                            <i class="fa fa-quote-left vh-quote-icon"></i>
+                            <p class="vh-review-text">
+                                The atmosphere invites you to slow down without trying. The kind of place that lingers in your mind.
+                            </p>
+                            <div class="vh-review-user">
+                                <div class="vh-user-avatar">
+                                    <img src="/theme_interio/static/src/img/gallery_woman_standing.png" alt="Amanda L." loading="lazy"/>
+                                </div>
+                                <div class="vh-user-details">
+                                    <span class="vh-user-name">Amanda L.</span>
+                                    <span class="vh-user-role">Couple Session</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Large Image -->
+                    <div class="vh-reviews-feature">
+                        <img src="/theme_interio/static/src/img/reviews_studio.png" alt="Studio Setup" loading="lazy"/>
+                        <div class="vh-feature-overlay">
+                            <h3 class="vh-feature-logo">Interio®</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

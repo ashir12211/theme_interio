@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_hero5" name="Atelier Hero">
+        <section class="interio_hero5 atelier-hero-section">
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+
+            <!-- Animated Grid & Marquee Background -->
+            <div class="ah-background">
+                <div class="ah-bg-grid"></div>
+                <div class="ah-marquee-container">
+                    <div class="ah-marquee-text">ATELIER ARCHITECTURE &amp; INTERIORS - VISUALIZE THE IMPOSSIBLE - </div>
+                    <div class="ah-marquee-text">ATELIER ARCHITECTURE &amp; INTERIORS - VISUALIZE THE IMPOSSIBLE - </div>
+                </div>
+            </div>
+
+            <!-- Main Container -->
+            <div class="container ah-container">
+                <div class="row align-items-center ah-row">
+
+                    <!-- Left: Typography & Call to Actions -->
+                    <div class="col-lg-6 ah-content-col">
+                        <div class="ah-content-wrapper">
+
+                            <div class="ah-badge-wrap stagger-up">
+                                <span class="ah-badge">Est. 2026</span>
+                                <span class="ah-badge-text">Visionary Design Studio</span>
+                            </div>
+
+                            <h1 class="ah-title">
+                                <span class="ah-title-line"><span class="ah-title-inner">Where Space</span></span>
+                                <span class="ah-title-line">
+                                    <span class="ah-title-inner">Meets <span class="ah-accent">Art.</span></span>
+                                </span>
+                            </h1>
+
+                            <p class="ah-description stagger-up">
+                                We are an avant-garde interior atelier pushing the boundaries
+                                of modern architecture. Crafting spaces that provoke thought
+                                and inspire living through bold, uncompromising design.
+                            </p>
+
+                            <div class="ah-actions stagger-up">
+                                <a href="#" class="ah-btn-explore">
+                                    <span class="ah-btn-text">Explore Projects</span>
+                                    <span class="ah-btn-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="ah-play-btn">
+                                    <div class="ah-play-circle">
+                                        <div class="ah-play-triangle"></div>
+                                    </div>
+                                    <span class="ah-play-text">Showreel</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right: Abstract Visuals & Animations -->
+                    <div class="col-lg-6 ah-visual-col">
+                        <div class="ah-visual-wrapper">
+
+                            <!-- Main Image with Curtain Reveal -->
+                            <div class="ah-image-box ah-img-main">
+                                <div class="ah-image-reveal"></div>
+                                <img src="/theme_interio/static/src/img/greentheme1.png" alt="Atelier Interior" loading="eager"/>
+
+                                <div class="ah-corner ah-corner-tl"></div>
+                                <div class="ah-corner ah-corner-br"></div>
+                            </div>
+
+                            <!-- Floating Secondary Image -->
+                            <div class="ah-img-floating-wrapper">
+                                <div class="ah-image-box ah-img-floating">
+                                    <img src="/theme_interio/static/src/img/greentheme2.png" alt="Atelier Details" loading="lazy"/>
+                                </div>
+                            </div>
+
+                            <!-- Rotating SVG Badge -->
+                            <div class="ah-rotating-badge">
+                                <svg viewBox="0 0 100 100" class="ah-spin-svg">
+                                    <path id="curve" fill="transparent" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"/>
+                                    <text>
+                                        <textPath href="#curve" startOffset="0">AWARD WINNING ATELIER • DESIGN STUDIO •</textPath>
+                                    </text>
+                                </svg>
+                                <div class="ah-spin-center">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="ah-scroll-indicator">
+                <span class="ah-scroll-text">Scroll Down</span>
+                <div class="ah-scroll-line">
+                    <div class="ah-scroll-dot"></div>
+                </div>
+            </div>
+
+        </section>
+    </template>
+</odoo>

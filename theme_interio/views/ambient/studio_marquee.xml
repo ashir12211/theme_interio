@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="studio_marquee" name="Studio Marquee">
+        <section class="studio-marquee-section">
+            <!-- Decorative floating particles -->
+            <div class="sm-particles">
+                <span class="sm-dot sm-dot-1"></span>
+                <span class="sm-dot sm-dot-2"></span>
+                <span class="sm-dot sm-dot-3"></span>
+                <span class="sm-dot sm-dot-4"></span>
+                <span class="sm-dot sm-dot-5"></span>
+            </div>
+
+            <!-- Section Header -->
+            <div class="container text-center sm-header">
+                <div class="sm-tag">Our Portfolio</div>
+                <h2 class="sm-title">
+                    <span class="sm-title-stroke">Studio</span> Showcase
+                </h2>
+                <div class="sm-divider">
+                    <span class="sm-divider-line"></span>
+                    <span class="sm-divider-diamond"></span>
+                    <span class="sm-divider-line"></span>
+                </div>
+                <p class="sm-subtitle">A curated flow of our finest interior works &#x2014; spaces crafted with intention, warmth, and timeless elegance.</p>
+            </div>
+
+            <!-- Marquee Row 1 — Left to Right -->
+            <div class="sm-marquee-wrapper">
+                <div class="sm-marquee-track sm-track-ltr">
+                    <!-- Set A -->
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero1_slide_1.png" alt="Studio Work 1"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Minimalist Living</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero2_slide_1.png" alt="Studio Work 2"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Refined Elegance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero3_img_1.png" alt="Studio Work 3"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Modern Warmth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero4_bg.png" alt="Studio Work 4"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Artistic Forms</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/gallery_woman_chair.png" alt="Studio Work 5"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Serene Comfort</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/r3_lumora.png" alt="Studio Work 6"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Lumora Suite</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set B (duplicate for seamless loop) -->
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero1_slide_1.png" alt="Studio Work 1"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Minimalist Living</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero2_slide_1.png" alt="Studio Work 2"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Refined Elegance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero3_img_1.png" alt="Studio Work 3"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Modern Warmth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/creation_main.png" alt="Studio Work 4"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Artistic Forms</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/gallery_woman_chair.png" alt="Studio Work 5"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Serene Comfort</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/r3_lumora.png" alt="Studio Work 6"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Lumora Suite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Floating Badge -->
+            <div class="sm-center-badge">
+                <div class="sm-badge-inner">
+                    <svg class="sm-badge-ring" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="55" fill="none" stroke="rgba(244,223,200,0.3)" stroke-width="1" stroke-dasharray="4 6"/>
+                    </svg>
+                    <span class="sm-badge-text">EST. 2024</span>
+                </div>
+            </div>
+
+            <!-- Marquee Row 2 — Right to Left -->
+            <div class="sm-marquee-wrapper">
+                <div class="sm-marquee-track sm-track-rtl">
+                    <!-- Set A -->
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero1_slide_2.png" alt="Studio Work 7"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Urban Retreat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero2_slide_2.png" alt="Studio Work 8"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Noir Aesthetic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero3_img_2.png" alt="Studio Work 9"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Fluid Geometry</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/r3_solira.png" alt="Studio Work 10"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Solira Space</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/gallery_man_reading.png" alt="Studio Work 11"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Silent Study</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/r3_zentra.png" alt="Studio Work 12"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Zentra Lounge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set B (duplicate for seamless loop) -->
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero1_slide_2.png" alt="Studio Work 7"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Urban Retreat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero2_slide_2.png" alt="Studio Work 8"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Noir Aesthetic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/hero3_img_2.png" alt="Studio Work 9"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Fluid Geometry</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/r3_solira.png" alt="Studio Work 10"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Solira Space</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/gallery_man_reading.png" alt="Studio Work 11"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Silent Study</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-marquee-item sm-item-tall">
+                        <div class="sm-card">
+                            <img src="/theme_interio/static/src/img/r3_zentra.png" alt="Studio Work 12"/>
+                            <div class="sm-card-overlay">
+                                <span class="sm-card-label">Zentra Lounge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom decorative arc -->
+            <div class="sm-bottom-art">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                    <path d="M0,80 C360,0 1080,0 1440,80" fill="none" stroke="rgba(244,223,200,0.15)" stroke-width="1.5"/>
+                    <path d="M0,80 C360,20 1080,20 1440,80" fill="none" stroke="rgba(244,223,200,0.08)" stroke-width="1"/>
+                </svg>
+            </div>
+        </section>
+    </template>
+</odoo>

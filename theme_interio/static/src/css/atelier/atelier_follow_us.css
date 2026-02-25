@@ -1,0 +1,285 @@
+
+
+.atelier-follow-section {
+    --afw-bg: #040D12;
+    --afw-text: #93B1A6;
+    --afw-accent: #5C8374;
+    --afw-muted: #183D3D;
+
+    background-color: var(--afw-bg);
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--afw-text);
+}
+
+.afw-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+
+/* Stylistic Bracket Corners */
+.afw-corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(147, 177, 166, 0.4);
+    z-index: 10;
+}
+
+.afw-tl {
+    top: 0;
+    left: 40px;
+    border-bottom: none;
+    border-right: none;
+}
+
+.afw-tr {
+    top: 0;
+    right: 40px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.afw-bl {
+    bottom: 0;
+    left: 40px;
+    border-top: none;
+    border-right: none;
+}
+
+
+/* Central Typography Layer */
+.afw-center-text {
+    text-align: center;
+    z-index: 20;
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+    /* Soft dark glow so text stays completely legible above underlying dark images */
+    background: radial-gradient(circle, rgba(4, 13, 18, 0.9) 30%, rgba(4, 13, 18, 0) 80%);
+}
+
+.afw-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.afw-handle {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    color: var(--afw-text);
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.4s ease;
+}
+
+.afw-handle:hover {
+    color: var(--afw-accent);
+    text-decoration: none;
+}
+
+
+/* Absolute Floating Image Collages */
+.afw-img-wrap {
+    position: absolute;
+    overflow: hidden;
+    /* Clean dark shadow pushing them away from the background void */
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+    filter: brightness(0.6) grayscale(30%);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+    /* Hardware acceleration limits to enforce clipping bug fixes */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    isolation: isolate;
+}
+
+.afw-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.afw-hover-border {
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--afw-accent);
+    opacity: 0;
+    transform: scale(1.05);
+    transition: all 0.6s ease;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Instagram Hover Icon */
+.afw-insta-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    font-size: 3rem;
+    color: var(--afw-accent);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Hover Physics */
+.afw-img-wrap:hover {
+    /* Prevent fighting JS transform by managing only the visual filter states */
+    filter: brightness(1) grayscale(0%);
+    z-index: 25;
+}
+
+.afw-img-wrap:hover img {
+    transform: scale(1.08);
+    /* slight internal parallax */
+}
+
+.afw-img-wrap:hover .afw-hover-border {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.afw-img-wrap:hover .afw-insta-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* 
+   Coordinate Mapping 
+   (Relative to the afw-container 1400x800 bounding box)
+*/
+.afw-img-1 {
+    top: 15%;
+    left: 5%;
+    width: 100px;
+    height: 140px;
+}
+
+.afw-img-2 {
+    bottom: 10%;
+    left: 5%;
+    width: 180px;
+    height: 250px;
+}
+
+.afw-img-3 {
+    top: 40%;
+    left: 18%;
+    width: 220px;
+    height: 280px;
+    z-index: 2;
+}
+
+.afw-img-4 {
+    bottom: 5%;
+    left: 35%;
+    width: 280px;
+    height: 350px;
+    z-index: 3;
+}
+
+.afw-img-5 {
+    top: 5%;
+    right: 5%;
+    width: 240px;
+    height: 300px;
+    z-index: 2;
+}
+
+.afw-img-6 {
+    top: 45%;
+    right: 28%;
+    width: 190px;
+    height: 260px;
+    z-index: 1;
+}
+
+.afw-img-7 {
+    bottom: 10%;
+    right: 10%;
+    width: 220px;
+    height: 300px;
+    z-index: 3;
+}
+
+
+/* Sequential Animations */
+.afw-anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.afw-anim.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Responsive Fallbacks */
+@media (max-width: 1199px) {
+    .afw-img-1 {
+        display: none;
+    }
+
+    .afw-img-6 {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .afw-container {
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .afw-center-text {
+        margin-bottom: 60px;
+        background: none;
+    }
+
+    .afw-img-wrap {
+        position: relative;
+        inset: auto !important;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+        transform: none !important;
+        filter: none;
+        box-shadow: none;
+    }
+
+    .afw-img-wrap:hover {
+        transform: scale(1.02) !important;
+    }
+
+    .afw-corner {
+        display: none;
+    }
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crafted_designers" name="Crafted Designers">
+        <section class="s_crafted_designers crafted-designers-snippet pt96 pb96" data-snippet="theme_interio.crafted_designers" data-name="Crafted Designers">
+            <div class="container-fluid px-5">
+                <div class="row text-center mb-5">
+                    <h2 class="display-4 fw-bold" style="color: #1a1a1a;"><span class="animated-designers-text">Meet The Designers</span></h2>
+                    <p class="lead" style="color: #555;">The creative minds behind our crafted collections.</p>
+                </div>
+                <!-- 5 cards layout -->
+                <div class="row justify-content-center">
+                    
+                    <!-- Card 1 -->
+                    <div class="col-lg-auto col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+                        <div class="parent">
+                            <div class="card">
+                                <div class="glass"></div>
+                                <div class="bg-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_1.png" class="img-fluid designer-image" alt="Designer 1"/>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Alice Walker</span>
+                                    <span class="text">Lead Interior Designer</span>
+                                </div>
+                                <div class="bottom">
+                                    <div class="social-buttons-container">
+                                        <button class="social-button social-button1">
+                                            <i class="fa fa-instagram"></i>
+                                        </button>
+                                        <button class="social-button social-button2">
+                                            <i class="fa fa-twitter"></i>
+                                        </button>
+                                        <button class="social-button social-button3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="view-more">
+                                        <button class="view-more-button">View more</button>
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-auto col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+                        <div class="parent">
+                            <div class="card">
+                                <div class="glass"></div>
+                                <div class="bg-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_2.png" class="img-fluid designer-image" alt="Designer 2"/>
+                                </div>
+                                <div class="content">
+                                    <span class="title">David Smith</span>
+                                    <span class="text">Senior Architect</span>
+                                </div>
+                                <div class="bottom">
+                                    <div class="social-buttons-container">
+                                        <button class="social-button social-button1">
+                                            <i class="fa fa-instagram"></i>
+                                        </button>
+                                        <button class="social-button social-button2">
+                                            <i class="fa fa-twitter"></i>
+                                        </button>
+                                        <button class="social-button social-button3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="view-more">
+                                        <button class="view-more-button">View more</button>
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-auto col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+                        <div class="parent">
+                            <div class="card">
+                                <div class="glass"></div>
+                                <div class="bg-img-wrap">
+                                    <img src="/theme_interio/static/src/img/reviews_avatar_2.png" class="img-fluid designer-image" alt="Designer 3"/>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Sarah Jones</span>
+                                    <span class="text">Creative Director</span>
+                                </div>
+                                <div class="bottom">
+                                    <div class="social-buttons-container">
+                                        <button class="social-button social-button1">
+                                            <i class="fa fa-instagram"></i>
+                                        </button>
+                                        <button class="social-button social-button2">
+                                            <i class="fa fa-twitter"></i>
+                                        </button>
+                                        <button class="social-button social-button3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="view-more">
+                                        <button class="view-more-button">View more</button>
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-lg-auto col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+                        <div class="parent">
+                            <div class="card">
+                                <div class="glass"></div>
+                                <div class="bg-img-wrap">
+                                    <img src="/theme_interio/static/src/img/reviews_avatar_3.png" class="img-fluid designer-image" alt="Designer 4"/>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Michael Brown</span>
+                                    <span class="text">Spatial Designer</span>
+                                </div>
+                                <div class="bottom">
+                                    <div class="social-buttons-container">
+                                        <button class="social-button social-button1">
+                                            <i class="fa fa-instagram"></i>
+                                        </button>
+                                        <button class="social-button social-button2">
+                                            <i class="fa fa-twitter"></i>
+                                        </button>
+                                        <button class="social-button social-button3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="view-more">
+                                        <button class="view-more-button">View more</button>
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-lg-auto col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+                        <div class="parent">
+                            <div class="card">
+                                <div class="glass"></div>
+                                <div class="bg-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_new_1.png" class="img-fluid designer-image" alt="Designer 5"/>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Emma Wilson</span>
+                                    <span class="text">Furniture Expert</span>
+                                </div>
+                                <div class="bottom">
+                                    <div class="social-buttons-container">
+                                        <button class="social-button social-button1">
+                                            <i class="fa fa-instagram"></i>
+                                        </button>
+                                        <button class="social-button social-button2">
+                                            <i class="fa fa-twitter"></i>
+                                        </button>
+                                        <button class="social-button social-button3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </button>
+                                    </div>
+                                    <div class="view-more">
+                                        <button class="view-more-button">View more</button>
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

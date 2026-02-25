@@ -1,0 +1,257 @@
+/* ============================================
+   Vista Members - Team Introduction
+   ============================================ */
+
+.vh-members {
+    --vh-bg: #ECDFCC;
+    --vh-text: #181C14;
+    --vh-text-alt: #3C3D37;
+    --vh-accent: #697565;
+    --vh-card-bg: #FFFFFF;
+    --vh-border: rgba(24, 28, 20, 0.1);
+    --vh-font-heading: 'Playfair Display', serif;
+    --vh-font-body: 'DM Sans', sans-serif;
+    --vh-ease: cubic-bezier(0.25, 1, 0.5, 1);
+
+    background-color: var(--vh-bg);
+    color: var(--vh-text);
+    padding: 100px 0;
+    font-family: var(--vh-font-body);
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Left Column: Intro --- */
+.vh-members-intro {
+    padding-right: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.vh-members-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--vh-text-alt);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 12px;
+    border-left: 2px solid var(--vh-text);
+}
+
+.vh-members-heading {
+    font-family: var(--vh-font-heading);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--vh-text);
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.vh-members-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #DCCFB7;
+    /* Darker beige/sand for button */
+    color: var(--vh-text);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    border-radius: 2px;
+}
+
+.vh-members-btn:hover {
+    background: var(--vh-text);
+    color: var(--vh-bg);
+    transform: translateY(-2px);
+    text-decoration: none;
+    /* Ensure no underline */
+}
+
+/* --- Infinity Marquee --- */
+.vh-members-marquee-wrap {
+    margin-top: 60px;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid var(--vh-border);
+    padding: 14px 0;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+}
+
+.vh-members-marquee {
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.vh-members-marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    animation: vh-marquee-scroll 15s linear infinite;
+}
+
+.vh-members-marquee-content span {
+    font-family: var(--vh-font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--vh-text-alt);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.vh-members-marquee-content span::after {
+    content: "•";
+    color: var(--vh-accent);
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+@keyframes vh-marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* --- Right Column: Team Grid --- */
+.vh-members-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.vh-member-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image Container */
+.vh-member-img-wrap {
+    width: 100%;
+    aspect-ratio: 4/5;
+    /* Portrait */
+    overflow: hidden;
+    position: relative;
+    background: #D8D8D8;
+}
+
+.vh-member-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--vh-ease), filter 0.6s ease;
+    filter: grayscale(20%);
+    /* Artistic touch */
+}
+
+.vh-member-card:hover .vh-member-img-wrap img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* Info Container */
+.vh-member-info {
+    background: #FFFFFF;
+    padding: 24px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease;
+    min-height: 120px;
+}
+
+.vh-member-role {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #9A8C74;
+    /* Gold/brown accent text */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.vh-member-name {
+    font-family: var(--vh-font-heading);
+    /* Use heading font for name based on image "JAMES ALBERT" look */
+    font-size: 1.4rem;
+    /* Adjusted for impact */
+    font-weight: 700;
+    color: var(--vh-text);
+    text-transform: uppercase;
+    /* Match reference */
+    margin: 0;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vh-member-socials {
+    display: inline-flex;
+    gap: 12px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.vh-member-card:hover .vh-member-socials {
+    opacity: 1;
+}
+
+.vh-social-link {
+    color: var(--vh-text);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.vh-social-link:hover {
+    color: var(--vh-accent);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .vh-members-intro {
+        margin-bottom: 60px;
+        padding-right: 0;
+    }
+
+    .vh-members-heading {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .vh-members-grid {
+        grid-template-columns: 1fr;
+        /* Stack cards */
+        gap: 40px;
+    }
+
+    .vh-members-intro {
+        align-items: flex-start;
+        text-align: left;
+    }
+}

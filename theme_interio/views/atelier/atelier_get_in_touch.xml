@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_get_in_touch" name="Atelier Get In Touch">
+        <section class="atelier-get-in-touch-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+            
+            <!-- Top Banner -->
+            <div class="aget-banner">
+                <div class="aget-banner-bg" style="background-image: url('/theme_interio/static/src/img/hero1_slide_2.png');"></div>
+                <div class="aget-banner-overlay"></div>
+                <div class="aget-banner-content aget-anim is-visible" data-delay="0s">
+                    <h2 class="aget-title">GET IN TOUCH</h2>
+                    <p class="aget-subtitle">Connect with Interio — a studio where conversation sparks new<br/>ideas. We'll shape the vision into your space.</p>
+                </div>
+            </div>
+
+            <!-- Content Container -->
+            <div class="container aget-content-container">
+                <div class="row g-5">
+                    
+                    <!-- Left Side: Form Container -->
+                    <div class="col-lg-8">
+                        <div class="aget-form-box aget-anim is-visible" data-delay="0.2s">
+                            <!-- Corner Borders -->
+                            <div class="aget-corner aget-tl"></div>
+                            <div class="aget-corner aget-tr"></div>
+                            <div class="aget-corner aget-bl"></div>
+                            <div class="aget-corner aget-br"></div>
+
+                            <div class="aget-form-header">
+                                <h3 class="aget-form-title">LET'S START!</h3>
+                                <div class="aget-avatars">
+                                    <img src="/theme_interio/static/src/img/reviews_avatar_1.png" alt="Team 1" class="aget-avatar-img"/>
+                                    <img src="/theme_interio/static/src/img/member_new_1.png" alt="Team 2" class="aget-avatar-img"/>
+                                    <img src="/theme_interio/static/src/img/member_new_3.png" alt="Team 3" class="aget-avatar-img"/>
+                                    <img src="/theme_interio/static/src/img/member_2.png" alt="Team 4" class="aget-avatar-img"/>
+                                </div>
+                            </div>
+
+                            <form class="aget-form">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="aget-form-group">
+                                            <label class="aget-label">FIRST NAME*</label>
+                                            <input type="text" class="aget-input" placeholder="Jane" required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="aget-form-group">
+                                            <label class="aget-label">LAST NAME</label>
+                                            <input type="text" class="aget-input" placeholder="Smith"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="aget-form-group">
+                                            <label class="aget-label">EMAIL*</label>
+                                            <input type="email" class="aget-input" placeholder="jane@framer.com" required="required"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="aget-form-group">
+                                            <label class="aget-label">MESSAGE*</label>
+                                            <textarea class="aget-input aget-textarea" placeholder="Your text" rows="4" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="aget-submit-btn">
+                                            <span class="aget-btn-text">SUBMIT</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Links -->
+                    <div class="col-lg-4">
+                        <div class="aget-links-box aget-anim is-visible" data-delay="0.4s">
+                            <h3 class="aget-links-title">USEFUL LINKS</h3>
+                            <ul class="aget-links-list">
+                                <li>
+                                    <a href="#" class="aget-link-item">
+                                        <span class="aget-link-text">NEW YORK, USA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+12124258617" class="aget-link-item">
+                                        <span class="aget-link-text">+1 212 425 8617</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+16428901519" class="aget-link-item">
+                                        <span class="aget-link-text">+1 642 890 1519</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:hello@example.com" class="aget-link-item">
+                                        <span class="aget-link-text">HELLO@EXAMPLE.COM</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

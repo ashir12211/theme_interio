@@ -1,0 +1,56 @@
+.s_crafted_pure {
+    background-color: #f0eeeb;
+    /* Soft white/off-white like the image */
+    overflow: hidden;
+    font-family: 'Montserrat', 'Arial Black', sans-serif;
+    padding: 15vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cp-text-container {
+    padding: 0 4vw;
+    width: 100%;
+}
+
+.cp-gradient-text {
+    font-size: clamp(1rem, 7.5vw, 180px);
+    font-weight: 900;
+    /* Heavy weight for the 3D block look */
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    /* Slightly open tracking like the image */
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+
+    /* White 3D embossed effect matching the image */
+    color: #e8e4e0;
+
+    /* Multi-layered text-shadow to simulate 3D depth/extrusion */
+    text-shadow:
+        1px 1px 0px #d4cfca,
+        2px 2px 0px #ccc7c2,
+        3px 3px 0px #c4bfba,
+        4px 4px 0px #bcb7b2,
+        5px 5px 0px #b4afaa,
+        6px 6px 0px #acabc6,
+        7px 7px 0px #a4a09b,
+        8px 8px 0px #9c9893,
+        /* Soft ambient shadow at the base */
+        10px 12px 20px rgba(0, 0, 0, 0.18),
+        4px 6px 8px rgba(0, 0, 0, 0.12);
+
+    /* Subtle top highlight for the lit-from-above feel */
+    filter: drop-shadow(0px -1px 0px rgba(255,255,255,0.9));
+}
+
+@media (max-width: 991px) {
+    .cp-gradient-text {
+        font-size: clamp(10px, 7.5vw, 80px);
+        letter-spacing: 0.03em;
+    }
+}

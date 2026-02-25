@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crafted_reviews" name="Crafted Reviews">
+        <section class="s_crafted_reviews" data-snippet="theme_interio.crafted_reviews" data-name="Crafted Reviews">
+            <div class="container-fluid cr-main-container">
+
+                <!-- Heading -->
+                <div class="row w-100 m-0 pb-5 justify-content-center text-center">
+                    <div class="col-12 col-md-8 mx-auto cr-heading-wrapper">
+                        <div class="cr-subtitle">✺ Reviews</div>
+                        <h2 class="cr-title">
+                            <span class="d-block p-2">Where Our Work</span>
+                            <span class="d-block cr-animated-text">Meets Their Words</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row w-100 m-0">
+                    <div class="col-12 cr-grid-container position-relative p-0 px-lg-5">
+                        
+                        <!-- Card 1 (Top Left) -->
+                        <div class="cr-card-wrapper cr-pos-1">
+                            <div class="cr-art-frame">
+                                <div class="cr-frame-bg"></div>
+                                <div class="cr-frame-img">
+                                    <img src="/theme_interio/static/src/img/profile1.png" alt="Sofia Martinez" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <div class="cr-frame-info">
+                                <strong class="cr-name">— Sofia Martinez</strong>
+                                <span class="cr-role">Home Owner</span>
+                            </div>
+                            <div class="cr-review-text">
+                                "Every corner of our home feels intentional, elegant, and alive. Estancia brought our vision into reality with a level of detail we didn't think was possible."
+                            </div>
+                        </div>
+
+                        <!-- Card 2 (Top Right) -->
+                        <div class="cr-card-wrapper cr-pos-2">
+                            <div class="cr-art-frame">
+                                <div class="cr-frame-bg"></div>
+                                <div class="cr-frame-img">
+                                    <img src="/theme_interio/static/src/img/profile3.png" alt="Daniel Ruiz" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <div class="cr-frame-info">
+                                <strong class="cr-name">— Daniel Ruiz</strong>
+                                <span class="cr-role">Kolo Office Owner</span>
+                            </div>
+                            <div class="cr-review-text">
+                                "From concept to completion, the team understood our needs perfectly. The result is a space that feels both luxurious and deeply personal."
+                            </div>
+                        </div>
+
+                        <!-- Card 3 (Center) -->
+                        <div class="cr-card-wrapper cr-pos-3">
+                            <div class="cr-art-frame">
+                                <div class="cr-frame-bg"></div>
+                                <div class="cr-frame-img">
+                                    <img src="/theme_interio/static/src/img/profile4.png" alt="Isabella Vega" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <div class="cr-frame-info">
+                                <strong class="cr-name">— Isabella Vega</strong>
+                                <span class="cr-role">Mirai Owner</span>
+                            </div>
+                            <div class="cr-review-text">
+                                "They blended architecture, furniture, and interior design into a seamless masterpiece. It's more than a home—it's an experience."
+                            </div>
+                        </div>
+
+                        <!-- Card 4 (Bottom Left) -->
+                        <div class="cr-card-wrapper cr-pos-4">
+                            <div class="cr-art-frame">
+                                <div class="cr-frame-bg"></div>
+                                <div class="cr-frame-img">
+                                    <img src="/theme_interio/static/src/img/profile2.png" alt="Javier Moreno" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <div class="cr-frame-info">
+                                <strong class="cr-name">— Javier Moreno</strong>
+                                <span class="cr-role">Building Owner</span>
+                            </div>
+                            <div class="cr-review-text">
+                                "Working with them was an absolute pleasure. They took our concepts and elevated them, creating environments that truly speak."
+                            </div>
+                        </div>
+
+                        <!-- Card 5 (Bottom Right) -->
+                        <div class="cr-card-wrapper cr-pos-5">
+                            <div class="cr-art-frame">
+                                <div class="cr-frame-bg"></div>
+                                <div class="cr-frame-img">
+                                    <img src="/theme_interio/static/src/img/profile5.png" alt="Lucía Hernández" class="img-fluid"/>
+                                </div>
+                            </div>
+                            <div class="cr-frame-info">
+                                <strong class="cr-name">— Lucía Hernández</strong>
+                                <span class="cr-role">TMT Owner</span>
+                            </div>
+                            <div class="cr-review-text">
+                                "The transformation was beyond our imagination. Each detail was carefully thought out to provide comfort and aesthetic brilliance."
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_about3" name="Vista About">
+        <section class="interio_about3 ia3-section">
+            <!-- Reuse Fonts from Hero 3 to ensure consistency -->
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+            
+            <div class="container">
+                <!-- Top Row: Content & Stats -->
+                <div class="row pt-5 pb-5 align-items-center">
+                    <!-- Left: Text Content -->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="ia3-content-wrap ia3-fade-up">
+                            <span class="ia3-badge">About Us</span>
+                            <h2 class="ia3-title">
+                                <span class="ia3-reveal-text">Designed for <span class="ia3-italic">simplicity</span>,</span>
+                                <span class="ia3-reveal-text" style="transition-delay: 0.1s;">focus, and creative control.</span>
+                            </h2>
+                            <p class="ia3-desc ia3-fade-up" style="transition-delay: 0.2s;">
+                                Interio is a design studio crafted for those who seek perfection. 
+                                Our spaces suit every mood, blending lighting, materials, and architecture 
+                                into a seamless experience. Just show up, live, and get exactly what you need — 
+                                without distractions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Stats Grid -->
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="row g-4">
+                            <!-- Stat 1 -->
+                            <div class="col-6">
+                                <div class="ia3-stat-item ia3-fade-up" style="transition-delay: 0.2s;">
+                                    <div class="ia3-stat-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    </div>
+                                    <h3 class="ia3-stat-num" data-count="1000">0</h3>
+                                    <span class="ia3-stat-label">Happy Clients</span>
+                                </div>
+                            </div>
+                            <!-- Stat 2 -->
+                            <div class="col-6">
+                                <div class="ia3-stat-item ia3-fade-up" style="transition-delay: 0.3s;">
+                                    <div class="ia3-stat-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                    </div>
+                                    <h3 class="ia3-stat-num" data-count="2400">0</h3>
+                                    <span class="ia3-stat-label">Projects Done</span>
+                                </div>
+                            </div>
+                            <!-- Stat 3 -->
+                            <div class="col-6">
+                                <div class="ia3-stat-item ia3-fade-up" style="transition-delay: 0.4s;">
+                                    <div class="ia3-stat-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                    </div>
+                                    <h3 class="ia3-stat-num" data-count="110">0</h3>
+                                    <span class="ia3-stat-label">Partnerships</span>
+                                </div>
+                            </div>
+                            <!-- Stat 4 -->
+                            <div class="col-6">
+                                <div class="ia3-stat-item ia3-fade-up" style="transition-delay: 0.5s;">
+                                    <div class="ia3-stat-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </div>
+                                    <h3 class="ia3-stat-num" data-count="180">0</h3>
+                                    <span class="ia3-stat-label">Awards Won</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Images -->
+                <div class="row pt-4 pb-5 g-4">
+                    <!-- Large Image List -->
+                    <div class="col-lg-7">
+                        <div class="ia3-img-card ia3-img-large ia3-parallax-wrap">
+                            <div class="ia3-reveal-mask"></div>
+                            <img src="/theme_interio/static/src/img/hero5_img_1.png" alt="Studio Interior" class="img-fluid ia3-parallax-img"/>
+                            <div class="ia3-brand-overlay">
+                                <span class="ia3-floating-text" data-depth="0.15">INTERIO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Small Image -->
+                    <div class="col-lg-5">
+                        <div class="ia3-img-card ia3-img-small ia3-parallax-wrap" style="transition-delay: 0.2s;">
+                            <div class="ia3-reveal-mask"></div>
+                            <img src="/theme_interio/static/src/img/hero3_img_1.png" alt="Bright Room" class="img-fluid ia3-parallax-img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

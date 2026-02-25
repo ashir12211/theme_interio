@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_hero1" name="Hero">
+        <section class="interio_hero1 ih1-hero">
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+            <!-- Video Background -->
+            <div class="ih1-video-bg">
+                <video autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" class="ih1-video">
+                    <source src="/theme_interio/static/src/vid/ambient.mp4" type="video/mp4"/>
+                </video>
+                <div class="ih1-overlay"></div>
+            </div>
+
+            <!-- Content Wrapper -->
+            <div class="ih1-content-wrapper">
+                <!-- Slide 1 -->
+                <div class="ih1-content container active">
+                    <div class="ih1-title-wrap">
+                        <div class="ih1-subtitle ih1-anim">Architecture / 2026</div>
+                        <h1 class="ih1-title ih1-anim">
+                            <span class="ih1-title-row">Silent</span>
+                            <span class="ih1-title-row ih1-outline">Concrete</span>
+                        </h1>
+                        <div class="ih1-desc ih1-anim">
+                            <p>Where raw materials meet refined light. A study in brutalist elegance.</p>
+                        </div>
+                        <div class="ih1-btn-wrap ih1-anim">
+                            <a href="#" class="ih1-btn">Explore Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="ih1-content container">
+                    <div class="ih1-title-wrap">
+                        <div class="ih1-subtitle ih1-anim">Interior / Detail</div>
+                        <h1 class="ih1-title ih1-anim">
+                            <span class="ih1-title-row">Natural</span>
+                            <span class="ih1-title-row ih1-outline">Stone</span>
+                        </h1>
+                        <div class="ih1-desc ih1-anim">
+                            <p>Hand-selected Italian travertine, sculpted by light and shadow.</p>
+                        </div>
+                        <div class="ih1-btn-wrap ih1-anim">
+                            <a href="#" class="ih1-btn">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="ih1-content container">
+                    <div class="ih1-title-wrap">
+                        <div class="ih1-subtitle ih1-anim">Living / Space</div>
+                        <h1 class="ih1-title ih1-anim">
+                            <span class="ih1-title-row">Warm</span>
+                            <span class="ih1-title-row ih1-outline">Sanctuary</span>
+                        </h1>
+                        <div class="ih1-desc ih1-anim">
+                            <p>A retreat designed for rest, featuring organic textures and soft forms.</p>
+                        </div>
+                        <div class="ih1-btn-wrap ih1-anim">
+                            <a href="#" class="ih1-btn">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="ih1-scroll-down">
+                <span class="ih1-scroll-text">Scroll</span>
+                <span class="ih1-scroll-line"></span>
+            </a>
+
+        </section>
+    </template>
+
+
+</odoo>

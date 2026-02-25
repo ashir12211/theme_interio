@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_members" name="Vista Members">
+        <section class="vh-members">
+            <div class="container">
+                <div class="row">
+                    <!-- Left: Intro & Title -->
+                    <div class="col-lg-4 col-md-12 vh-members-intro">
+                        <div>
+                            <span class="vh-members-tag">Management</span>
+                            <h2 class="vh-members-heading">
+                                Meet with<br/>
+                                Our Team<br/>
+                                Members
+                            </h2>
+                            <a href="#" class="btn btn-primary vh-members-btn">Team Members</a>
+                            
+                            <!-- Infinity Marquee -->
+                            <div class="vh-members-marquee-wrap">
+                                <div class="vh-members-marquee">
+                                    <div class="vh-members-marquee-content">
+                                        <span>The creative minds behind our crafted collections.</span>
+                                        <span>The creative minds behind our crafted collections.</span>
+                                    </div>
+                                    <div class="vh-members-marquee-content" aria-hidden="true">
+                                        <span>The creative minds behind our crafted collections.</span>
+                                        <span>The creative minds behind our crafted collections.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Team Grid -->
+                    <div class="col-lg-8 col-md-12">
+                        <div class="vh-members-grid">
+                            <!-- Member 1 -->
+                            <div class="vh-member-card">
+                                <div class="vh-member-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_new_1.png" alt="James Albert" loading="lazy"/>
+                                </div>
+                                <div class="vh-member-info">
+                                    <span class="vh-member-role">Design Director</span>
+                                    <h3 class="vh-member-name">James Albert
+                                        <div class="vh-member-socials">
+                                            <a href="#" class="vh-social-link"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#" class="vh-social-link"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Member 2 -->
+                            <div class="vh-member-card">
+                                <div class="vh-member-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_new_2.png" alt="David M Hower" loading="lazy"/>
+                                </div>
+                                <div class="vh-member-info">
+                                    <span class="vh-member-role">Site Engineer</span>
+                                    <h3 class="vh-member-name">David M Hower
+                                        <div class="vh-member-socials">
+                                            <a href="#" class="vh-social-link"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#" class="vh-social-link"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Member 3 -->
+                            <div class="vh-member-card">
+                                <div class="vh-member-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_new_3.png" alt="Dennis Poroma" loading="lazy"/>
+                                </div>
+                                <div class="vh-member-info">
+                                    <span class="vh-member-role">Space Planner</span>
+                                    <h3 class="vh-member-name">Dennis Poroma
+                                        <div class="vh-member-socials">
+                                            <a href="#" class="vh-social-link"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#" class="vh-social-link"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+
+                             <!-- Member 4 -->
+                            <div class="vh-member-card">
+                                <div class="vh-member-img-wrap">
+                                    <img src="/theme_interio/static/src/img/member_new_4.png" alt="Floyd Miles" loading="lazy"/>
+                                </div>
+                                <div class="vh-member-info">
+                                    <span class="vh-member-role">Senior Architect</span>
+                                    <h3 class="vh-member-name">Floyd Miles
+                                        <div class="vh-member-socials">
+                                            <a href="#" class="vh-social-link"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#" class="vh-social-link"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

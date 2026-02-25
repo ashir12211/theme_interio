@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ambient_atelier" name="Ambient Atelier">
+        <section class="aa-section">
+            <!-- Cinematic film grain overlay -->
+            <div class="aa-grain"></div>
+            <!-- Floating light leak -->
+            <div class="aa-light-leak aa-leak-1"></div>
+            <div class="aa-light-leak aa-leak-2"></div>
+
+            <!-- ===== PART 1: Split Editorial Panel ===== -->
+
+
+            <!-- ===== PART 2: The Three Pillars ===== -->
+            <div class="container aa-pillars-section">
+                <div class="aa-section-label">
+                    <span class="aa-section-label-line"></span>
+                    <span class="aa-section-label-text">Our Pillars</span>
+                    <span class="aa-section-label-line"></span>
+                </div>
+
+                <div class="row g-4 aa-pillars-grid">
+                    <!-- Pillar 1 -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="aa-pillar-card">
+                            <div class="aa-pillar-number">01</div>
+                            <div class="aa-pillar-img-wrap">
+                                <img src="/theme_interio/static/src/img/hero2_slide_1.png" alt="Intention"/>
+                            </div>
+                            <div class="aa-pillar-content">
+                                <h3>Intention</h3>
+                                <p>Every design decision begins with a question of purpose. We never add without reason, never subtract without consideration.</p>
+                            </div>
+                            <div class="aa-pillar-reveal-bar"></div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="col-lg-6 col-md-12 offset-lg-6 mt-lg-5">
+                        <div class="aa-pillar-card">
+                            <div class="aa-pillar-number">02</div>
+                            <div class="aa-pillar-img-wrap">
+                                <img src="/theme_interio/static/src/img/hero3_img_3.png" alt="Materiality"/>
+                            </div>
+                            <div class="aa-pillar-content">
+                                <h3>Materiality</h3>
+                                <p>We speak fluently in stone, wood, light, and glass. Materials are our vocabulary &#x2014; texture and tone our grammar.</p>
+                            </div>
+                            <div class="aa-pillar-reveal-bar"></div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="col-lg-6 col-md-12 mt-lg-5">
+                        <div class="aa-pillar-card">
+                            <div class="aa-pillar-number">03</div>
+                            <div class="aa-pillar-img-wrap">
+                                <img src="/theme_interio/static/src/img/crafted_1_ny.png" alt="Atmosphere"/>
+                            </div>
+                            <div class="aa-pillar-content">
+                                <h3>Atmosphere</h3>
+                                <p>A room should feel before it is seen. We design the invisible &#x2014; warmth, stillness, the quality of light at dusk.Materials are our vocabulary</p>
+                            </div>
+                            <div class="aa-pillar-reveal-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PART 3: Pull Quote ===== -->
+            <div class="container aa-quote-section">
+                <div class="aa-quote-block">
+                    <span class="aa-quote-mark aa-quote-open">&#x201C;</span>
+                    <blockquote class="aa-quote-text">
+                        Architecture is the learned game, correct and magnificent, of forms assembled in the light.
+                    </blockquote>
+                    <span class="aa-quote-mark aa-quote-close">&#x201D;</span>
+                    <div class="aa-quote-attribution">
+                        <span class="aa-quote-dash"></span>
+                        <span class="aa-quote-author">Le Corbusier</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="luxe_contact" name="Luxe Contact">
+        <section class="luxe-contact-section">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <!-- Left: Text & Image -->
+                    <div class="col-lg-6 lc-left-col">
+                        <div class="lc-text-wrap">
+                            <h2 class="lc-huge-title">
+                                Let's design your<br/>space, together.
+                            </h2>
+                            <p class="lc-email-text">
+                                Get a start at <a href="mailto:hello@interio.com" class="lc-email-link">hello@interio.com</a>
+                            </p>
+                        </div>
+                        <div class="lc-circle-badge mt-5 mt-lg-auto">
+                            <svg class="lc-spinning-text" viewBox="0 0 200 200">
+                                <defs>
+                                    <path id="badgePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+                                </defs>
+                                <text>
+                                    <textPath href="#badgePath" startOffset="0">
+                                        • DISCOVER OUR INTERIOR DESIGNS •
+                                    </textPath>
+                                </text>
+                            </svg>
+                            <div class="lc-circle-center"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="col-lg-5 offset-lg-1 lc-right-col">
+                        <form class="lc-form" action="/contact" method="post">
+                            <div class="lc-form-group">
+                                <label for="lc_name">Name <span class="lc-asterisk">*</span></label>
+                                <input type="text" id="lc_name" name="name" placeholder="Type name" class="lc-input"/>
+                                <span class="lc-input-border"></span>
+                            </div>
+                            
+                            <div class="lc-form-group">
+                                <label for="lc_company">Company <span class="lc-asterisk">*</span></label>
+                                <input type="text" id="lc_company" name="company" placeholder="Type company name" class="lc-input"/>
+                                <span class="lc-input-border"></span>
+                            </div>
+                            
+                            <div class="lc-form-group">
+                                <label for="lc_phone">Phone</label>
+                                <input type="tel" id="lc_phone" name="phone" placeholder="Type phone number" class="lc-input"/>
+                                <span class="lc-input-border"></span>
+                            </div>
+                            
+                            <div class="lc-form-group">
+                                <label for="lc_email">Email Address <span class="lc-asterisk">*</span></label>
+                                <input type="email" id="lc_email" name="email" placeholder="Type email address" class="lc-input"/>
+                                <span class="lc-input-border"></span>
+                            </div>
+                            
+                            <div class="lc-form-group">
+                                <label for="lc_desc">How can we help? <span class="lc-asterisk">*</span></label>
+                                <input type="text" id="lc_desc" name="description" placeholder="A brief description here" class="lc-input"/>
+                                <span class="lc-input-border"></span>
+                            </div>
+
+                            <!-- Checkboxes -->
+                            <div class="lc-form-group lc-services-group mt-4">
+                                <label>Services <span class="lc-asterisk">*</span></label>
+                                <div class="row mt-3">
+                                    <div class="col-6 lc-checkbox-item">
+                                        <input type="checkbox" id="srv_interior" name="services" value="Interior Design"/>
+                                        <label for="srv_interior" class="lc-chk-label">Interior Design</label>
+                                    </div>
+                                    <div class="col-6 lc-checkbox-item">
+                                        <input type="checkbox" id="srv_arch" name="services" value="Content Creation"/>
+                                        <label for="srv_arch" class="lc-chk-label">Architecture</label>
+                                    </div>
+                                    <div class="col-6 lc-checkbox-item">
+                                        <input type="checkbox" id="srv_space" name="services" value="Digital Experience"/>
+                                        <label for="srv_space" class="lc-chk-label">Space Planning</label>
+                                    </div>
+                                    <div class="col-6 lc-checkbox-item">
+                                        <input type="checkbox" id="srv_consulting" name="services" value="Strategy"/>
+                                        <label for="srv_consulting" class="lc-chk-label">Consulting</label>
+                                    </div>
+                                    <div class="col-6 lc-checkbox-item">
+                                        <input type="checkbox" id="srv_custom" name="services" value="Other"/>
+                                        <label for="srv_custom" class="lc-chk-label">Custom Furniture</label>
+                                    </div>
+                                    <div class="col-6 lc-checkbox-item">
+                                        <input type="checkbox" id="srv_other" name="services" value="Other"/>
+                                        <label for="srv_other" class="lc-chk-label">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="lc-submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

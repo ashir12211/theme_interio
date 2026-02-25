@@ -1,0 +1,270 @@
+
+.work-marquee-section {
+    background-color: #f0eeeb;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.wm-badge {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #888888;
+}
+
+.wm-title {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.wm-marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0 80px 0;
+}
+
+.wm-marquee-track {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+}
+
+.wm-marquee-inner,
+.wm-cloned {
+    display: flex;
+    flex-shrink: 0;
+    width: max-content;
+    animation: marqueeScrollLeft 45s linear infinite;
+    /* Slower, more elegant scroll */
+    gap: 50px;
+    padding-right: 50px;
+}
+
+/* On hover pause */
+.wm-marquee-track:hover .wm-marquee-inner,
+.wm-marquee-track:hover .wm-cloned {
+    animation-play-state: paused;
+}
+
+/* Hide animation during odoo edit mode so users can edit normally */
+.o_editable .wm-marquee-inner {
+    animation: none !important;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
+}
+
+.o_editable .wm-marquee-track {
+    width: 100%;
+    white-space: normal;
+}
+
+.o_editable .wm-cloned {
+    display: none !important;
+}
+
+@keyframes marqueeScrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Premium Framed Card Design */
+.wm-card {
+    width: 480px;
+    /* Wider footprint */
+    background: transparent;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    perspective: 1000px;
+    padding: 10px;
+    /* Safe padding for hover expansions */
+}
+
+.wm-card-inner {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateZ(0);
+    /* Hardware accel */
+}
+
+.wm-card:hover .wm-card-inner {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+    transform: translateY(-10px);
+    border-color: rgba(0, 0, 0, 0.08);
+    /* Darkens border subtly on hover */
+}
+
+.wm-img-frame {
+    width: 100%;
+    height: 380px;
+    /* Taller image */
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fa;
+}
+
+.wm-project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: transform;
+}
+
+.wm-card:hover .wm-project-img {
+    transform: scale(1.08);
+}
+
+.wm-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    /* Soft overlay */
+    backdrop-filter: blur(5px);
+    /* Elegant glassmorphism */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.wm-card:hover .wm-img-overlay {
+    opacity: 1;
+}
+
+.wm-view-btn {
+    background: #ffffff;
+    color: #000000;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transform: translateY(25px);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.wm-card:hover .wm-view-btn {
+    transform: translateY(0);
+}
+
+.wm-view-btn i {
+    transition: transform 0.3s ease;
+}
+
+.wm-view-btn:hover i {
+    transform: translateX(5px);
+}
+
+.wm-card-bottom {
+    padding: 0 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wm-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.wm-category {
+    font-size: 0.75rem;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.wm-year {
+    font-size: 0.8rem;
+    color: #111111;
+    font-weight: 600;
+    background: #f4f4f4;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.wm-title-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    letter-spacing: -0.5px;
+    transition: color 0.4s ease;
+}
+
+.wm-card:hover .wm-title-text {
+    color: #555555;
+    text-shadow: 0 0px 4px rgba(0, 0, 0, 0.05);
+    /* Slight burnish text effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .wm-card {
+        width: 380px;
+    }
+
+    .wm-img-frame {
+        height: 280px;
+    }
+
+    .wm-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .wm-card {
+        width: 320px;
+    }
+
+    .wm-img-frame {
+        height: 220px;
+    }
+
+    .wm-title {
+        font-size: 2.5rem;
+    }
+
+    .wm-title-text {
+        font-size: 1.5rem;
+    }
+
+    .wm-marquee-inner,
+    .wm-cloned {
+        animation-duration: 35s;
+        gap: 25px;
+        padding-right: 25px;
+    }
+}

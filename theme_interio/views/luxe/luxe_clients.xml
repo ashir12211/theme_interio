@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="luxe_clients" name="Luxe Clients">
+        <section class="luxe_clients lc-section" data-snippet="luxe_clients" data-name="Clients">
+            <div class="container">
+                <div class="lc-header">
+                    <span class="lc-label">Trusted Partnerships</span>
+                    <h2 class="lc-title">Our <span class="lc-highlight">Clients</span></h2>
+                    <div class="lc-divider" data-oe-protected="true">
+                        <span class="lc-divider-diamond"></span>
+                    </div>
+                    <p class="lc-subtitle">Collaborating with the world's most discerning brands to craft extraordinary spaces.</p>
+                </div>
+            </div>
+
+            <!-- Marquee Row 1: Left to Right -->
+            <div class="lc-marquee-wrapper" data-oe-protected="true">
+                <div class="lc-marquee lc-marquee-ltr">
+                    <div class="lc-marquee-track">
+                        <!-- Set 1 -->
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="28" font-weight="700" letter-spacing="4">ARTISAN</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="300" letter-spacing="8">ZENITH</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-weight="600" font-style="italic" letter-spacing="3">Bloom</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="600" letter-spacing="10">VERTEX</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="30" font-weight="700" letter-spacing="5">CREST</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="400" letter-spacing="12">PRISM</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="24" font-weight="600" letter-spacing="6">MAISON</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="500" letter-spacing="9">HAVEN</text></svg>
+                        </div>
+                        <!-- Duplicate Set 1 for seamless loop -->
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="28" font-weight="700" letter-spacing="4">ARTISAN</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="300" letter-spacing="8">ZENITH</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-weight="600" font-style="italic" letter-spacing="3">Bloom</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="600" letter-spacing="10">VERTEX</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="30" font-weight="700" letter-spacing="5">CREST</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="400" letter-spacing="12">PRISM</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="24" font-weight="600" letter-spacing="6">MAISON</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="500" letter-spacing="9">HAVEN</text></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marquee Row 2: Right to Left -->
+            <div class="lc-marquee-wrapper lc-marquee-wrapper-2" data-oe-protected="true">
+                <div class="lc-marquee lc-marquee-rtl">
+                    <div class="lc-marquee-track">
+                        <!-- Set 2 -->
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-weight="700" letter-spacing="5">VELOUR</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="19" font-weight="600" letter-spacing="10">ELEMENT</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="28" font-weight="600" font-style="italic" letter-spacing="3">Solace</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="400" letter-spacing="12">AURORA</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="30" font-weight="700" letter-spacing="4">NOBLE</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="300" letter-spacing="8">FORMA</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="24" font-weight="600" letter-spacing="6">ATRIUM</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="500" letter-spacing="7">IVORY</text></svg>
+                        </div>
+                        <!-- Duplicate Set 2 for seamless loop -->
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" font-weight="700" letter-spacing="5">VELOUR</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="19" font-weight="600" letter-spacing="10">ELEMENT</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="28" font-weight="600" font-style="italic" letter-spacing="3">Solace</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="400" letter-spacing="12">AURORA</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="30" font-weight="700" letter-spacing="4">NOBLE</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="300" letter-spacing="8">FORMA</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 200 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="24" font-weight="600" letter-spacing="6">ATRIUM</text></svg>
+                        </div>
+                        <div class="lc-logo-item">
+                            <svg viewBox="0 0 180 50" class="lc-logo-svg"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="500" letter-spacing="7">IVORY</text></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="container" data-oe-protected="true">
+                <div class="lc-stats-bar">
+                    <div class="lc-stat-item">
+                        <span class="lc-stat-number" data-target="120">0</span>
+                        <span class="lc-stat-plus">+</span>
+                        <span class="lc-stat-label">Clients Worldwide</span>
+                    </div>
+                    <div class="lc-stat-divider"></div>
+                    <div class="lc-stat-item">
+                        <span class="lc-stat-number" data-target="350">0</span>
+                        <span class="lc-stat-plus">+</span>
+                        <span class="lc-stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="lc-stat-divider"></div>
+                    <div class="lc-stat-item">
+                        <span class="lc-stat-number" data-target="15">0</span>
+                        <span class="lc-stat-plus">+</span>
+                        <span class="lc-stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="lc-stat-divider"></div>
+                    <div class="lc-stat-item">
+                        <span class="lc-stat-number" data-target="28">0</span>
+                        <span class="lc-stat-plus">+</span>
+                        <span class="lc-stat-label">Design Awards</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

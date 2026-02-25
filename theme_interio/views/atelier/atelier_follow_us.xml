@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_follow_us" name="Atelier Follow Us">
+        <section class="atelier-follow-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+            <div class="afw-container">
+                <!-- Stylistic Constraints -->
+                <div class="afw-corner afw-tl"></div>
+                <div class="afw-corner afw-tr"></div>
+                <div class="afw-corner afw-bl"></div>
+
+                <div class="afw-center-text afw-anim" data-delay="0s">
+                    <h2 class="afw-title">SAY HI AND FOLLOW ALONG<br/>FOR UPDATES</h2>
+                    <a href="#" class="afw-handle">@INTERIO. ATELIER</a>
+                </div>
+
+                <!-- Floating Images Layout -->
+                <!-- Top Left -->
+                <div class="afw-img-wrap afw-img-1 afw-anim" data-delay="0.1s">
+                    <img src="/theme_interio/static/src/img/cc6.png" alt="Detail 1"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+
+                <!-- Bottom Left -->
+                <div class="afw-img-wrap afw-img-2 afw-anim" data-delay="0.2s">
+                    <img src="/theme_interio/static/src/img/cc5.png" alt="Detail 2"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+
+                <!-- Middle Left -->
+                <div class="afw-img-wrap afw-img-3 afw-anim" data-delay="0.3s">
+                    <img src="/theme_interio/static/src/img/hero1_slide_1.png" alt="Detail 3"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+
+                <!-- Bottom Center -->
+                <div class="afw-img-wrap afw-img-4 afw-anim" data-delay="0.4s">
+                    <img src="/theme_interio/static/src/img/hero5_img_3.png" alt="Detail 4"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+
+                <!-- Top Right -->
+                <div class="afw-img-wrap afw-img-5 afw-anim" data-delay="0.5s">
+                    <img src="/theme_interio/static/src/img/hero3_img_2.png" alt="Detail 5"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+
+                <!-- Middle Right -->
+                <div class="afw-img-wrap afw-img-6 afw-anim" data-delay="0.6s">
+                    <img src="/theme_interio/static/src/img/cc3.png" alt="Detail 6"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+
+                <!-- Bottom Right -->
+                <div class="afw-img-wrap afw-img-7 afw-anim" data-delay="0.7s">
+                    <img src="/theme_interio/static/src/img/hero5_img_2.png" alt="Detail 7"/>
+                    <div class="afw-hover-border"></div>
+                    <i class="fa fa-instagram afw-insta-icon"></i>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

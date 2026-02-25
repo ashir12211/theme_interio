@@ -1,0 +1,176 @@
+.s_crafted_about {
+    background-color: #f0eeeb;
+    color: #3b3127;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.s_crafted_about .small-title {
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.s_crafted_about .estancia-title {
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+}
+
+.s_crafted_about .estancia-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 24px;
+    transition: all 0.3s;
+}
+
+.s_crafted_about .estancia-btn:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Cards Animation and Layout */
+.s_crafted_about .crafted-about-card {
+    background-color: #E6E1D8;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    animation: craftedFloat 4s infinite ease-in-out;
+    transition: box-shadow 0.3s;
+}
+
+.s_crafted_about .crafted-about-card:hover {
+    animation-play-state: paused;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    opacity: 1 !important;
+}
+
+@keyframes craftedFloat {
+    0% {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
+}
+
+.s_crafted_about .card-wrapper:nth-child(1) .crafted-about-card {
+    animation-delay: 0s;
+    margin-bottom: 60px;
+}
+
+.s_crafted_about .card-wrapper:nth-child(2) .crafted-about-card {
+    animation-delay: 1.3s;
+    margin-top: 60px;
+}
+
+.s_crafted_about .card-wrapper:nth-child(3) .crafted-about-card {
+    animation-delay: 2.6s;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+
+    .s_crafted_about .card-wrapper:nth-child(1) .crafted-about-card,
+    .s_crafted_about .card-wrapper:nth-child(2) .crafted-about-card,
+    .s_crafted_about .card-wrapper:nth-child(3) .crafted-about-card {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Split Image Hover Effect from user Codepen */
+.s_crafted_about .split-image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    /* Background seen during split */
+    overflow: hidden;
+}
+
+.s_crafted_about .quadrant {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: var(--bg-url);
+    background-size: 200% 200%;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1;
+}
+
+.s_crafted_about .quadrant-1 {
+    top: 0;
+    left: 0;
+    background-position: top left;
+}
+
+.s_crafted_about .quadrant-2 {
+    top: 0;
+    right: 0;
+    background-position: top right;
+}
+
+.s_crafted_about .quadrant-3 {
+    bottom: 0;
+    left: 0;
+    background-position: bottom left;
+}
+
+.s_crafted_about .quadrant-4 {
+    bottom: 0;
+    right: 0;
+    background-position: bottom right;
+}
+
+.s_crafted_about .crafted-about-card:hover .quadrant-1 {
+    transform: translate(-10px, -10px);
+}
+
+.s_crafted_about .crafted-about-card:hover .quadrant-2 {
+    transform: translate(10px, -10px);
+}
+
+.s_crafted_about .crafted-about-card:hover .quadrant-3 {
+    transform: translate(-10px, 10px);
+}
+
+.s_crafted_about .crafted-about-card:hover .quadrant-4 {
+    transform: translate(10px, 10px);
+}
+
+/* Text Area */
+.s_crafted_about .card-text-area {
+    padding-top: 15px;
+}
+
+.s_crafted_about .card-text-area h3 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.s_crafted_about .card-text-area small {
+    font-size: 13px;
+    color: #555;
+}
+
+.s_crafted_about .asterisk-icon {
+    font-size: 20px;
+    color: #000000;
+    align-self: flex-start;
+    margin-top: 5px;
+}

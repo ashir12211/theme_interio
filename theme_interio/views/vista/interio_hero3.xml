@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_hero3" name="Hero">
+        <section class="interio_hero3 ih3-hero">
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+            <!-- Top Bar -->
+            <div class="ih3-topbar">
+                <span class="ih3-topbar-label">Interior Design Studio</span>
+                <span class="ih3-topbar-line"></span>
+                <span class="ih3-topbar-year">Est. 2010</span>
+            </div>
+
+            <!-- Hero Content Area -->
+            <div class="container-fluid ih3-container">
+                <div class="row g-0">
+
+                    <!-- Left: Typography Block -->
+                    <div class="col-lg-5 ih3-text-col">
+                        <div class="ih3-text-block">
+                            <div class="ih3-overline ih3-anim" data-delay="0">
+                                <span class="ih3-overline-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                </span>
+                                Crafting Stories Through Space
+                            </div>
+
+                            <h1 class="ih3-title ih3-anim" data-delay="1">
+                                <span class="ih3-title-line">Where</span>
+                                <span class="ih3-title-line ih3-title-outline">Design</span>
+                                <span class="ih3-title-line">Meets <em>Soul</em></span>
+                            </h1>
+
+                            <p class="ih3-subtitle ih3-anim" data-delay="2">
+                                Every room tells a story. We design spaces that blend
+                                modern elegance with timeless comfort — creating environments
+                                where life unfolds beautifully.
+                            </p>
+
+                            <div class="ih3-cta-row ih3-anim" data-delay="3">
+                                <a href="#" class="ih3-btn-main">
+                                    <span>View Our Work</span>
+                                    <span class="ih3-btn-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="ih3-btn-ghost">Book Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Bento Image Grid -->
+                    <div class="col-lg-7 ih3-grid-col">
+                        <div class="ih3-bento-grid">
+                            <!-- Card 1: Tall Left -->
+                            <div class="ih3-card ih3-card-tall ih3-anim" data-delay="1">
+                                <div class="ih3-card-inner">
+                                    <img src="/theme_interio/static/src/img/hero3_img_1.png" alt="Living Space" loading="eager"/>
+                                    <div class="ih3-card-content">
+                                        <span class="ih3-card-num">01</span>
+                                        <h3 class="ih3-card-title">Living Spaces</h3>
+                                        <p class="ih3-card-desc">Curated comfort for modern living</p>
+                                    </div>
+                                    <div class="ih3-card-shine"></div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Top Right -->
+                            <div class="ih3-card ih3-card-top ih3-anim" data-delay="2">
+                                <div class="ih3-card-inner">
+                                    <img src="/theme_interio/static/src/img/hero3_img_2.png" alt="Bathroom" loading="eager"/>
+                                    <div class="ih3-card-content">
+                                        <span class="ih3-card-num">02</span>
+                                        <h3 class="ih3-card-title">Spa Retreats</h3>
+                                        <p class="ih3-card-desc">Sanctuary of serenity</p>
+                                    </div>
+                                    <div class="ih3-card-shine"></div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Bottom Right -->
+                            <div class="ih3-card ih3-card-bottom ih3-anim" data-delay="3">
+                                <div class="ih3-card-inner">
+                                    <img src="/theme_interio/static/src/img/hero3_img_3.png" alt="Dining Room" loading="eager"/>
+                                    <div class="ih3-card-content">
+                                        <span class="ih3-card-num">03</span>
+                                        <h3 class="ih3-card-title">Dining Elegance</h3>
+                                        <p class="ih3-card-desc">Where moments are savored</p>
+                                    </div>
+                                    <div class="ih3-card-shine"></div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Small Accent -->
+                            <div class="ih3-card ih3-card-accent ih3-anim" data-delay="4">
+                                <div class="ih3-card-inner">
+                                    <img src="/theme_interio/static/src/img/hero3_img_4.png" alt="Home Office" loading="eager"/>
+                                    <div class="ih3-card-content">
+                                        <span class="ih3-card-num">04</span>
+                                        <h3 class="ih3-card-title">Work Studios</h3>
+                                    </div>
+                                    <div class="ih3-card-shine"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marquee Strip -->
+            <div class="ih3-marquee-wrap">
+                <div class="ih3-marquee-track">
+                    <div class="ih3-marquee-content">
+                        <span class="ih3-marquee-item">Interior Design</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Architecture</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Space Planning</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Furniture Curation</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Luxury Homes</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Commercial Spaces</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Interior Design</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Architecture</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Space Planning</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Furniture Curation</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Luxury Homes</span>
+                        <span class="ih3-marquee-dot"></span>
+                        <span class="ih3-marquee-item">Commercial Spaces</span>
+                        <span class="ih3-marquee-dot"></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,561 @@
+
+
+/* ---------- Section ---------- */
+.studio-marquee-section {
+    position: relative;
+    padding: 120px 0 100px;
+    background: #0A0A0A;
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Subtle radial glow behind section */
+.studio-marquee-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(244, 223, 200, 0.04) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ---------- Floating Particles Art ---------- */
+.sm-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.sm-dot {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(244, 223, 200, 0.12);
+    animation: smFloat 12s ease-in-out infinite;
+}
+
+.sm-dot-1 {
+    width: 6px;
+    height: 6px;
+    top: 12%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.sm-dot-2 {
+    width: 4px;
+    height: 4px;
+    top: 30%;
+    right: 12%;
+    animation-delay: -2s;
+}
+
+.sm-dot-3 {
+    width: 8px;
+    height: 8px;
+    bottom: 25%;
+    left: 15%;
+    animation-delay: -4s;
+}
+
+.sm-dot-4 {
+    width: 5px;
+    height: 5px;
+    top: 60%;
+    right: 20%;
+    animation-delay: -6s;
+}
+
+.sm-dot-5 {
+    width: 3px;
+    height: 3px;
+    bottom: 10%;
+    left: 50%;
+    animation-delay: -8s;
+}
+
+@keyframes smFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.15;
+    }
+
+    25% {
+        transform: translateY(-30px) scale(1.3);
+        opacity: 0.35;
+    }
+
+    50% {
+        transform: translateY(10px) scale(0.8);
+        opacity: 0.1;
+    }
+
+    75% {
+        transform: translateY(-20px) scale(1.1);
+        opacity: 0.25;
+    }
+}
+
+/* ---------- Section Header ---------- */
+.sm-header {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 70px;
+}
+
+.sm-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #F4DFC8;
+    border: 1px solid rgba(244, 223, 200, 0.25);
+    padding: 8px 24px;
+    border-radius: 30px;
+    margin-bottom: 28px;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    background: rgba(244, 223, 200, 0.04);
+}
+
+.sm-title {
+    font-family: 'Cinzel', serif;
+    font-size: 62px;
+    font-weight: 400;
+    color: #FAF6F0;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.sm-title-stroke {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #F4DFC8;
+    position: relative;
+    animation: smTitlePulse 4s ease-in-out infinite;
+}
+
+@keyframes smTitlePulse {
+
+    0%,
+    100% {
+        color: transparent;
+        -webkit-text-stroke: 1.5px #F4DFC8;
+    }
+
+    50% {
+        color: #F4DFC8;
+        -webkit-text-stroke: 1.5px transparent;
+    }
+}
+
+/* Decorative Diamond Divider */
+.sm-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.sm-divider-line {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #F4DFC8, transparent);
+}
+
+.sm-divider-diamond {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #F4DFC8;
+    transform: rotate(45deg);
+    animation: smDiamondSpin 6s linear infinite;
+}
+
+@keyframes smDiamondSpin {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(225deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(405deg) scale(1);
+    }
+}
+
+.sm-subtitle {
+    font-size: 17px;
+    color: rgba(250, 246, 240, 0.55);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* ---------- Marquee Wrapper ---------- */
+.sm-marquee-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Fade edges */
+.sm-marquee-wrapper::before,
+.sm-marquee-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.sm-marquee-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, #0A0A0A 0%, transparent 100%);
+}
+
+.sm-marquee-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, #0A0A0A 0%, transparent 100%);
+}
+
+/* ---------- Marquee Track ---------- */
+.sm-marquee-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    will-change: transform;
+}
+
+.sm-track-ltr {
+    animation: smScrollLTR 45s linear infinite;
+}
+
+.sm-track-rtl {
+    animation: smScrollRTL 50s linear infinite;
+}
+
+/* Pause on hover */
+.sm-marquee-wrapper:hover .sm-marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes smScrollLTR {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes smScrollRTL {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ---------- Marquee Item ---------- */
+.sm-marquee-item {
+    flex-shrink: 0;
+    width: 360px;
+    height: 260px;
+}
+
+.sm-marquee-item.sm-item-tall {
+    width: 320px;
+    height: 240px;
+}
+
+/* ---------- Card ---------- */
+.sm-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #181818;
+    border: 1px solid rgba(244, 223, 200, 0.08);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+}
+
+.sm-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 13px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(244, 223, 200, 0.15), transparent 50%, rgba(244, 223, 200, 0.08));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.sm-card:hover::before {
+    opacity: 1;
+}
+
+.sm-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(244, 223, 200, 0.06);
+    border-color: rgba(244, 223, 200, 0.15);
+}
+
+/* Image */
+.sm-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%) brightness(0.75);
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sm-card:hover img {
+    filter: grayscale(0%) brightness(1);
+    transform: scale(1.08);
+}
+
+/* Overlay */
+.sm-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(10, 10, 10, 0.85) 0%,
+            rgba(10, 10, 10, 0.3) 40%,
+            transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.sm-card:hover .sm-card-overlay {
+    opacity: 1;
+}
+
+.sm-card-label {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FAF6F0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 18px;
+    transform: translateY(10px);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sm-card:hover .sm-card-label {
+    transform: translateY(0);
+}
+
+.sm-card-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 1px;
+    background: #F4DFC8;
+}
+
+/* ---------- Center Badge ---------- */
+.sm-center-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.sm-badge-inner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm-badge-ring {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    animation: smRingSpin 20s linear infinite;
+}
+
+@keyframes smRingSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sm-badge-text {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: rgba(244, 223, 200, 0.5);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* ---------- Bottom Arc Art ---------- */
+.sm-bottom-art {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.sm-bottom-art svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .sm-title {
+        font-size: 48px;
+    }
+
+    .sm-marquee-item {
+        width: 300px;
+        height: 220px;
+    }
+
+    .sm-marquee-item.sm-item-tall {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .studio-marquee-section {
+        padding: 80px 0 60px;
+    }
+
+    .sm-header {
+        margin-bottom: 40px;
+    }
+
+    .sm-title {
+        font-size: 36px;
+    }
+
+    .sm-subtitle {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .sm-tag {
+        font-size: 10px;
+        letter-spacing: 3px;
+        padding: 6px 18px;
+    }
+
+    .sm-marquee-item {
+        width: 250px;
+        height: 180px;
+    }
+
+    .sm-marquee-item.sm-item-tall {
+        width: 230px;
+        height: 170px;
+    }
+
+    .sm-marquee-wrapper::before,
+    .sm-marquee-wrapper::after {
+        width: 60px;
+    }
+
+    .sm-card-overlay {
+        opacity: 1;
+    }
+
+    .sm-card-label {
+        transform: translateY(0);
+        font-size: 13px;
+    }
+
+    .sm-card img {
+        filter: grayscale(40%) brightness(0.85);
+    }
+}
+
+@media (max-width: 480px) {
+    .sm-title {
+        font-size: 28px;
+    }
+
+    .sm-marquee-item {
+        width: 200px;
+        height: 150px;
+    }
+
+    .sm-marquee-item.sm-item-tall {
+        width: 190px;
+        height: 140px;
+    }
+
+    .sm-divider-line {
+        width: 35px;
+    }
+
+    .sm-center-badge {
+        padding: 20px 0;
+    }
+
+    .sm-badge-inner {
+        width: 70px;
+        height: 70px;
+    }
+
+    .sm-badge-text {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}

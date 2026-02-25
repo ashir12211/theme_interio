@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="extra_visit" name="Extra Visit">
+        <section class="extra_visit_section pt96 pb96" data-snippet="extra_visit" data-name="Extra Visit">
+            <div class="container">
+                <div class="extra_visit_container position-relative">
+                    <!-- Decorative Background Elements -->
+                    <div class="extra_visit_blob extra_visit_blob_1"></div>
+                    <div class="extra_visit_blob extra_visit_blob_2"></div>
+
+                    <div class="row align-items-center position-relative z-index-2 h-100">
+                        <!-- Content Side -->
+                        <div class="col-lg-5 p-5 p-md-5 p-4 extra_visit_info z-index-2">
+                            <span class="text-uppercase fw-bold letter-spacing-2" style="color: #F4DFC8;">Experience The Craft</span>
+                            <h2 class="display-3 fw-bolder mt-3 mb-4" style="color: #FAF6F0;">Visit Our<br/>Studio.</h2>
+                            <p class="mb-5" style="color: #F4EAE0; opacity: 0.8; font-size: 1.1rem; line-height: 1.8;">
+                                Step into a world of curated aesthetics. Our studio is a gallery of bespoke materials, visionary layouts, and immersive design experiences. Come and collaborate with our master designers.
+                            </p>
+                            
+                            <div class="d-flex align-items-center extra_visit_action">
+                                <a href="#" class="extra_visit_btn">
+                                    <span class="btn_text">Book Appointment</span>
+                                    <span class="btn_icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="mt-5 pt-4 border-top extra_visit_address border-secondary">
+                                <h6 class="text-uppercase mb-2" style="color: #F4DFC8; letter-spacing: 1px;">Headquarters &amp; Gallery</h6>
+                                <p class="mb-0" style="color: #FAF6F0; opacity: 0.7;">123 Prestige Avenue, Design District<br/>New York, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <!-- 3D Fan Out Interative Visuals Side -->
+                        <div class="col-lg-7 h-100 position-relative extra_visit_visuals mt-5 mt-lg-0">
+                            <!-- Image Cards Stack -->
+                            <div class="extra_visit_image_card card_back_2">
+                                <img src="/theme_interio/static/src/img/hero5_img_3.png" alt="Materials" class="w-100 h-100 object-fit-cover"/>
+                                <div class="card_overlay">
+                                    <h3 style="color: #FAF6F0;">Materials</h3>
+                                </div>
+                            </div>
+                            <div class="extra_visit_image_card card_back">
+                                <img src="/theme_interio/static/src/img/hero5_img_1.png" alt="Workspace" class="w-100 h-100 object-fit-cover"/>
+                                <div class="card_overlay">
+                                    <h3 style="color: #FAF6F0;">Workspace</h3>
+                                </div>
+                            </div>
+                            <div class="extra_visit_image_card card_front">
+                                <img src="/theme_interio/static/src/img/crafted_3_paris.png" alt="The Gallery" class="w-100 h-100 object-fit-cover"/>
+                                <div class="card_overlay">
+                                    <h3 style="color: #FAF6F0;">The Gallery</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

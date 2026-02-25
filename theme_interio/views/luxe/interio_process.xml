@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_process" name="Luxe Process">
+        <section class="interio_process luxe-theme text-start" data-snippet="interio_process" data-name="Process">
+            <!-- Background Elements -->
+             <div class="ip-bg-pattern" data-oe-protected="true"></div>
+             
+             <!-- Using asset bundle classes if needed, or specific snippet style -->
+            <div class="container-fluid">
+                <div class="row align-items-stretch">
+                
+                    <!-- LEFT: Process Steps -->
+                    <div class="col-lg-6 ip-left-panel">
+                        <div class="ip-content-wrap">
+                            <h2 class="ip-section-title" data-aos="fade-up">Process</h2>
+                            
+                            <div class="ip-steps-list">
+                                <!-- Step 01 -->
+                                <div class="ip-step-item" data-aos="fade-right" data-aos-delay="100">
+                                    <div class="ip-step-header">
+                                        <span class="ip-step-num">01</span>
+                                        <h3 class="ip-step-title">Sourcing</h3>
+                                    </div>
+                                    <p class="ip-step-desc">
+                                        We begin with honest materials – responsibly sourced wood, textiles and metal –
+                                        selected for longevity, tactility and beauty.
+                                    </p>
+                                </div>
+                                
+                                <!-- Step 02 -->
+                                <div class="ip-step-item" data-aos="fade-right" data-aos-delay="200">
+                                    <div class="ip-step-header">
+                                        <span class="ip-step-num">02</span>
+                                        <h3 class="ip-step-title">Design &amp; Proportion</h3>
+                                    </div>
+                                    <p class="ip-step-desc">
+                                        Each piece is thoughtfully shaped to balance function and form. We refine
+                                        proportions, ergonomics and structure down to the millimeter.
+                                    </p>
+                                </div>
+                                
+                                <!-- Step 03 -->
+                                <div class="ip-step-item" data-aos="fade-right" data-aos-delay="300">
+                                    <div class="ip-step-header">
+                                        <span class="ip-step-num">03</span>
+                                        <h3 class="ip-step-title">Crafting</h3>
+                                    </div>
+                                    <p class="ip-step-desc">
+                                        Our workshop brings the design to life using traditional joinery, precision tools and
+                                        human touch. No shortcuts. Only care.
+                                    </p>
+                                </div>
+                                
+                                <!-- Step 04 -->
+                                <div class="ip-step-item" data-aos="fade-right" data-aos-delay="400">
+                                    <div class="ip-step-header">
+                                        <span class="ip-step-num">04</span>
+                                        <h3 class="ip-step-title">Finishing &amp; Assembly</h3>
+                                    </div>
+                                    <p class="ip-step-desc">
+                                        Natural oils, soft matte coatings and hand-polished surfaces complete the piece –
+                                        ready to live in real homes and age gracefully.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- RIGHT: Materials List -->
+                    <div class="col-lg-6 ip-right-panel">
+                        <div class="ip-content-wrap">
+                            <h2 class="ip-section-title" data-aos="fade-up">Our Materials</h2>
+                            
+                            <div class="ip-materials-list">
+                                <!-- Material 01 -->
+                                <div class="ip-material-item" data-aos="fade-left" data-aos-delay="100">
+                                    <div class="ip-material-icon">
+                                        <!-- Placeholder or generated image path -->
+                                        <img src="/theme_interio/static/src/img/birch_tree_sketch.png" alt="Birch" class="img-fluid"/>
+                                    </div>
+                                    <div class="ip-material-info">
+                                        <h3 class="ip-material-name">Birch</h3>
+                                        <p class="ip-material-desc">
+                                            Smooth, fine-grained hardwood with high strength and light color.
+                                            Takes stains evenly and resists warping.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Material 02 -->
+                                <div class="ip-material-item" data-aos="fade-left" data-aos-delay="200">
+                                    <div class="ip-material-icon">
+                                        <img src="/theme_interio/static/src/img/pine_tree_sketch.png" alt="Pine" class="img-fluid"/>
+                                    </div>
+                                    <div class="ip-material-info">
+                                        <h3 class="ip-material-name">Pine</h3>
+                                        <p class="ip-material-desc">
+                                            Lightweight and easy to work with, pine has a warm tone and natural
+                                            charm. Its soft texture allows for smooth cutting, shaping, and fast
+                                            absorption of finishes.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Material 03 -->
+                                <div class="ip-material-item" data-aos="fade-left" data-aos-delay="300">
+                                    <div class="ip-material-icon">
+                                        <img src="/theme_interio/static/src/img/oak1_tree_sketch.png" alt="Oak" class="img-fluid"/>
+                                    </div>
+                                    <div class="ip-material-info">
+                                        <h3 class="ip-material-name">Oak</h3>
+                                        <p class="ip-material-desc">
+                                            Very hard and dense with a pronounced grain. Naturally resistant to
+                                            moisture and wear.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Material 04 -->
+                                <div class="ip-material-item" data-aos="fade-left" data-aos-delay="400">
+                                    <div class="ip-material-icon">
+                                        <img src="/theme_interio/static/src/img/ash1_tree_sketch.png" alt="Ash" class="img-fluid"/>
+                                    </div>
+                                    <div class="ip-material-info">
+                                        <h3 class="ip-material-name">Ash</h3>
+                                        <p class="ip-material-desc">
+                                            Tough and elastic with straight grain and good shock resistance. Bends
+                                            well and finishes smoothly.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Divider Lines (CSS handled) -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

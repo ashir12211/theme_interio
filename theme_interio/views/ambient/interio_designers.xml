@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_designers" name="Designers">
+        <section class="interio_designers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <div class="title">
+                            <h1><span class="animated-heading">Designers</span> of the Studio</h1>
+                            <div class="separator"></div>
+                            <p class="subtitle">A dedicated group of professionals working collaboratively to shape interior environments with clarity, purpose, and lasting quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center designers-grid">
+                    <!-- Designer 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="designer-card">
+                            <div class="img-container">
+                                <img src="/theme_interio/static/src/img/member_1.png" alt="Marco Bellini" class="img-fluid"/>
+                            </div>
+                            <div class="card-content">
+                                <h3>Marco Bellini</h3>
+                                <p>Founder &amp; Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Designer 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="designer-card">
+                            <div class="img-container">
+                                <img src="/theme_interio/static/src/img/member_2.png" alt="Thomas Keller" class="img-fluid"/>
+                            </div>
+                            <div class="card-content">
+                                <h3>Thomas Keller</h3>
+                                <p>Interior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Designer 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="designer-card">
+                            <div class="img-container">
+                                <img src="/theme_interio/static/src/img/member_new_3.png" alt="Luca Moretti" class="img-fluid"/>
+                            </div>
+                            <div class="card-content">
+                                <h3>Luca Moretti</h3>
+                                <p>Senior Interior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

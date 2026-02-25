@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_marquee" name="Atelier Marquee">
+        <section class="atelier-marquee-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+            <div class="amarq-container">
+                <div class="amarq-track">
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <!-- duplicate for smooth infinite loop -->
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                    <span class="amarq-text">INTERIO ATELIER STUDIO</span>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

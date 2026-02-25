@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_philosophy" name="Philosophy">
+        <section class="ip-philosophy-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 style="font-family: 'Cinzel', serif; color: #EAEAEA; font-size: 3rem; margin-bottom: 1rem;">OUR DESIGN PHILOSOPHY</h2>
+                        <div style="width: 60px; height: 2px; background-color: #C4A484; margin: 0 auto;"></div>
+                    </div>
+                </div>
+                
+                <div class="ip-philosophy-container">
+                    
+                    <!-- Card 1: Simplicity -->
+                    <div class="ip-philosophy-box">
+                        <div class="ip-philosophy-glass"></div>
+                        <div class="ip-philosophy-content">
+                            <h2>Simplicity</h2>
+                            <p>We value clean lines and thoughtful restraint, allowing each element to breathe and serve a purpose.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Harmony -->
+                    <div class="ip-philosophy-box">
+                        <div class="ip-philosophy-glass"></div>
+                        <div class="ip-philosophy-content">
+                            <h2>Harmony</h2>
+                            <p>Every space should feel cohesive — a seamless blend of materials, colors, and light designed to inspire calm.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Longevity -->
+                    <div class="ip-philosophy-box">
+                        <div class="ip-philosophy-glass"></div>
+                        <div class="ip-philosophy-content">
+                            <h2>Longevity</h2>
+                            <p>We design with intention, ensuring each decision stands the test of time in both style and quality.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

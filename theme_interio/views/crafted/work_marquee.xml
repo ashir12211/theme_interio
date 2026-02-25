@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="work_marquee" name="Crafted Work">
+        <section class="work-marquee-section pt128 pb128" data-snippet="work_marquee" data-name="Work Marquee">
+            <div class="container mb-5 text-center">
+                <span class="wm-badge mb-3 d-inline-block" data-oe-type="text">Selected Works</span>
+                <h2 class="wm-title" data-oe-type="text">Modern Masterpieces</h2>
+            </div>
+            
+            <div class="wm-marquee-wrapper" data-oe-protected="true">
+                <div class="wm-marquee-track">
+                    <div class="wm-marquee-inner" data-oe-protected="false">
+                        <!-- Card 1 -->
+                        <div class="wm-card">
+                            <div class="wm-card-inner">
+                                <div class="wm-img-frame">
+                                    <img src="/theme_interio/static/src/img/crafted_1_ny.png" alt="NY" class="img-fluid wm-project-img"/>
+                                    <div class="wm-img-overlay">
+                                        <span class="wm-view-btn">View Project <i class="fa fa-arrow-right ms-2"/></span>
+                                    </div>
+                                </div>
+                                <div class="wm-card-bottom">
+                                    <div class="wm-card-meta">
+                                        <span class="wm-category" data-oe-type="text">Interior Architecture</span>
+                                        <span class="wm-year" data-oe-type="text">2026</span>
+                                    </div>
+                                    <h4 class="wm-title-text" data-oe-type="text">The NY Residence</h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="wm-card">
+                            <div class="wm-card-inner">
+                                <div class="wm-img-frame">
+                                    <img src="/theme_interio/static/src/img/crafted_2_london.png" alt="London" class="img-fluid wm-project-img"/>
+                                    <div class="wm-img-overlay">
+                                        <span class="wm-view-btn">View Project <i class="fa fa-arrow-right ms-2"/></span>
+                                    </div>
+                                </div>
+                                <div class="wm-card-bottom">
+                                    <div class="wm-card-meta">
+                                        <span class="wm-category" data-oe-type="text">Heritage Restoration</span>
+                                        <span class="wm-year" data-oe-type="text">2025</span>
+                                    </div>
+                                    <h4 class="wm-title-text" data-oe-type="text">London Townhouse</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="wm-card">
+                            <div class="wm-card-inner">
+                                <div class="wm-img-frame">
+                                    <img src="/theme_interio/static/src/img/crafted_3_paris.png" alt="Paris" class="img-fluid wm-project-img"/>
+                                    <div class="wm-img-overlay">
+                                        <span class="wm-view-btn">View Project <i class="fa fa-arrow-right ms-2"/></span>
+                                    </div>
+                                </div>
+                                <div class="wm-card-bottom">
+                                    <div class="wm-card-meta">
+                                        <span class="wm-category" data-oe-type="text">Boutique Design</span>
+                                        <span class="wm-year" data-oe-type="text">2024</span>
+                                    </div>
+                                    <h4 class="wm-title-text" data-oe-type="text">Parisian Suite</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="wm-card">
+                            <div class="wm-card-inner">
+                                <div class="wm-img-frame">
+                                    <img src="/theme_interio/static/src/img/crafted_4_tokyo.png" alt="Tokyo" class="img-fluid wm-project-img"/>
+                                    <div class="wm-img-overlay">
+                                        <span class="wm-view-btn">View Project <i class="fa fa-arrow-right ms-2"/></span>
+                                    </div>
+                                </div>
+                                <div class="wm-card-bottom">
+                                    <div class="wm-card-meta">
+                                        <span class="wm-category" data-oe-type="text">Living Space</span>
+                                        <span class="wm-year" data-oe-type="text">2026</span>
+                                    </div>
+                                    <h4 class="wm-title-text" data-oe-type="text">Tokyo Minimalist</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="wm-card">
+                            <div class="wm-card-inner">
+                                <div class="wm-img-frame">
+                                    <img src="/theme_interio/static/src/img/crafted_5_milan.png" alt="Milan" class="img-fluid wm-project-img"/>
+                                    <div class="wm-img-overlay">
+                                        <span class="wm-view-btn">View Project <i class="fa fa-arrow-right ms-2"/></span>
+                                    </div>
+                                </div>
+                                <div class="wm-card-bottom">
+                                    <div class="wm-card-meta">
+                                        <span class="wm-category" data-oe-type="text">Commercial</span>
+                                        <span class="wm-year" data-oe-type="text">2025</span>
+                                    </div>
+                                    <h4 class="wm-title-text" data-oe-type="text">Milan Studio</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="wm-card">
+                            <div class="wm-card-inner">
+                                <div class="wm-img-frame">
+                                    <img src="/theme_interio/static/src/img/crafted_6_la.png" alt="LA" class="img-fluid wm-project-img"/>
+                                    <div class="wm-img-overlay">
+                                        <span class="wm-view-btn">View Project <i class="fa fa-arrow-right ms-2"/></span>
+                                    </div>
+                                </div>
+                                <div class="wm-card-bottom">
+                                    <div class="wm-card-meta">
+                                        <span class="wm-category" data-oe-type="text">Exterior &amp; Landscape</span>
+                                        <span class="wm-year" data-oe-type="text">2023</span>
+                                    </div>
+                                    <h4 class="wm-title-text" data-oe-type="text">LA Villa</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

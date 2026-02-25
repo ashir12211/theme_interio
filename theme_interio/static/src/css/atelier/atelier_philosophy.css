@@ -1,0 +1,319 @@
+
+
+.atelier-philosophy-section {
+    --ap-bg: #040D12;
+    --ap-text: #93B1A6;
+    --ap-accent: #5C8374;
+    --ap-muted: #183D3D;
+
+    background-color: var(--ap-bg);
+    color: var(--ap-text);
+    font-family: 'Outfit', sans-serif;
+    padding: 140px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ap-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Header Section */
+.ap-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 100px;
+}
+
+.ap-main-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.ap-main-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--ap-text);
+    opacity: 0.9;
+}
+
+.ap-grid-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.ap-line-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--ap-muted);
+    z-index: 1;
+}
+
+/* Base structural crosses (+) lying on the horizontal line */
+.ap-cross {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.ap-cross::before,
+.ap-cross::after {
+    content: '';
+    position: absolute;
+    background-color: var(--ap-text);
+    transition: all 0.4s ease;
+}
+
+.ap-cross::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: translateY(-50%);
+}
+
+.ap-cross::after {
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    transform: translateX(-50%);
+}
+
+.ap-cross-1 {
+    left: 25%;
+}
+
+.ap-cross-2 {
+    left: 50%;
+}
+
+.ap-cross-3 {
+    left: 75%;
+}
+
+/* When a card is hovered, light up the crosses! */
+.atelier-philosophy-section.is-hovering .ap-cross::before,
+.atelier-philosophy-section.is-hovering .ap-cross::after {
+    background-color: var(--ap-accent);
+}
+
+.ap-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 450px 450px;
+    position: relative;
+    z-index: 3;
+}
+
+.ap-col {
+    position: relative;
+}
+
+.ap-card {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Background Image Layer */
+.ap-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 1s ease;
+    transform: scale(1.1);
+    mix-blend-mode: luminosity;
+    filter: sepia(0.3) hue-rotate(120deg) brightness(0.6) contrast(1.2);
+}
+
+.ap-card:hover .ap-card-bg {
+    opacity: 0.25;
+    transform: scale(1);
+}
+
+/* Staggered Border Layout Strategy */
+.ap-card-top {
+    top: 0;
+    border-left: 1px solid var(--ap-muted);
+    border-right: 1px solid var(--ap-muted);
+    border-top: 1px solid var(--ap-muted);
+}
+
+.ap-card-bottom {
+    top: 450px;
+    border-left: 1px solid var(--ap-muted);
+    border-right: 1px solid var(--ap-muted);
+    border-bottom: 1px solid var(--ap-muted);
+}
+
+/* Add a very dark semi transparent fill */
+.ap-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--ap-bg);
+    opacity: 1;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+}
+
+.ap-card:hover {
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+    background: var(--ap-bg);
+}
+
+/* Specifically for top vs bottom hover shift */
+.ap-card-top:hover {
+    transform: translateY(-10px);
+    border-color: var(--ap-accent);
+}
+
+.ap-card-bottom:hover {
+    transform: translateY(10px);
+    border-color: var(--ap-accent);
+}
+
+/* Number Label */
+.ap-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    color: var(--ap-text);
+    opacity: 0.6;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 10;
+}
+
+.ap-card-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.ap-card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.ap-card:hover .ap-card-title {
+    color: var(--ap-accent);
+}
+
+.ap-card-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ap-text);
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+.ap-card-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    color: var(--ap-text);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.ap-card-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.4s ease;
+}
+
+.ap-card:hover .ap-card-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ap-card:hover .ap-card-link::after {
+    width: 100%;
+}
+
+/* Scroll Animation */
+.ap-anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ap-anim.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Fallback - stack them */
+@media (max-width: 991px) {
+    .atelier-philosophy-section {
+        padding: 80px 0;
+    }
+
+    .ap-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .ap-line-horizontal,
+    .ap-cross {
+        display: none;
+    }
+
+    .ap-col {
+        height: auto;
+    }
+
+    .ap-card {
+        position: relative;
+        top: 0 !important;
+        height: auto;
+        min-height: 280px;
+        border: 1px solid var(--ap-muted) !important;
+    }
+
+    .ap-card-top:hover,
+    .ap-card-bottom:hover {
+        transform: translateY(-5px);
+    }
+}

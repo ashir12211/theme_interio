@@ -1,0 +1,165 @@
+/* Ambient Designers Snippet */
+.interio_designers {
+    padding: 100px 0;
+    background-color: #000000;
+    /* Very soft gray background */
+    overflow: hidden;
+    position: relative;
+}
+
+.interio_designers .title {
+    margin-bottom: 30px;
+    /* Reduced gap */
+    position: relative;
+    z-index: 2;
+}
+
+.interio_designers h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #FAF6F0;
+    /* Soft black */
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+/* Animated Text */
+.interio_designers .animated-heading {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 1px #F4DFC8;
+    position: relative;
+    animation: textFill 2s ease-in-out forwards alternate infinite;
+}
+
+@keyframes textFill {
+    0% {
+        color: transparent;
+        -webkit-text-stroke: 1px #F4DFC8;
+    }
+
+    50% {
+        color: #F4DFC8;
+        /* Fill in */
+        -webkit-text-stroke: 1px transparent;
+    }
+
+    100% {
+        color: transparent;
+        -webkit-text-stroke: 1px #F4DFC8;
+    }
+}
+
+/* Decorative Separator */
+.interio_designers .separator {
+    width: 60px;
+    height: 3px;
+    background: #F4DFC8;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+.interio_designers .subtitle {
+    font-size: 18px;
+    color: #FAF6F0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Perspective Container */
+.interio_designers .designers-grid {
+    perspective: 1500px;
+    /* Increased perspective for better depth */
+}
+
+/* Card Styling */
+.interio_designers .designer-card {
+    background: #FAF6F0;
+    padding: 0;
+    text-align: center;
+    border-radius: 4px;
+    /* Slightly rounded */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+    /* The "Tourist Cards" effect adaptation */
+    transform-style: preserve-3d;
+    transform-origin: center bottom;
+    transform: rotateX(50deg) translateY(0) scale(0.95);
+
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /* Spacing for grid */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.interio_designers .designer-card:hover {
+    transform: rotateX(0deg) translateY(-10px) scale(1.02);
+    box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* Image Container */
+.interio_designers .img-container {
+    width: 100%;
+    height: 380px;
+    /* Taller images as per screenshot */
+    overflow: hidden;
+    position: relative;
+}
+
+.interio_designers .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+    filter: grayscale(100%);
+    /* Start with B&W to match theme */
+}
+
+.interio_designers .designer-card:hover .img-container img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    /* Color on hover */
+}
+
+/* Content Styling */
+.interio_designers .card-content {
+    padding: 25px 20px;
+    background: #FAF6F0;
+    position: relative;
+    z-index: 2;
+}
+
+.interio_designers .card-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #181C14;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.interio_designers .card-content p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #181C14;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .interio_designers .designer-card {
+        transform: none !important;
+        /* Disable 3D effect on mobile for better UX */
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .interio_designers .img-container img {
+        filter: grayscale(0%);
+    }
+}

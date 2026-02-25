@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_philosophy" name="Atelier Philosophy">
+        <section class="atelier-philosophy-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+            <div class="container ap-container">
+                <!-- Header Section -->
+                <div class="ap-header ap-anim" data-delay="0s">
+                    <h2 class="ap-main-title">Design philosophy and vision at Interio</h2>
+                    <p class="ap-main-subtitle">
+                        At Interio, we're passionate about transforming spaces into unique and inspiring interiors. Our expert team of designers combines creativity and functionality to breathe life into every project. Whether you're looking to revamp your home, office, or any other space, we're here to turn your vision into reality. Explore our diverse range of design services.
+                    </p>
+                </div>
+
+                <div class="ap-grid-wrapper">
+                    <!-- Base Structure Lines -->
+                    <div class="ap-line-horizontal"></div>
+                    
+                    <!-- Plus Symbols at Intersections -->
+                    <div class="ap-cross ap-cross-1"></div>
+                    <div class="ap-cross ap-cross-2"></div>
+                    <div class="ap-cross ap-cross-3"></div>
+
+                    <!-- Layout Grid -->
+                    <div class="ap-grid">
+                        
+                        <!-- Block 03 (Col 1, Bottom) -->
+                        <div class="ap-col ap-col-1">
+                            <div class="ap-card ap-card-bottom ap-card-03 ap-anim" data-delay="0s">
+                                <div class="ap-card-bg" style="background-image: url('/theme_interio/static/src/img/hero5_img_1.png');"></div>
+                                <span class="ap-num">03</span>
+                                <div class="ap-card-content">
+                                    <h3 class="ap-card-title">PLANNING</h3>
+                                    <p class="ap-card-desc">Smart layout and material planning for smooth projects.</p>
+                                    <a href="#" class="ap-card-link">SEE OUR PRICING</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Block 01 (Col 2, Top) -->
+                        <div class="ap-col ap-col-2">
+                            <div class="ap-card ap-card-top ap-card-01 ap-anim" data-delay="0.2s">
+                                <div class="ap-card-bg" style="background-image: url('/theme_interio/static/src/img/hero5_img_2.png');"></div>
+                                <span class="ap-num">01</span>
+                                <div class="ap-card-content">
+                                    <h3 class="ap-card-title">DESIGN</h3>
+                                    <p class="ap-card-desc">Tailored interiors crafted to match your style and needs.</p>
+                                    <a href="#" class="ap-card-link">VIEW PROJECTS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Block 04 (Col 3, Bottom) -->
+                        <div class="ap-col ap-col-3">
+                            <div class="ap-card ap-card-bottom ap-card-04 ap-anim" data-delay="0.4s">
+                                <div class="ap-card-bg" style="background-image: url('/theme_interio/static/src/img/hero5_img_3.png');"></div>
+                                <span class="ap-num">04</span>
+                                <div class="ap-card-content">
+                                    <h3 class="ap-card-title">3D VISUAL</h3>
+                                    <p class="ap-card-desc">Realistic renders that show your future space before work.</p>
+                                    <a href="#" class="ap-card-link">EXPLORE SERVICES</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Block 02 (Col 4, Top) -->
+                        <div class="ap-col ap-col-4">
+                            <div class="ap-card ap-card-top ap-card-02 ap-anim" data-delay="0.6s">
+                                <div class="ap-card-bg" style="background-image: url('/theme_interio/static/src/img/hero4_bg.png');"></div>
+                                <span class="ap-num">02</span>
+                                <div class="ap-card-content">
+                                    <h3 class="ap-card-title">CONCEPT</h3>
+                                    <p class="ap-card-desc">Clear creative direction that shapes the look of your space.</p>
+                                    <a href="#" class="ap-card-link">LEARN ABOUT US</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
