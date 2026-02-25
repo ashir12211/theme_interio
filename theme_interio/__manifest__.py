@@ -20,7 +20,7 @@
     'license': 'OPL-1',
     'live_test_url': 'https://interio.xappco.site/',
     'support': 'rarebirdev@gmail.com',
-    'price': 28.00,
+    'price': 109.00,
     'currency': 'USD',
 
     'depends': [
