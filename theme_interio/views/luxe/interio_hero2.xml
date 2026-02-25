@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_hero2" name="Luxe Hero">
+        <section class="interio_hero2 ih2-hero" data-snippet="interio_hero2" data-name="Hero">
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+            <!-- Decorative Background Elements -->
+            <div class="ih2-bg-pattern" data-oe-protected="true"></div>
+            <div class="ih2-bg-gradient" data-oe-protected="true"></div>
+
+            <!-- Floating Vertical Accent Text -->
+            <div class="ih2-vertical-text" data-oe-protected="true">INTERIOR</div>
+
+            <div class="container-fluid px-0 h-100">
+                <div class="row g-0 h-100 align-items-stretch">
+
+                    <!-- LEFT: Content Panel -->
+                    <div class="col-lg-6 d-flex align-items-center ih2-content-panel">
+                        <div class="ih2-content-inner">
+                            <!-- Tagline Badge -->
+                            <div class="ih2-badge-wrap ih2-reveal">
+                                <div class="ih2-badge">
+                                    <div class="ih2-badge-dot"></div>
+                                    Award-Winning Design Studio
+                                </div>
+                            </div>
+
+                            <!-- Main Heading with Split Animation -->
+                            <h1 class="ih2-heading ih2-reveal ih2-delay-1">
+                                <span class="ih2-heading-line">We Create</span>
+                                <span class="ih2-heading-line ih2-heading-accent">Timeless</span>
+                                <span class="ih2-heading-line">Sanctuaries</span>
+                            </h1>
+
+                            <!-- Description -->
+                            <p class="ih2-description ih2-reveal ih2-delay-2">
+                                Transforming visions into extraordinary interiors. Our bespoke design philosophy merges
+                                artistry with functionality to craft spaces that inspire and elevate everyday living.
+                            </p>
+
+                            <!-- CTA Group -->
+                            <div class="ih2-cta-group ih2-reveal ih2-delay-3">
+                                <a href="#" class="ih2-cta-primary">
+                                    <span class="ih2-cta-text">Explore Projects</span>
+                                    <div class="ih2-cta-arrow">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"/>
+                                            <polyline points="12 5 19 12 12 19"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="#" class="ih2-cta-secondary">
+                                    <div class="ih2-play-icon">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"/>
+                                        </svg>
+                                    </div>
+                                    <span>Watch Showreel</span>
+                                </a>
+                            </div>
+
+                            <!-- Stats Row -->
+                            <div class="ih2-stats ih2-reveal ih2-delay-4">
+                                <div class="ih2-stat">
+                                    <span class="ih2-stat-number" data-count="250">0</span>
+                                    <span class="ih2-stat-plus">+</span>
+                                    <div class="ih2-stat-label">Projects Completed</div>
+                                </div>
+                                <div class="ih2-stat-divider"></div>
+                                <div class="ih2-stat">
+                                    <span class="ih2-stat-number" data-count="15">0</span>
+                                    <span class="ih2-stat-plus">+</span>
+                                    <div class="ih2-stat-label">Years Experience</div>
+                                </div>
+                                <div class="ih2-stat-divider"></div>
+                                <div class="ih2-stat">
+                                    <span class="ih2-stat-number" data-count="38">0</span>
+                                    <div class="ih2-stat-label">Design Awards</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Image Showcase Panel -->
+                    <div class="col-lg-6 ih2-image-panel">
+                        <div class="ih2-gallery">
+                            <!-- Main Large Image -->
+                            <div class="ih2-gallery-main">
+                                <div class="ih2-img-card ih2-img-main active" data-index="0">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_1.png" alt="Modern Living Room" loading="eager"/>
+                                    <div class="ih2-img-overlay">
+                                        <span class="ih2-img-tag">Living Room</span>
+                                    </div>
+                                </div>
+                                <div class="ih2-img-card ih2-img-main" data-index="1">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_2.png" alt="Contemporary Bedroom" loading="eager"/>
+                                    <div class="ih2-img-overlay">
+                                        <span class="ih2-img-tag">Bedroom</span>
+                                    </div>
+                                </div>
+                                <div class="ih2-img-card ih2-img-main" data-index="2">
+                                    <img src="/theme_interio/static/src/img/kitchen.png" alt="Elegant Kitchen" loading="eager"/>
+                                    <div class="ih2-img-overlay">
+                                        <span class="ih2-img-tag">Kitchen</span>
+                                    </div>
+                                </div>
+
+                                <!-- Navigation Arrows -->
+                                <div class="ih2-nav" data-oe-protected="true">
+                                    <button class="ih2-nav-btn ih2-nav-prev" aria-label="Previous">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 18 9 12 15 6"/>
+                                        </svg>
+                                    </button>
+                                    <div class="ih2-nav-counter">
+                                        <span class="ih2-nav-current">01</span>
+                                        <span class="ih2-nav-separator">/</span>
+                                        <span class="ih2-nav-total">03</span>
+                                    </div>
+                                    <button class="ih2-nav-btn ih2-nav-next" aria-label="Next">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="9 18 15 12 9 6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- Progress Bar -->
+                                <div class="ih2-progress-track" data-oe-protected="true">
+                                    <div class="ih2-progress-bar"></div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Thumbnail Strip -->
+                            <div class="ih2-thumb-strip" data-oe-protected="true">
+                                <div class="ih2-thumb active" data-index="0">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_1.png" alt="Thumb 1"/>
+                                </div>
+                                <div class="ih2-thumb" data-index="1">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_2.png" alt="Thumb 2"/>
+                                </div>
+                                <div class="ih2-thumb" data-index="2">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_3.png" alt="Thumb 3"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decorative Corner Element -->
+                        <div class="ih2-corner-decor" data-oe-protected="true"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="ih2-scroll-indicator" data-oe-protected="true">
+                <span class="ih2-scroll-text">Scroll</span>
+                <div class="ih2-scroll-line">
+                    <div class="ih2-scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

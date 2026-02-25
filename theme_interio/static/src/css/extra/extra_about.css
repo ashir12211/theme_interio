@@ -1,0 +1,225 @@
+.card_extra {
+    overflow: visible;
+    width: 320px;
+    height: 420px;
+}
+
+.content_extra {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.front_extra,
+.back_extra {
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.back_extra {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.back_extra::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 250px;
+    height: 250%;
+    /* Make it large enough to cover the bigger card while rotating */
+    background: linear-gradient(90deg, transparent, #F4DFC8, #F4DFC8, #F4DFC8, #F4DFC8, transparent);
+    animation: rotation_481_extra 5000ms infinite linear;
+}
+
+.back-content_extra {
+    position: absolute;
+    width: calc(100% - 6px);
+    /* leave 3px border */
+    height: calc(100% - 6px);
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.back-content_extra img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: transform 0.8s ease, opacity 0.4s ease;
+}
+
+.card_extra:hover .back-content_extra img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.card_extra:hover .content_extra {
+    transform: rotateY(180deg);
+}
+
+@keyframes rotation_481_extra {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.front_extra {
+    transform: rotateY(180deg);
+    background-color: #000000;
+    color: white;
+}
+
+.front_extra .img_extra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle_extra {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #F4DFC8;
+    position: absolute;
+    filter: blur(25px);
+    animation: floating_extra 2600ms infinite linear;
+}
+
+#bottom_extra {
+    background-color: #FAF6F0;
+    left: 80px;
+    top: 250px;
+    width: 180px;
+    height: 180px;
+    animation-delay: -800ms;
+}
+
+#right_extra {
+    background-color: #F4EAE0;
+    left: 200px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    animation-delay: -1800ms;
+}
+
+@keyframes floating_extra {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.front_extra .front-content_extra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.front-content_extra .badge_extra {
+    background-color: rgba(244, 223, 200, 0.2);
+    padding: 6px 16px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    width: fit-content;
+    color: #202020;
+    border: 1px solid rgba(244, 223, 200, 0.4);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.specs-list_extra {
+    margin-top: 25px;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.spec-item_extra {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #FAF6F0;
+}
+
+.spec-item_extra svg {
+    width: 20px;
+    height: 20px;
+    fill: #F4DFC8;
+}
+
+.description_extra {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 18px;
+    background-color: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title_extra {
+    font-size: 16px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_extra p {
+    width: auto;
+    margin-bottom: 0px;
+    color: #FAF6F0;
+    font-weight: 700;
+}
+
+.card-footer_extra {
+    color: #FAF6F0;
+    margin-top: 5px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    opacity: 0.7;
+}
+
+.extra_about {
+    background-color: #F4EAE0;
+}

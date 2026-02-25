@@ -1,0 +1,216 @@
+
+
+.ip2-section {
+    padding: 140px 0;
+    background-color: #F5DAA7;
+    /* Cream Gold from palette */
+    color: #662222;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+    --ip2-accent: #842A3B;
+    /* Burgundy */
+    --ip2-dark: #662222;
+    --ip2-light: #F5DAA7;
+    --ip2-font-display: 'Cormorant Garamond', serif;
+    --ip2-font-body: 'Inter', sans-serif;
+    --ip2-ease: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Header */
+.ip2-uptitle {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--ip2-accent);
+}
+
+.ip2-title {
+    font-family: var(--ip2-font-display);
+    font-size: 3.5rem;
+    color: var(--ip2-dark);
+    margin-bottom: 60px;
+}
+
+.ip2-italic {
+    font-style: italic;
+    color: var(--ip2-accent);
+    font-weight: 400;
+}
+
+/* Item Wrapper */
+.ip2-item {
+    padding: 60px 0;
+    position: relative;
+    border-bottom: 1px solid rgba(132, 42, 59, 0.2);
+}
+
+.ip2-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Image */
+.ip2-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+    transition: transform 0.8s var(--ip2-ease);
+    border-radius: 4px;
+    box-shadow: 0 20px 60px rgba(24, 28, 20, 0.08);
+}
+
+.ip2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s ease;
+}
+
+.ip2-img-wrap:hover .ip2-img {
+    transform: scale(1.05);
+}
+
+/* Big Number */
+.ip2-number {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    font-family: var(--ip2-font-display);
+    font-size: 8rem;
+    line-height: 1;
+    color: rgba(132, 42, 59, 0.1);
+    z-index: -1;
+    font-weight: 700;
+}
+
+.ip2-number-left {
+    left: auto;
+    right: -40px;
+}
+
+/* Content */
+.ip2-content {
+    padding: 40px;
+    background: transparent;
+    transition: transform 0.8s var(--ip2-ease), opacity 0.8s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.ip2-content-right {
+    margin-left: -50px;
+    background: var(--ip2-light);
+    /* Overlap needs solid background */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.ip2-content-left {
+    margin-right: -50px;
+    background: var(--ip2-light);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+    /* Ensure on top */
+    position: relative;
+}
+
+.ip2-cat {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ip2-accent);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.ip2-name {
+    font-family: var(--ip2-font-display);
+    font-size: 2.75rem;
+    color: var(--ip2-dark);
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.ip2-desc {
+    font-family: var(--ip2-font-body);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4A4A4A;
+    margin-bottom: 32px;
+    font-weight: 300;
+}
+
+.ip2-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ip2-dark);
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--ip2-accent);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ip2-link:hover {
+    color: var(--ip2-accent);
+    padding-bottom: 8px;
+}
+
+.ip2-arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.ip2-link:hover .ip2-arrow {
+    transform: translateX(5px);
+}
+
+/* Animations Trigger */
+.ip2-visible .ip2-content,
+.ip2-visible .ip2-img-wrap {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ip2-section {
+        padding: 80px 0;
+    }
+
+    .ip2-img-wrap {
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .ip2-content-right,
+    .ip2-content-left {
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        background: transparent;
+    }
+
+    .ip2-number {
+        font-size: 5rem;
+        top: -20px;
+        left: 0;
+        z-index: 1;
+        opacity: 0.5;
+        color: var(--ip2-light);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Make readable over image */
+    }
+
+    .ip2-number-left {
+        left: unset;
+        right: 0;
+    }
+}

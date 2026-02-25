@@ -1,0 +1,231 @@
+/* ============================================
+   Vista FAQ (F&Q) - Curated Questions
+   ============================================ */
+
+.vh-faq {
+    --vh-bg: #ECDFCC;
+    --vh-text: #181C14;
+    --vh-text-alt: #3C3D37;
+    --vh-accent: #697565;
+    --vh-border: rgba(24, 28, 20, 0.12);
+    --vh-font-heading: 'Playfair Display', serif;
+    --vh-font-body: 'DM Sans', sans-serif;
+    --vh-ease: cubic-bezier(0.25, 1, 0.5, 1);
+
+    background-color: var(--vh-bg);
+    color: var(--vh-text);
+    padding: 100px 0;
+    font-family: var(--vh-font-body);
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Section Top: Intro & Accordion --- */
+.vh-faq-top {
+    margin-bottom: 80px;
+}
+
+/* Intro Text Column */
+.vh-faq-intro {
+    padding-right: 48px;
+}
+
+.vh-faq-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--vh-border);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--vh-text-alt);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vh-faq-heading {
+    font-family: var(--vh-font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--vh-text);
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.vh-faq-desc {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--vh-text-alt);
+    margin-bottom: 32px;
+}
+
+/* Accordion Column */
+.vh-accordion-item {
+    background: #FFFFFF;
+    border: 1px solid var(--vh-border);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.vh-accordion-header {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--vh-text);
+    transition: color 0.3s ease;
+}
+
+.vh-accordion-header:hover {
+    color: var(--vh-accent);
+}
+
+.vh-acc-icon {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.vh-acc-icon::before,
+.vh-acc-icon::after {
+    content: '';
+    position: absolute;
+    background: var(--vh-text-alt);
+    transition: transform 0.3s ease;
+}
+
+.vh-acc-icon::before {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.vh-acc-icon::after {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Active State */
+.vh-accordion-item.active .vh-acc-icon {
+    transform: rotate(45deg);
+}
+
+.vh-accordion-item.active .vh-acc-icon::after {
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.vh-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--vh-ease);
+    background: #FAFAF8;
+}
+
+.vh-acc-inner {
+    padding: 0 24px 24px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--vh-text-alt);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.vh-accordion-item.active .vh-acc-inner {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* --- Section Bottom: Images --- */
+.vh-faq-imgs {
+    margin-top: 24px;
+}
+
+.vh-faq-img-wrap {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 480px;
+}
+
+.vh-faq-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s var(--vh-ease);
+}
+
+.vh-faq-img-wrap:hover img {
+    transform: scale(1.04);
+}
+
+/* Feature Logo Overlay */
+.vh-faq-logo-ol {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #fff;
+    z-index: 2;
+}
+
+.vh-faq-logo-ol h3 {
+    font-family: var(--vh-font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .vh-faq-intro {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .vh-faq-heading {
+        font-size: 2.2rem;
+    }
+
+    .vh-faq-imgs {
+        grid-template-columns: 1fr 1fr;
+        /* Even split tablet */
+    }
+}
+
+@media (max-width: 767px) {
+    .vh-faq-top {
+        margin-bottom: 40px;
+    }
+
+    .vh-faq-imgs {
+        grid-template-columns: 1fr;
+        /* Stack images */
+    }
+
+    .vh-faq-img-wrap {
+        height: 300px;
+    }
+
+    .vh-faq-logo-ol h3 {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,73 @@
+
+
+.atelier-marquee-section {
+    --amarq-bg: #040D12;
+    --amarq-text: #93B1A6;
+    --amarq-accent: #5C8374;
+    --amarq-muted: #183D3D;
+
+    background-color: var(--amarq-bg);
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--amarq-muted);
+    border-bottom: 1px solid var(--amarq-muted);
+}
+
+.amarq-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.amarq-track {
+    display: inline-flex;
+    white-space: nowrap;
+    /* Clean right-to-left linear infinite scrolling */
+    animation: amarq-scroll-left 25s linear infinite;
+    align-items: center;
+}
+
+/* Pause the scrolling natively on hover */
+.amarq-track:hover {
+    animation-play-state: paused;
+}
+
+.amarq-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(3rem, 5vw, 6rem);
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    /* Transparent center with stark white stroke matches the screenshot */
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    padding: 0 40px;
+    letter-spacing: 4px;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+/* Stunning hover reaction */
+.amarq-text:hover {
+    color: var(--amarq-accent);
+    -webkit-text-stroke: 1px var(--amarq-accent);
+    text-shadow: 0 0 20px rgba(92, 131, 116, 0.4);
+    transform: scale(1.05);
+}
+
+@keyframes amarq-scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Translates exactly half of the double track to loop infinitely without tearing */
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,379 @@
+
+
+.atelier-get-in-touch-section {
+    --aget-bg: #040D12;
+    --aget-form-bg: #0A1116;
+    /* slightly lighter than void */
+    --aget-text: #93B1A6;
+    --aget-accent: #5C8374;
+    --aget-muted: #183D3D;
+
+    background-color: var(--aget-bg);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--aget-text);
+}
+
+/* ============================================
+   Top Banner Context
+   ============================================ */
+.aget-banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.aget-banner-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5) grayscale(20%);
+    transform: scale(1.05);
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+.aget-banner:hover .aget-banner-bg {
+    transform: scale(1);
+    filter: brightness(0.6) grayscale(10%);
+}
+
+.aget-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(4, 13, 18, 0.7) 0%, rgba(4, 13, 18, 1) 100%);
+    z-index: 2;
+}
+
+.aget-banner-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.aget-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.aget-subtitle {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--aget-text);
+    opacity: 0.9;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+
+/* ============================================
+   Main Split Layout
+   ============================================ */
+.aget-content-container {
+    position: relative;
+    z-index: 10;
+    /* Pull content slightly into the banner space */
+    margin-top: -80px;
+    padding-bottom: 150px;
+}
+
+
+/* ============================================
+   Left: The Form Box (Architectural Motif)
+   ============================================ */
+.aget-form-box {
+    position: relative;
+    background: transparent;
+    border: 1px solid rgba(147, 177, 166, 0.1);
+    padding: 60px 50px;
+}
+
+/* Stylistic Bracket Corners for Form Box */
+.aget-corner {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ffffff;
+    z-index: 10;
+}
+
+.aget-tl {
+    top: -1px;
+    left: -1px;
+    border-bottom: none;
+    border-right: none;
+}
+
+.aget-tr {
+    top: -1px;
+    right: -1px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.aget-bl {
+    bottom: -1px;
+    left: -1px;
+    border-top: none;
+    border-right: none;
+}
+
+.aget-br {
+    bottom: -1px;
+    right: -1px;
+    border-top: none;
+    border-left: none;
+}
+
+.aget-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.aget-form-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.aget-avatars {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.aget-avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--aget-bg);
+    margin-left: -15px;
+    /* overlap */
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.aget-avatar-img:hover {
+    transform: translateY(-5px) scale(1.1);
+    border-color: var(--aget-accent);
+    z-index: 10;
+}
+
+/* Form Inputs styling */
+.aget-form-group {
+    margin-bottom: 25px;
+}
+
+.aget-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--aget-text);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.aget-input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(147, 177, 166, 0.2);
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    font-family: 'Space Grotesk', sans-serif;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.aget-input::placeholder {
+    color: rgba(147, 177, 166, 0.5);
+}
+
+.aget-input:focus {
+    outline: none;
+    border-color: var(--aget-accent);
+    background: rgba(92, 131, 116, 0.05);
+}
+
+.aget-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Bold Submit Button */
+.aget-submit-btn {
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    padding: 18px 0;
+    color: var(--aget-bg);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.4s ease;
+    margin-top: 10px;
+}
+
+.aget-submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--aget-accent);
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aget-btn-text {
+    position: relative;
+    z-index: 2;
+}
+
+.aget-submit-btn:hover {
+    color: #ffffff;
+}
+
+.aget-submit-btn:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+
+/* ============================================
+   Right: Useful Links Box
+   ============================================ */
+.aget-links-box {
+    padding: 40px 0 40px 40px;
+    border-left: 1px solid var(--aget-bg);
+    /* will change via js parallax visually */
+}
+
+.aget-links-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.aget-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aget-links-list li {
+    margin-bottom: 25px;
+}
+
+.aget-link-item {
+    display: inline-flex;
+    align-items: center;
+    color: var(--aget-text);
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.aget-link-item:hover {
+    color: var(--aget-accent);
+    text-decoration: none;
+}
+
+
+/* Scroll Animation Defaults */
+.aget-anim {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aget-anim.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ============================================
+   Responsive Settings
+   ============================================ */
+@media (max-width: 991px) {
+    .aget-form-box {
+        padding: 40px 30px;
+    }
+
+    .aget-links-box {
+        padding: 30px 20px;
+        border-left: none;
+        border-top: 1px solid rgba(147, 177, 166, 0.2);
+    }
+
+    .aget-content-container {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .aget-title {
+        font-size: 2.5rem;
+    }
+
+    .aget-form-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .aget-avatars {
+        flex-direction: row;
+    }
+
+    .aget-avatar-img {
+        margin-left: 0;
+        margin-right: -15px;
+    }
+
+    .aget-corner {
+        display: none;
+    }
+
+    .aget-form-box {
+        padding: 30px 20px;
+    }
+}

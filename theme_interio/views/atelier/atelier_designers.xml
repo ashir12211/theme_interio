@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_designers" name="Atelier Designers">
+        <section class="atelier-designers-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+            <div class="container ades-container">
+                <div class="ades-wrapper">
+                    
+                    <!-- Top Row -->
+                    <div class="row align-items-end mb-5 ades-anim" data-delay="0s">
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <h2 class="ades-main-title">Meet the people behind<br/>the process</h2>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="ades-main-desc">Exceptional design is a team effort. We collaborate closely to bring aligned, thoughtful results that not only meet but exceed your expectations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cards Row -->
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 mb-4">
+                        <!-- Card 1 -->
+                        <div class="col ades-anim" data-delay="0.1s">
+                            <div class="ades-card">
+                                <div class="ades-content">
+                                    <div class="ades-img-layer">
+                                        <img src="/theme_interio/static/src/img/profile1.png" alt="Sophia Martinez"/>
+                                    </div>
+                                    <div class="ades-text-layer">
+                                        <h4>Sophia Martinez</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="col ades-anim" data-delay="0.2s">
+                            <div class="ades-card">
+                                <div class="ades-content">
+                                    <div class="ades-img-layer">
+                                        <img src="/theme_interio/static/src/img/profile3.png" alt="Ethan Caldwell"/>
+                                    </div>
+                                    <div class="ades-text-layer">
+                                        <h4>Ethan Caldwell</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col ades-anim" data-delay="0.3s">
+                            <div class="ades-card">
+                                <div class="ades-content">
+                                    <div class="ades-img-layer">
+                                        <img src="/theme_interio/static/src/img/profile4.png" alt="Liam Bennett"/>
+                                    </div>
+                                    <div class="ades-text-layer">
+                                        <h4>Liam Bennett</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col ades-anim" data-delay="0.4s">
+                            <div class="ades-card">
+                                <div class="ades-content">
+                                    <div class="ades-img-layer">
+                                        <img src="/theme_interio/static/src/img/profile5.png" alt="Noah Spencer"/>
+                                    </div>
+                                    <div class="ades-text-layer">
+                                        <h4>Noah Spencer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col ades-anim" data-delay="0.5s">
+                            <div class="ades-card">
+                                <div class="ades-content">
+                                    <div class="ades-img-layer">
+                                        <img src="/theme_interio/static/src/img/profile2.png" alt="James Thornton"/>
+                                    </div>
+                                    <div class="ades-text-layer">
+                                        <h4>Hala Thornton</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row -->
+                    <div class="row align-items-center mt-5 pt-4 border-top border-dark ades-anim" data-delay="0.6s">
+                        <div class="col-md-9">
+                            <h5 class="ades-btm-title">Join us in shaping better spaces</h5>
+                            <p class="ades-btm-desc">Ready to build something meaningful together? Let's connect and turn ideas into impactful design.</p>
+                        </div>
+                        <div class="col-md-3 text-md-end mt-4 mt-md-0">
+                            <a href="#" class="ades-btn">Join us now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,268 @@
+
+/* Footer Container */
+.interio-footer {
+    /* === PHOTOREALISTIC WOOD LAYERS === */
+    background-color: #6b4423;
+    background-image:
+        repeating-linear-gradient(88deg,
+            transparent 0px,
+            transparent 1px,
+            rgba(255, 220, 160, 0.04) 1px,
+            rgba(255, 220, 160, 0.04) 2px,
+            transparent 2px,
+            transparent 5px,
+            rgba(0, 0, 0, 0.03) 5px,
+            rgba(0, 0, 0, 0.03) 6px,
+            transparent 6px,
+            transparent 9px),
+        repeating-linear-gradient(90deg,
+            transparent 0px,
+            transparent 14px,
+            rgba(255, 190, 100, 0.05) 14px,
+            rgba(255, 190, 100, 0.05) 16px,
+            transparent 16px,
+            transparent 28px,
+            rgba(0, 0, 0, 0.04) 28px,
+            rgba(0, 0, 0, 0.04) 30px,
+            transparent 30px,
+            transparent 44px),
+        repeating-linear-gradient(97deg,
+            transparent 0px,
+            transparent 22px,
+            rgba(255, 200, 120, 0.03) 22px,
+            rgba(255, 200, 120, 0.03) 24px,
+            transparent 24px,
+            transparent 55px),
+        repeating-linear-gradient(180deg,
+            transparent 0px,
+            transparent 6px,
+            rgba(30, 10, 0, 0.04) 6px,
+            rgba(30, 10, 0, 0.04) 7px,
+            transparent 7px,
+            transparent 18px,
+            rgba(30, 10, 0, 0.025) 18px,
+            rgba(30, 10, 0, 0.025) 19px,
+            transparent 19px,
+            transparent 32px),
+        linear-gradient(170deg,
+            rgba(255, 235, 190, 0.18) 0%,
+            rgba(255, 210, 140, 0.10) 20%,
+            transparent 50%),
+        linear-gradient(to right,
+            transparent 60%,
+            rgba(20, 8, 0, 0.18) 100%),
+        linear-gradient(162deg,
+            #7a4e28 0%,
+            #6b3f1c 18%,
+            #7c5230 35%,
+            #5a3318 52%,
+            #6e4522 68%,
+            #4e2e10 85%,
+            #3d2209 100%);
+
+    color: #e8c898;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 220, 160, 0.25);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   TYPOGRAPHY & GLOBAL OVERRIDES
+   Aggressive override of Odoo default styles
+   ============================================ */
+
+/* Target all text elements within the footer */
+.interio-footer h1,
+.interio-footer h2,
+.interio-footer h3,
+.interio-footer h4,
+.interio-footer h5,
+.interio-footer h6,
+.interio-footer p,
+.interio-footer span,
+.interio-footer div,
+.interio-footer li,
+.interio-footer a {
+    font-family: 'Outfit', 'Inter', sans-serif !important;
+}
+
+/* Specific Heading Styles */
+.interio-footer-heading {
+    font-family: 'Outfit', 'Inter', sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px !important;
+    text-transform: capitalize !important;
+    margin-bottom: 2rem !important;
+    line-height: 1.1 !important;
+    color: #fff8ec !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.5) !important;
+    background: none !important;
+}
+
+/* Column Titles (Navigate, Connect) */
+.interio-footer h5 {
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: #fff8ec !important;
+    margin-bottom: 1.5rem !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+    border-bottom: none !important;
+    /* Ensure no default borders */
+}
+
+/* Links */
+.interio-footer-link,
+.interio-footer-link-small,
+.interio-footer a {
+    color: #e8c898 !important;
+    /* Base wood text color */
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !important;
+    /* Soft shadow for legibility */
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* Hover State for Links */
+.interio-footer-link:hover,
+.interio-footer-link-small:hover,
+.interio-footer a:hover {
+    color: #fff8ec !important;
+    /* Cream highlight */
+    transform: translateX(5px);
+    text-shadow: 0 0 12px rgba(255, 210, 140, 0.55), 0 1px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Specific styling for small links (Privacy, Terms, Back to Top) */
+.interio-footer-link-small {
+    font-size: 0.9rem !important;
+    color: rgba(232, 200, 152, 0.7) !important;
+}
+
+.interio-footer-link-small:hover {
+    color: #fff8ec !important;
+    transform: none !important;
+    /* No slide for bottom links */
+    text-decoration: underline !important;
+}
+
+/* Contact Links special behavior */
+.interio-footer-link.contact-link:hover {
+    transform: none !important;
+    color: #fff8ec !important;
+}
+
+/* Contact Icons */
+.interio-footer-icon {
+    font-size: 1.1rem;
+    color: #c9966a !important;
+    /* Lighter wood tone */
+    transition: color 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.interio-footer-link:hover .interio-footer-icon {
+    color: #fff8ec !important;
+}
+
+/* Menu Lists */
+.interio-footer-menu {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.interio-footer-menu li {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Social Icons */
+.interio-footer-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.interio-social-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Inset routed look */
+    background: rgba(40, 20, 5, 0.3) !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8c898 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 200, 120, 0.05) !important;
+}
+
+.interio-social-item:hover {
+    background: rgba(255, 200, 120, 0.1) !important;
+    color: #fff8ec !important;
+    transform: translateY(-3px) !important;
+    border-color: rgba(255, 200, 120, 0.3) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Copyright Section */
+.interio-footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 200, 120, 0.15);
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem !important;
+    color: rgba(232, 200, 152, 0.6) !important;
+}
+
+.interio-footer-bottom span {
+    color: rgba(232, 200, 152, 0.6) !important;
+    font-family: 'Outfit', 'Inter', sans-serif !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .interio-footer-heading {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .interio-footer {
+        padding-top: 3rem;
+    }
+
+    .interio-footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .interio-footer-link:hover {
+        transform: translateX(3px);
+        /* Smaller movement on mobile */
+    }
+}

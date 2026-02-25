@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="extra_projects1" name="Extra Projects 1">
+        <section class="extra_projects1 pt96 pb96" data-snippet="extra_projects1" data-name="Extra Projects 1">
+            <div class="container">
+                <!-- Header -->
+                <div class="row align-items-center mb-5 pb-4">
+                    <div class="col-12 text-center position-relative z-index-2">
+                        <div class="d-inline-block position-relative">
+                            <div class="title-decor_extra_1"></div>
+                            <h2 class="fw-bold mb-0 position-relative" style="color: #000000; font-size: 3rem; letter-spacing: 1px; z-index: 2;">
+                                Exclusive Projects
+                            </h2>
+                        </div>
+                        <p class="mt-3 text-muted mx-auto" style="max-width: 600px; font-size: 1.1rem;">
+                            Discover our portfolio of premium interior transformations, featuring elegant, tailor-made designs for contemporary living spaces.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Project 1 -->
+                    <div class="col-lg-6">
+                        <div class="project-card_extra_1 d-flex flex-column flex-md-row align-items-center mb-4 pe-auto">
+                            <div class="img-container_extra_1 position-relative me-md-4 mb-4 mb-md-0 d-block" style="width: 250px; min-width: 250px; height: 250px;">
+                                <div class="img-bg-shape_extra_1"></div>
+                                <div class="img-wrapper_extra_1 position-relative h-100 w-100 overflow-hidden shadow-sm">
+                                    <img src="/theme_interio/static/src/img/hero5_img_1.png" alt="Modern Elegance Residence" class="w-100 h-100 object-fit-cover"/>
+                                </div>
+                            </div>
+                            <div class="content-wrapper_extra_1">
+                                <h4 class="fw-bold mb-3">Modern Elegance Residence</h4>
+                                <p class="mb-4">A perfect blend of sophistication and contemporary design.</p>
+                                <a href="#" class="btn-learn-more_extra_1 text-uppercase fw-bold text-decoration-none">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-lg-6">
+                        <div class="project-card_extra_1 d-flex flex-column flex-md-row align-items-center mb-4 pe-auto">
+                            <div class="img-container_extra_1 position-relative me-md-4 mb-4 mb-md-0 d-block" style="width: 250px; min-width: 250px; height: 250px;">
+                                <div class="img-bg-shape_extra_1"></div>
+                                <div class="img-wrapper_extra_1 position-relative h-100 w-100 overflow-hidden shadow-sm">
+                                    <img src="/theme_interio/static/src/img/crafted_3_paris.png" alt="Modern Serenity Retreat" class="w-100 h-100 object-fit-cover"/>
+                                </div>
+                            </div>
+                            <div class="content-wrapper_extra_1">
+                                <h4 class="fw-bold mb-3">Modern Serenity Retreat</h4>
+                                <p class="mb-4">Natural textures, and open, airy spaces that promote relaxation.</p>
+                                <a href="#" class="btn-learn-more_extra_1 text-uppercase fw-bold text-decoration-none">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-lg-6">
+                        <div class="project-card_extra_1 d-flex flex-column flex-md-row align-items-center mb-4 pe-auto">
+                            <div class="img-container_extra_1 position-relative me-md-4 mb-4 mb-md-0 d-block" style="width: 250px; min-width: 250px; height: 250px;">
+                                <div class="img-bg-shape_extra_1"></div>
+                                <div class="img-wrapper_extra_1 position-relative h-100 w-100 overflow-hidden shadow-sm">
+                                    <img src="/theme_interio/static/src/img/hero5_img_3.png" alt="The Grand Villa Makeover" class="w-100 h-100 object-fit-cover"/>
+                                </div>
+                            </div>
+                            <div class="content-wrapper_extra_1">
+                                <h4 class="fw-bold mb-3">The Grand Villa Makeover</h4>
+                                <p class="mb-4">A calming and minimalist home design focused on neutral palettes.</p>
+                                <a href="#" class="btn-learn-more_extra_1 text-uppercase fw-bold text-decoration-none">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="col-lg-6">
+                        <div class="project-card_extra_1 d-flex flex-column flex-md-row align-items-center mb-4 pe-auto">
+                            <div class="img-container_extra_1 position-relative me-md-4 mb-4 mb-md-0 d-block" style="width: 250px; min-width: 250px; height: 250px;">
+                                <div class="img-bg-shape_extra_1"></div>
+                                <div class="img-wrapper_extra_1 position-relative h-100 w-100 overflow-hidden shadow-sm">
+                                    <img src="/theme_interio/static/src/img/crafted_4_tokyo.png" alt="Contemporary Minimalist" class="w-100 h-100 object-fit-cover"/>
+                                </div>
+                            </div>
+                            <div class="content-wrapper_extra_1">
+                                <h4 class="fw-bold mb-3">Contemporary Minimalist</h4>
+                                <p class="mb-4">An industrial-style loft transformation with exposed brick walls.</p>
+                                <a href="#" class="btn-learn-more_extra_1 text-uppercase fw-bold text-decoration-none">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_project2" name="Luxe Project">
+        <section class="interio_project2 ip2-section" data-snippet="interio_project2" data-name="Project">
+            <!-- Google Fonts (re-declared just in case, or rely on hero2) -->
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+            
+            <div class="container">
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <div class="ip2-uptitle ip2-anim">Selected Works</div>
+                        <h2 class="ip2-title ip2-anim">
+                            <span class="ip2-italic">Curated</span> Interiors
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Project Item 01 -->
+                <div class="row align-items-center ip2-item mb-5 mb-lg-0">
+                    <div class="col-lg-7 position-relative">
+                        <div class="ip2-img-wrap ip2-anim">
+                            <img src="/theme_interio/static/src/img/res.png" alt="Project 1" class="img-fluid ip2-img"/>
+                            <div class="ip2-number">01</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="ip2-content ip2-content-right ip2-anim">
+                            <div class="ip2-cat">Residential</div>
+                            <h3 class="ip2-name">The Gilden Loft</h3>
+                            <p class="ip2-desc">A restoration of classic heritage meeting modern comfort using warm tones and natural light.</p>
+                            <a href="#" class="ip2-link">
+                                View Case Study <span class="ip2-arrow">&#8594;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Item 02 -->
+                <div class="row align-items-center ip2-item flex-row-reverse mb-5 mb-lg-0">
+                    <div class="col-lg-7 position-relative">
+                        <div class="ip2-img-wrap ip2-anim">
+                            <img src="/theme_interio/static/src/img/comm.png" alt="Project 2" class="img-fluid ip2-img"/>
+                            <div class="ip2-number ip2-number-left">02</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="ip2-content ip2-content-left ip2-anim">
+                            <div class="ip2-cat">Commercial</div>
+                            <h3 class="ip2-name">Atelier Stone</h3>
+                            <p class="ip2-desc">Minimalist workspace designed to foster creativity through open planes and raw materials.</p>
+                            <a href="#" class="ip2-link">
+                                View Case Study <span class="ip2-arrow">&#8594;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Item 03 -->
+                <div class="row align-items-center ip2-item">
+                    <div class="col-lg-7 position-relative">
+                        <div class="ip2-img-wrap ip2-anim">
+                            <img src="/theme_interio/static/src/img/clinic.png" alt="Project 3" class="img-fluid ip2-img"/>
+                            <div class="ip2-number">03</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="ip2-content ip2-content-right ip2-anim">
+                            <div class="ip2-cat">Hospitality</div>
+                            <h3 class="ip2-name">Verde Hotel</h3>
+                            <p class="ip2-desc">An eco-conscious luxury retreat integrating biophilic design principles.</p>
+                            <a href="#" class="ip2-link">
+                                View Case Study <span class="ip2-arrow">&#8594;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+</odoo>

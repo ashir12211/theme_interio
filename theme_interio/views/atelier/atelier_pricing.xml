@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_pricing" name="Atelier Pricing">
+        <section class="atelier-pricing-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+            <div class="aprice-container-fluid g-0">
+                <div class="row g-0 aprice-row">
+                    <!-- Left Side: Content -->
+                    <div class="col-lg-7 aprice-left-col">
+                        <div class="aprice-content-wrapper aprice-anim" data-delay="0s">
+                            <!-- Stylistic Corners -->
+                            <div class="aprice-corner aprice-tl"></div>
+                            <div class="aprice-corner aprice-bl"></div>
+                            
+                            <!-- Content Details -->
+                            <h2 class="aprice-title">
+                                DISCOVER OUR INTERIOR<br/>DESIGN SERVICE COSTS
+                            </h2>
+                            
+                            <div class="row aprice-desc-row mt-5">
+                                <div class="col-md-6 aprice-desc-col">
+                                    <p class="aprice-desc">
+                                        At Interio, we craft inspiring, functional spaces designed to reflect the unique character and lifestyle of every client with thoughtful creative intention.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 aprice-desc-col">
+                                    <p class="aprice-desc">
+                                        With a passion for quality design and a commitment to excellence, we offer a wide range of interior design services that enhance your life.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="aprice-btn-wrap mt-5">
+                                <a href="#" class="aprice-btn">
+                                    <span>SERVICES PRICING</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Vertical Marquee -->
+                    <div class="col-lg-5 aprice-right-col">
+                        <div class="aprice-marquee-container">
+                            <div class="aprice-marquee-track">
+                                <!-- Group 1 -->
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/cc6.png" alt="Interior Details"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/cc5.png" alt="Sofa Design"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/cc4.png" alt="Modern Styling"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/hero5_img_2.png" alt="Minimalism"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                
+                                <!-- Group 2 (Duplicate for Seamless Loop) -->
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/cc6.png" alt="Interior Details"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/cc5.png" alt="Sofa Design"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/cc4.png" alt="Modern Styling"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                                <div class="aprice-marquee-item">
+                                    <img src="/theme_interio/static/src/img/hero5_img_2.png" alt="Minimalism"/>
+                                    <div class="aprice-shine"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

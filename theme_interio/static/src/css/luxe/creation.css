@@ -1,0 +1,299 @@
+/* ============================================
+   Interio Creation — Luxe Category
+   Split Layout & Horizontal Slider
+   Palette: Burgundy & Gold (F5DAA7, 662222, 842A3B)
+   ============================================ */
+
+.interio_creation {
+
+    /* Use global variables if possible, but redefine here for snippet independence */
+    --ic-bg: #F5DAA7;
+    /* Cream Gold */
+    --ic-text: #662222;
+    /* Dark Burgundy */
+    --ic-accent: #842A3B;
+    /* Burgundy */
+    --ic-accent-light: #A3485A;
+    /* Rose */
+    --ic-white: #FFFFFF;
+    --ic-line: rgba(132, 42, 59, 0.4);
+    /* Soft Burgundy Line */
+    --ic-shadow: 0 10px 30px rgba(102, 34, 34, 0.1);
+
+    background-color: var(--ic-bg);
+    color: var(--ic-text);
+    padding: 100px 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ---------- Typography ---------- */
+.ic-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--ic-text);
+}
+
+.ic-highlight {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ic-accent);
+}
+
+.ic-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.ic-subtext {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ic-accent-light);
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.ic-divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--ic-line);
+    margin: 2rem 0;
+    transition: width 0.6s ease;
+}
+
+/* ---------- Top Section Layout ---------- */
+.ic-top-row {
+    margin-bottom: 80px;
+}
+
+.ic-content-wrapper {
+    padding-left: 2rem;
+    position: relative;
+}
+
+.ic-image-wrapper {
+    position: relative;
+    border-radius: 4px;
+    background: transparent;
+    padding: 20px;
+    /* Space for potential graphics */
+}
+
+.ic-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: var(--ic-shadow);
+    background: #fff;
+    /* Paper-like bg for sketch */
+    transition: transform 0.6s ease;
+}
+
+.ic-main-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    /* To blend with "paper" bg if needed */
+}
+
+/* Technical Overlay Sim */
+.ic-tech-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.ic-tech-line-v {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 1px;
+    height: 80%;
+    background-image: linear-gradient(to bottom, var(--ic-text) 50%, transparent 50%);
+    background-size: 1px 10px;
+    /* Dashed line */
+}
+
+.ic-tech-line-h {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--ic-text) 50%, transparent 50%);
+    background-size: 10px 1px;
+}
+
+.ic-tech-dim {
+    position: absolute;
+    bottom: 16%;
+    right: 16%;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: var(--ic-text);
+}
+
+/* ---------- Bottom Slider ---------- */
+.ic-slider-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    white-space: nowrap;
+    cursor: grab;
+    padding-bottom: 20px;
+}
+
+.ic-slider-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.ic-slider-track {
+    display: inline-flex;
+    gap: 40px;
+    padding: 0 5vw;
+    /* Indent start/end */
+}
+
+.ic-card {
+    display: inline-flex;
+    flex-direction: column;
+    width: 320px;
+    /* Fixed width per card */
+    position: relative;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.ic-card:hover {
+    transform: translateY(-5px);
+}
+
+.ic-card-img-box {
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--ic-shadow);
+}
+
+.ic-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Keep product visible */
+    padding: 20px;
+    transition: transform 0.6s ease;
+}
+
+.ic-card:hover .ic-card-img {
+    transform: scale(1.08);
+}
+
+.ic-card-info {
+    border-bottom: 1px solid var(--ic-line);
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.ic-card-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ic-text);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.ic-card-line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--ic-accent);
+    transition: width 0.4s ease;
+}
+
+.ic-card:hover .ic-card-line {
+    width: 100%;
+}
+
+/* ---------- Scroll Animations (Reveal) ---------- */
+.ic-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ic-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ic-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.ic-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.ic-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.ic-delay-4 {
+    transition-delay: 0.4s;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ic-heading {
+        font-size: 2.5rem;
+    }
+
+    .ic-top-row {
+        flex-direction: column;
+    }
+
+    .ic-content-wrapper {
+        padding-left: 0;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    .ic-card {
+        width: 260px;
+    }
+
+    .ic-card-img-box {
+        height: 200px;
+    }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_creation" name="Luxe Creation">
+        <section class="interio_creation ic-section" data-snippet="interio_creation" data-name="Creation">
+            <div class="container-fluid">
+                <!-- Top Section: Table & Story -->
+                <div class="row align-items-center ic-top-row">
+                    <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0">
+                        <div class="ic-image-wrapper ic-reveal">
+                            <div class="ic-image-container">
+                                <img src="/theme_interio/static/src/img/creation_main.png" alt="Furniture Design Process" class="img-fluid ic-main-img"/>
+                                <div class="ic-tech-overlay" data-oe-protected="true">
+                                    <div class="ic-tech-line-v"></div>
+                                    <div class="ic-tech-line-h"></div>
+                                    <div class="ic-tech-dim">24"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="ic-content-wrapper">
+                            <h2 class="ic-heading ic-reveal ic-delay-1">
+                                We create our designs with a <span class="ic-highlight">special focus</span> on ergonomics, quality materials, and timeless aesthetics.
+                            </h2>
+                            <p class="ic-text ic-reveal ic-delay-2">
+                                Every curve, every joint, and every texture is designed to support the body and spirit. Using natural materials and subtle proportions, we create furniture that looks as intelligent as it is comfortable.
+                            </p>
+                            <div class="ic-divider ic-reveal ic-delay-3"></div>
+                            <p class="ic-subtext ic-reveal ic-delay-3">
+                                From raw materials to warm products — all in one studio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Section: Product Slider -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="ic-slider-container ic-reveal ic-delay-4">
+                            <div class="ic-slider-track">
+                                <!-- Card 1: Chairs -->
+                                <div class="ic-card">
+                                    <div class="ic-card-img-box">
+                                        <img src="/theme_interio/static/src/img/creation_chair.png" alt="Chairs" class="ic-card-img"/>
+                                    </div>
+                                    <div class="ic-card-info">
+                                        <div class="ic-card-title">Chairs</div>
+                                        <div class="ic-card-line"></div>
+                                    </div>
+                                </div>
+                                <!-- Card 2: Sofas -->
+                                <div class="ic-card">
+                                    <div class="ic-card-img-box">
+                                        <img src="/theme_interio/static/src/img/creation_sofa.png" alt="Sofas" class="ic-card-img"/>
+                                    </div>
+                                    <div class="ic-card-info">
+                                        <div class="ic-card-title">Sofas</div>
+                                        <div class="ic-card-line"></div>
+                                    </div>
+                                </div>
+                                <!-- Card 3: Sidetables -->
+                                <div class="ic-card">
+                                    <div class="ic-card-img-box">
+                                        <img src="/theme_interio/static/src/img/creation_sidetable.png" alt="Sidetables" class="ic-card-img"/>
+                                    </div>
+                                    <div class="ic-card-info">
+                                        <div class="ic-card-title">Sidetables</div>
+                                        <div class="ic-card-line"></div>
+                                    </div>
+                                </div>
+                                <!-- Card 4: Tables -->
+                                <div class="ic-card">
+                                    <div class="ic-card-img-box">
+                                        <img src="/theme_interio/static/src/img/creation_table.png" alt="Tables" class="ic-card-img"/>
+                                    </div>
+                                    <div class="ic-card-info">
+                                        <div class="ic-card-title">Tables</div>
+                                        <div class="ic-card-line"></div>
+                                    </div>
+                                </div>
+                                 <!-- Card 5: Lighting -->
+                                <div class="ic-card">
+                                    <div class="ic-card-img-box">
+                                        <img src="/theme_interio/static/src/img/creation_light.png" alt="Lighting" class="ic-card-img"/>
+                                    </div>
+                                    <div class="ic-card-info">
+                                        <div class="ic-card-title">Lighting</div>
+                                        <div class="ic-card-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

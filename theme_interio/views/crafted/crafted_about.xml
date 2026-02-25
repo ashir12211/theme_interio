@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crafted_about" name="Crafted About">
+        <section class="s_crafted_about pt104 pb104" data-snippet="theme_interio.crafted_about" data-name="Crafted About">
+            <div class="container-fluid px-5">
+                <!-- Text Above the Cards -->
+                <div class="row text-center mb-5 justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="small-title mb-3">✺ About us</div>
+                        <h2 class="display-4 fw-medium mb-4 estancia-title">
+                            At Interio, we shape timeless<br/>spaces where furniture, and interiors<br/>flow together in perfect harmony.
+                        </h2>
+                        <a href="#" class="btn btn-dark estancia-btn">✺ About us</a>
+                    </div>
+                </div>
+
+                <!-- 3 Cards -->
+                <div class="row gx-4 mt-5 align-items-center justify-content-center px-lg-5">
+                    
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4 card-wrapper">
+                        <div class="crafted-about-card card-1 mx-auto">
+                            <!-- Background Image Variable -->
+                            <div class="split-image-container" style="--bg-url: url('/theme_interio/static/src/img/cc6.png');">
+                                <div class="quadrant quadrant-1"></div>
+                                <div class="quadrant quadrant-2"></div>
+                                <div class="quadrant quadrant-3"></div>
+                                <div class="quadrant quadrant-4"></div>
+                            </div>
+                            <div class="card-text-area d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h3 class="fw-normal">2012</h3>
+                                    <small>Year of establishment</small>
+                                </div>
+                                <span class="asterisk-icon">✺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4 card-wrapper">
+                        <div class="crafted-about-card card-2 mx-auto">
+                            <div class="split-image-container" style="--bg-url: url('/theme_interio/static/src/img/fandq_2.png');">
+                                <div class="quadrant quadrant-1"></div>
+                                <div class="quadrant quadrant-2"></div>
+                                <div class="quadrant quadrant-3"></div>
+                                <div class="quadrant quadrant-4"></div>
+                            </div>
+                            <div class="card-text-area d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h3 class="fw-normal">320+</h3>
+                                    <small>Projects Completed</small>
+                                </div>
+                                <span class="asterisk-icon">✺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4 card-wrapper">
+                        <div class="crafted-about-card card-3 mx-auto">
+                            <div class="split-image-container" style="--bg-url: url('/theme_interio/static/src/img/cc3.png');">
+                                <div class="quadrant quadrant-1"></div>
+                                <div class="quadrant quadrant-2"></div>
+                                <div class="quadrant quadrant-3"></div>
+                                <div class="quadrant quadrant-4"></div>
+                            </div>
+                            <div class="card-text-area d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h3 class="fw-normal">200+</h3>
+                                    <small>Satisfied Clients</small>
+                                </div>
+                                <span class="asterisk-icon">✺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="luxe_marquee" name="Luxe Marquee">
+        <section class="luxe-marquee-section" data-snippet="luxe_marquee" data-name="Luxe Marquee">
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+            <div class="lmarq-container" data-oe-protected="true">
+                <div class="lmarq-track">
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <!-- duplicate for smooth infinite loop -->
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <span class="lmarq-text">Build something beautiful together</span>
+                    <span class="lmarq-text">Build something beautiful together</span>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

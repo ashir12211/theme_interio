@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="luxe_services" name="Luxe Services">
+        <section class="ls-section" data-snippet="luxe_services" data-name="Luxe Services">
+            <!-- Decorative dot pattern -->
+            <div class="ls-bg-pattern" data-oe-protected="true"></div>
+
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row mb-5 align-items-end">
+                    <div class="col-lg-4">
+                        <div class="ls-label-wrap">
+                            <span class="ls-dot"></span>
+                            <span class="ls-label">Services</span>
+                        </div>
+                        <h2 class="ls-title">Personalized Care.<br/>Inspired Spaces.</h2>
+                        <div class="ls-divider" data-oe-protected="true"></div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-4 d-flex align-items-end">
+                        <p class="ls-subtitle">Discover our range of interior designs that turn ideas into stunning spaces!</p>
+                    </div>
+                </div>
+
+                <!-- Main Content: Left Info + Right Stacked Cards -->
+                <div class="row align-items-center ls-main-row">
+
+                    <!-- Left: Service Details -->
+                    <div class="col-lg-5">
+                        <div class="ls-service-details">
+                            <!-- Active Service Info (changes with top card) -->
+                            <div class="ls-service-info active" data-service="0">
+                                <span class="ls-service-num">(001)</span>
+                                <h3 class="ls-service-name">Residential Design</h3>
+                                <p class="ls-service-desc">Complete home interiors that reflect your style functional, beautiful, and deeply personal.</p>
+                                <div class="ls-service-stat">
+                                    <span class="ls-stat-number">90+</span>
+                                    <span class="ls-stat-label">Transformed Spaces</span>
+                                </div>
+                            </div>
+                            <div class="ls-service-info" data-service="1">
+                                <span class="ls-service-num">(002)</span>
+                                <h3 class="ls-service-name">Commercial Interior Design</h3>
+                                <p class="ls-service-desc">Smart, branded spaces for offices, cafes, and retail that engage and perform.</p>
+                                <div class="ls-service-stat">
+                                    <span class="ls-stat-number">40+</span>
+                                    <span class="ls-stat-label">Transformed Spaces</span>
+                                </div>
+                            </div>
+                            <div class="ls-service-info" data-service="2">
+                                <span class="ls-service-num">(003)</span>
+                                <h3 class="ls-service-name">Interior Renovations</h3>
+                                <p class="ls-service-desc">We rework layouts, update materials, and give tired spaces a fresh, modern edge.</p>
+                                <div class="ls-service-stat">
+                                    <span class="ls-stat-number">30+</span>
+                                    <span class="ls-stat-label">Transformed Spaces</span>
+                                </div>
+                            </div>
+                            <div class="ls-service-info" data-service="3">
+                                <span class="ls-service-num">(004)</span>
+                                <h3 class="ls-service-name">Hospitality Design</h3>
+                                <p class="ls-service-desc">Elegant and memorable interiors for hotels, restaurants, and boutique experiences.</p>
+                                <div class="ls-service-stat">
+                                    <span class="ls-stat-number">20+</span>
+                                    <span class="ls-stat-label">Transformed Spaces</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Stacked Cards -->
+                    <div class="col-lg-7">
+                        <div class="ls-stack-wrapper" data-oe-protected="true">
+                            <div class="ls-stack-container">
+                                <div class="ls-stack-card" data-index="0">
+                                    <img src="/theme_interio/static/src/img/residential.png" alt="Residential Design"/>
+                                </div>
+                                <div class="ls-stack-card" data-index="1">
+                                    <img src="/theme_interio/static/src/img/commerce.png" alt="Commercial Interior Design"/>
+                                </div>
+                                <div class="ls-stack-card" data-index="2">
+                                    <img src="/theme_interio/static/src/img/hero2_slide_3.png" alt="Interior Renovations"/>
+                                </div>
+                                <div class="ls-stack-card" data-index="3">
+                                    <img src="/theme_interio/static/src/img/hospital.png" alt="Hospitality Design"/>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Dots -->
+                            <div class="ls-stack-nav">
+                                <button class="ls-nav-dot active" data-target="0" aria-label="Service 1"></button>
+                                <button class="ls-nav-dot" data-target="1" aria-label="Service 2"></button>
+                                <button class="ls-nav-dot" data-target="2" aria-label="Service 3"></button>
+                                <button class="ls-nav-dot" data-target="3" aria-label="Service 4"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Separator -->
+                <div class="ls-bottom-line" data-oe-protected="true"></div>
+
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,248 @@
+/* --- Extra Project 2 Section (Black Theme) --- */
+.extra_project2_section {
+    background-color: #FAF6F0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Expanding Flex Grid (Accordion Style) */
+.extra_p2_grid {
+    display: flex;
+    gap: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+.extra_p2_panel {
+    position: relative;
+    flex: 1;
+    /* Default equal width */
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid rgba(244, 223, 200, 0.1);
+}
+
+/* Base Gradient Overlay for text contrast */
+.extra_p2_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+    z-index: 1;
+    transition: opacity 0.8s ease;
+    opacity: 0.9;
+}
+
+.extra_p2_content {
+    position: relative;
+    z-index: 2;
+    padding: 35px;
+    color: #FAF6F0;
+    transition: all 0.6s ease;
+}
+
+/* Category Tag */
+.extra_p2_category {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #F4DFC8;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    opacity: 0;
+    /* Hidden until hover */
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.badge_dot {
+    width: 6px;
+    height: 6px;
+    background-color: #F4DFC8;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 10px #F4DFC8;
+}
+
+/* Project Title */
+.extra_p2_title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    white-space: nowrap;
+    /* Forces text to not wrap on inactive panels */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    /* Prevents flex blowout */
+}
+
+/* Hidden Details Container */
+.extra_p2_details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.extra_p2_details p {
+    color: #F4EAE0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-top: 1px dashed rgba(244, 223, 200, 0.3);
+    padding-top: 15px;
+}
+
+/* Discover Button */
+.extra_p2_btn {
+    display: inline-flex;
+    align-items: center;
+    color: #000000 !important;
+    background-color: #F4DFC8;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+
+.extra_p2_btn svg {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.extra_p2_btn:hover {
+    background-color: #FAF6F0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(244, 223, 200, 0.2);
+}
+
+.extra_p2_btn:hover svg {
+    transform: translateX(5px);
+}
+
+/* ===========================
+   HOVER DYNAMICS (The Art)
+   =========================== */
+
+/* When hovering over the grid, slightly shrink and wash out ALL panels */
+.extra_p2_grid:hover .extra_p2_panel {
+    flex: 0.6;
+    filter: grayscale(80%) brightness(0.5);
+}
+
+/* But expand the SPECIFIC panel being hovered */
+.extra_p2_grid .extra_p2_panel:hover {
+    flex: 3;
+    /* Major expansion */
+    filter: grayscale(0%) brightness(1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    z-index: 10;
+    border-color: rgba(244, 223, 200, 0.5);
+}
+
+/* Text & Overlay adjustments on hover */
+.extra_p2_panel:hover .extra_p2_overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.extra_p2_panel:hover .extra_p2_category {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.extra_p2_panel:hover .extra_p2_title {
+    font-size: 2.8rem;
+    white-space: normal;
+    /* Allow wrapping when fully expanded */
+    text-overflow: clip;
+    margin-top: 10px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.extra_p2_panel:hover .extra_p2_details {
+    max-height: 300px;
+    opacity: 1;
+    padding-bottom: 10px;
+}
+
+/* Image Slow Pan Effect inside panel */
+.extra_p2_panel {
+    background-size: 100% 100%;
+}
+
+.extra_p2_grid .extra_p2_panel:hover {
+    background-size: 115% 115%;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 1199px) {
+    .extra_p2_title {
+        font-size: 1.3rem;
+    }
+
+    .extra_p2_panel:hover .extra_p2_title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .extra_p2_grid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .extra_p2_panel {
+        height: 150px;
+        /* Small collapsed height */
+        flex: auto !important;
+        /* Override flex growth */
+        margin-bottom: 20px;
+        background-size: cover;
+    }
+
+    .extra_p2_grid .extra_p2_panel:hover {
+        height: 450px;
+        /* Expand vertically */
+        background-size: cover;
+    }
+
+    .extra_p2_title {
+        white-space: normal;
+        margin-bottom: 0;
+    }
+
+    .extra_p2_panel:hover .extra_p2_title {
+        font-size: 2rem;
+    }
+
+    .extra_project2_section .display-3 {
+        font-size: 3rem;
+    }
+
+    .extra_p2_content {
+        padding: 20px;
+    }
+}

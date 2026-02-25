@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="atelier_key" name="Atelier Key Features">
+        <section class="atelier-key-section">
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+            <div class="ak-container">
+                <div class="ak-accordion">
+                    <!-- Panel 1 -->
+                    <div class="ak-panel" style="background-image: url('/theme_interio/static/src/img/team.png');">
+                        <div class="ak-overlay"></div>
+                        <div class="ak-content">
+                            <h2 class="ak-title">OUR TEAM</h2>
+                            <p class="ak-subtitle">EXPLORE OUR EXPERTS</p>
+                        </div>
+                    </div>
+                    <!-- Panel 2 -->
+                    <div class="ak-panel" style="background-image: url('/theme_interio/static/src/img/hero2_slide_1.png');">
+                        <div class="ak-overlay"></div>
+                        <div class="ak-content">
+                            <h2 class="ak-title">PROJECTS</h2>
+                            <p class="ak-subtitle">BE INSPIRED BY INTERIORS</p>
+                        </div>
+                    </div>
+                    <!-- Panel 3 -->
+                    <div class="ak-panel" style="background-image: url('/theme_interio/static/src/img/support.png');">
+                        <div class="ak-overlay"></div>
+                        <div class="ak-content">
+                            <h2 class="ak-title">SUPPORT</h2>
+                            <p class="ak-subtitle">JUST CHOOSE COMFORT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

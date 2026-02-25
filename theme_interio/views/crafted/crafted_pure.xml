@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="crafted_pure" name="Crafted Text">
+        <section class="s_crafted_pure" data-snippet="theme_interio.crafted_pure" data-name="Crafted Pure">
+            <div class="container-fluid m-0 p-0 overflow-hidden">
+                <div class="row w-100 m-0 align-items-center justify-content-center cp-text-container">
+                    <div class="col-12 text-center p-0">
+                        <h1 class="cp-gradient-text m-0">White Perfection</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

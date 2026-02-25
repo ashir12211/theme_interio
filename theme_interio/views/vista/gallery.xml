@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="interio_gallery" name="Vista Gallery">
+        <section class="vh-gallery">
+            <!-- Center Text -->
+            <div class="vh-gallery-center-wrap">
+                <span class="vh-gallery-tag">Gallery</span>
+                <h2 class="vh-gallery-title">Create Moments</h2>
+                <div class="vh-gallery-desc">
+                    Inspiration starts here. Your moment is next.<br/>
+                    A space designed for life.
+                </div>
+                <a href="#" class="vh-gallery-btn">Reserve Now</a>
+            </div>
+
+            <!-- Scattered Images -->
+            <div class="vh-gallery-imgs">
+                <!-- 1. Top Left -->
+                <div class="vh-gallery-item vh-pos-1" data-parallax="0.04">
+                    <div class="vh-gallery-img-wrap">
+                        <img src="/theme_interio/static/src/img/gallery_man_reading.png" alt="Reading moment" loading="lazy"/>
+                    </div>
+                </div>
+
+                <!-- 2. Top Right -->
+                <div class="vh-gallery-item vh-pos-2" data-parallax="0.06">
+                    <div class="vh-gallery-img-wrap">
+                        <img src="/theme_interio/static/src/img/gallery_woman_chair.png" alt="Relaxing" loading="lazy"/>
+                    </div>
+                </div>
+
+                <!-- 3. Mid Left (Lower) -->
+                <div class="vh-gallery-item vh-pos-3" data-parallax="0.03">
+                    <div class="vh-gallery-img-wrap">
+                        <img src="/theme_interio/static/src/img/gallery_woman_standing.png" alt="Zen space" loading="lazy"/>
+                    </div>
+                </div>
+
+                <!-- 4. Mid Right (Lower) -->
+                <div class="vh-gallery-item vh-pos-4" data-parallax="0.05">
+                    <div class="vh-gallery-img-wrap">
+                        <img src="/theme_interio/static/src/img/gallery_couple_floor.png" alt="Couple moments" loading="lazy"/>
+                    </div>
+                </div>
+
+                <!-- 5. Bottom Left (Center-ish) -->
+                <div class="vh-gallery-item vh-pos-5" data-parallax="0.02">
+                    <div class="vh-gallery-img-wrap">
+                        <img src="/theme_interio/static/src/img/r3_zentra.png" alt="Studio detail" loading="lazy"/>
+                    </div>
+                </div>
+
+                 <!-- 6. Bottom Right (Center-ish) -->
+                <div class="vh-gallery-item vh-pos-6" data-parallax="0.04">
+                    <div class="vh-gallery-img-wrap">
+                        <img src="/theme_interio/static/src/img/r3_lumora.png" alt="Warm lighting" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

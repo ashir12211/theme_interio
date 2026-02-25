@@ -1,0 +1,143 @@
+/* Main section background */
+.extra_projects1 {
+    background-color: #FAF6F0;
+    overflow: hidden;
+}
+
+/* Card container hover and styles */
+.project-card_extra_1 {
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding: 20px 15px;
+    border-radius: 12px;
+}
+
+.project-card_extra_1:hover {
+    background-color: #F4EAE0;
+}
+
+/* Image styling and wrapping */
+.img-container_extra_1 {
+    z-index: 2;
+}
+
+/* Background sliding shape under the image */
+.img-bg-shape_extra_1 {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 100%;
+    height: 100%;
+    background-color: #F4DFC8;
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card_extra_1:hover .img-bg-shape_extra_1 {
+    transform: translate(24px, 24px);
+}
+
+/* Image zoom effect */
+.img-wrapper_extra_1 img {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(0.96);
+}
+
+.project-card_extra_1:hover .img-wrapper_extra_1 img {
+    transform: scale(1.1);
+    filter: brightness(1.02);
+}
+
+/* Text and headings animations */
+.content-wrapper_extra_1 h4 {
+    color: #000000;
+    font-size: 1.35rem;
+    transition: color 0.3s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card_extra_1:hover .content-wrapper_extra_1 h4 {
+    transform: translateX(8px);
+}
+
+.content-wrapper_extra_1 p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+/* Learn More button with line hover effect */
+.btn-learn-more_extra_1 {
+    position: relative;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #000000 !important;
+    display: inline-block;
+}
+
+.btn-learn-more_extra_1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 25px;
+    height: 2px;
+    background-color: #F4DFC8;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card_extra_1:hover .btn-learn-more_extra_1::after {
+    width: 100%;
+    background-color: #000000;
+}
+
+/* Header Decor float animation */
+.title-decor_extra_1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F4DFC8;
+    top: -15px;
+    left: -25px;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    animation: float_extra_1 6s ease-in-out infinite;
+}
+
+@keyframes float_extra_1 {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(15deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Responsive details */
+@media (max-width: 767px) {
+    .project-card_extra_1 {
+        flex-direction: column !important;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .img-container_extra_1 {
+        width: 100% !important;
+        height: 300px !important;
+        margin-right: 0 !important;
+    }
+
+    .content-wrapper_extra_1 p {
+        max-width: 100%;
+    }
+
+    .project-card_extra_1:hover .content-wrapper_extra_1 h4 {
+        transform: translateY(-5px);
+    }
+}

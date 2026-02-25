@@ -1,0 +1,288 @@
+.interio_hero4 {
+    margin: 0;
+    background-color: #fdfdfd;
+    color: #333333;
+    position: relative;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.interio_hero4 .card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.interio_hero4 .card-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    padding-left: 16px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.interio_hero4 .content-place {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.interio_hero4 .content-title-1,
+.interio_hero4 .content-title-2 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.interio_hero4 .content-start {
+    width: 30px;
+    height: 5px;
+    border-radius: 99px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.interio_hero4 .details {
+    z-index: 22;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    max-width: 600px;
+}
+
+.interio_hero4 .details .place-box {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.interio_hero4 .details .place-box .text {
+    padding-top: 16px;
+    font-size: clamp(16px, 2vw, 20px);
+    position: relative;
+    color: #555555;
+}
+
+.interio_hero4 .details .place-box .text:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 99px;
+    background-color: #333333;
+}
+
+.interio_hero4 .details .title-1,
+.interio_hero4 .details .title-2 {
+    font-weight: 600;
+    font-size: clamp(40px, 8vw, 75px);
+    font-family: "Oswald", sans-serif;
+    line-height: 1.1;
+    color: #111111;
+}
+
+.interio_hero4 .details .title-box-1,
+.interio_hero4 .details .title-box-2 {
+    height: auto;
+    overflow: hidden;
+}
+
+.interio_hero4 .details>.desc {
+    margin-top: 20px;
+    width: 100%;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.6;
+    color: #444444;
+}
+
+.interio_hero4 .details>.cta {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.interio_hero4 .details>.cta>.bookmark {
+    border: none;
+    background-color: #d4af37;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.interio_hero4 .details>.cta>.bookmark svg {
+    width: 20px;
+    height: 20px;
+}
+
+.interio_hero4 .details>.cta>.discover {
+    border: 1px solid #333333;
+    background-color: transparent;
+    height: 44px;
+    border-radius: 99px;
+    color: #333333;
+    padding: 4px 24px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interio_hero4 .details>.cta>.discover:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.interio_hero4 .indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+    z-index: 60;
+    background-color: #000000;
+}
+
+.interio_hero4 .pagination {
+    position: absolute;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    z-index: 60;
+}
+
+.interio_hero4 .pagination .slide-numbers-wrapper {
+    display: flex;
+    align-items: baseline;
+    font-family: "Oswald", sans-serif;
+    color: #333333;
+}
+
+.interio_hero4 .pagination .slide-numbers {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.interio_hero4 .pagination .slide-numbers .item {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    font-size: clamp(20px, 3vw, 24px);
+    font-weight: 600;
+}
+
+.interio_hero4 .pagination .slide-numbers-total {
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 500;
+    color: #888888;
+    margin-left: 2px;
+}
+
+.interio_hero4 .pagination .progress-sub-container {
+    flex-grow: 1;
+    max-width: 600px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.interio_hero4 .pagination .progress-sub-background {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 99px;
+    position: relative;
+    overflow: hidden;
+}
+
+.interio_hero4 .pagination .progress-sub-foreground {
+    height: 100%;
+    background-color: #333333;
+    border-radius: 99px;
+}
+
+.interio_hero4 .pagination .nav-arrows {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.interio_hero4 .pagination .arrow {
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #333333;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.interio_hero4 .pagination .arrow:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+
+.interio_hero4 .pagination .arrow svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.interio_hero4 .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fdfdfd;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .interio_hero4 .details {
+        top: 10%;
+    }
+
+    .interio_hero4 .details>.cta {
+        margin-top: 15px;
+        flex-direction: row;
+    }
+
+    .interio_hero4 .pagination .progress-sub-container {
+        display: none;
+        /* Hide progress bar on small devices to save space */
+    }
+}

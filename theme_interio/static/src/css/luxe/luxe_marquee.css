@@ -1,0 +1,106 @@
+
+
+.luxe-marquee-section {
+    --lmarq-bg: #F5DAA7;
+    --lmarq-bg-deep: #EFD097;
+    --lmarq-text-base: #842A3B;
+    --lmarq-text-dark: #662222;
+    --lmarq-highlight: #B55267;
+    --lmarq-shadow: #4A1515;
+
+    background: linear-gradient(180deg, var(--lmarq-bg) 0%, var(--lmarq-bg-deep) 100%);
+    width: 100%;
+    padding: 80px 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(132, 42, 59, 0.2);
+    border-bottom: 1px solid rgba(132, 42, 59, 0.2);
+}
+
+.lmarq-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.lmarq-track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: lmarq-scroll-left 150s linear infinite;
+    align-items: center;
+}
+
+.lmarq-track:hover {
+    animation-play-state: paused;
+}
+
+.lmarq-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(5rem, 10vw, 12rem);
+    font-weight: 700;
+    padding: 0 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+    cursor: default;
+
+    color: var(--lmarq-text-base);
+
+    /* 3D Extrusion matching the uploaded red 3D text */
+    text-shadow:
+        /* inner top shine / bevel */
+        -2px -2px 0px var(--lmarq-highlight),
+        /* solid 3D depth */
+        1px 1px 0px #742533,
+        2px 2px 0px #742533,
+        3px 3px 0px var(--lmarq-text-dark),
+        4px 4px 0px var(--lmarq-text-dark),
+        5px 5px 0px #551A1A,
+        6px 6px 0px #551A1A,
+        7px 7px 0px var(--lmarq-shadow),
+        8px 8px 0px var(--lmarq-shadow),
+        /* drop shadow on the background */
+        15px 15px 30px rgba(102, 34, 34, 0.5);
+
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.lmarq-text:hover {
+    transform: scale(1.05) translateY(-5px);
+    text-shadow:
+        -2px -2px 0px var(--lmarq-highlight),
+        1px 1px 0px #742533,
+        2px 2px 0px #742533,
+        3px 3px 0px #742533,
+        4px 4px 0px var(--lmarq-text-dark),
+        5px 5px 0px var(--lmarq-text-dark),
+        6px 6px 0px #551A1A,
+        7px 7px 0px #551A1A,
+        8px 8px 0px #551A1A,
+        9px 9px 0px var(--lmarq-shadow),
+        10px 10px 0px var(--lmarq-shadow),
+        11px 11px 0px var(--lmarq-shadow),
+        12px 12px 0px var(--lmarq-shadow),
+        25px 25px 45px rgba(102, 34, 34, 0.7);
+}
+
+@keyframes lmarq-scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .lmarq-text {
+        font-size: clamp(4rem, 8vw, 6rem);
+        padding: 0 25px;
+    }
+}

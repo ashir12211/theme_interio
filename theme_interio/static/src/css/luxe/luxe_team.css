@@ -1,0 +1,341 @@
+
+
+/* ---------- Section ---------- */
+.lt-section {
+    padding: 120px 0;
+    background-color: #F5DAA7;
+    color: #662222;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Dot Pattern */
+.lt-bg-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    background-image: radial-gradient(#842A3B 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+}
+
+/* ---------- Header ---------- */
+.lt-uptitle {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    color: #842A3B;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.lt-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #662222;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.lt-divider {
+    width: 60px;
+    height: 3px;
+    background: #842A3B;
+    margin-top: 28px;
+    transition: width 0.6s ease;
+}
+
+.lt-section:hover .lt-divider {
+    width: 100px;
+}
+
+.lt-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #662222;
+    font-weight: 300;
+    max-width: 480px;
+    margin-bottom: 0;
+}
+
+/* ---------- Team Grid ---------- */
+.lt-team-grid {
+    margin-top: 20px;
+}
+
+/* ---------- Card Container (Perspective) ---------- */
+.lt-card-container {
+    height: 420px;
+    perspective: 800px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ---------- Card (Flipping Element) ---------- */
+.lt-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1200ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.lt-card-container:hover>.lt-card {
+    transform: rotateX(180deg) rotateZ(-180deg);
+}
+
+/* ---------- Front & Back (Common) ---------- */
+.lt-card-front,
+.lt-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ---------- Front ---------- */
+.lt-card-front {
+    background: #662222;
+    color: #F5DAA7;
+    box-shadow: 0 8px 40px rgba(132, 42, 59, 0.25);
+}
+
+/* Profile Badge */
+.lt-card-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid #662222;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 0 12px 4px rgba(244, 124, 124, 0.35);
+    z-index: 2;
+}
+
+.lt-card-top-text {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #F5DAA7;
+}
+
+/* Photo */
+.lt-card-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 3px solid rgba(244, 124, 124, 0.3);
+    box-shadow: 0 0 20px rgba(244, 124, 124, 0.15);
+    transition: all 0.6s ease;
+}
+
+.lt-card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.lt-card-container:hover .lt-card-photo {
+    border-color: rgba(244, 124, 124, 0.5);
+}
+
+/* Info (Front) */
+.lt-card-info {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.lt-card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F5DAA7;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lt-card-role {
+    font-size: 13px;
+    color: #EF9F9F;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Plus Icon */
+.lt-card-plus {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    font-size: 22px;
+    font-weight: 300;
+    color: rgba(245, 218, 167, 0.4);
+    transition: all 0.4s ease;
+    line-height: 1;
+}
+
+.lt-card-container:hover .lt-card-plus {
+    color: #F47C7C;
+    transform: rotate(45deg);
+}
+
+/* ---------- Back ---------- */
+.lt-card-back {
+    background: #842A3B;
+    color: #F5DAA7;
+    transform: rotateX(180deg) rotateZ(-180deg);
+    padding: 40px 28px;
+    text-align: center;
+    gap: 16px;
+    box-shadow: 0 8px 40px rgba(132, 42, 59, 0.35);
+}
+
+.lt-back-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #F5DAA7;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lt-back-bio {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(245, 218, 167, 0.8);
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Social Icons */
+.lt-back-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 8px;
+}
+
+.lt-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 218, 167, 0.25);
+    color: #F5DAA7;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    background: transparent;
+}
+
+.lt-social-link:hover {
+    background: #F47C7C;
+    border-color: #F47C7C;
+    color: #662222;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(244, 124, 124, 0.4);
+}
+
+.lt-social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 1200px) {
+    .lt-title {
+        font-size: 3rem;
+    }
+
+    .lt-card-container {
+        height: 400px;
+    }
+
+    .lt-card-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .lt-section {
+        padding: 80px 0;
+    }
+
+    .lt-title {
+        font-size: 2.6rem;
+        margin-bottom: 20px;
+    }
+
+    .lt-subtitle {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lt-title {
+        font-size: 2.2rem;
+    }
+
+    .lt-card-container {
+        height: 380px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .lt-card-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .lt-card-name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lt-title {
+        font-size: 1.9rem;
+    }
+
+    .lt-card-container {
+        height: 360px;
+        max-width: 260px;
+    }
+
+    .lt-card-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .lt-back-bio {
+        font-size: 13px;
+    }
+}

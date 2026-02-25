@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ambient_marquee" name="Ambient Marquee">
+        <section class="ambient-marquee-section" data-snippet="ambient_marquee" data-name="Ambient Marquee">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&amp;display=swap" rel="stylesheet"/>
+            <div class="amarq2-container" data-oe-protected="true">
+                <div class="amarq2-track">
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <!-- duplicate for smooth infinite loop -->
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                    <span class="amarq2-text">The Art of Dark Living</span>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
