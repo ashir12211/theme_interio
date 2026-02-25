@@ -188,7 +188,7 @@
 
 'images': [
         'static/description/interio_cover.jpg',
-        'static/description/interio_screenshot.mp4',
+        'static/description/interio_screenshot.gif',
 
     ],
 
