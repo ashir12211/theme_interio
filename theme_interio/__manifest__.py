@@ -20,7 +20,7 @@
     'license': 'OPL-1',
     'live_test_url': 'https://interior.xappco.site/',
     'support': 'rarebirdev@gmail.com',
-    'price': 109.00,
+    'price': 49.00,
     'currency': 'USD',
 
     'depends': [
